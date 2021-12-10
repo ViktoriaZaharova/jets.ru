@@ -1,0 +1,86 @@
+@import "fonts"
+@import "vars"
+
+
+.card-airplane
+  width: 100%
+  cursor: pointer
+  transition: .3s ease
+  height: 100%
+  background: #fff
+  border: 1px solid #D7D7D7
+  position: relative
+  .add-favorite
+    display: none
+    position: absolute
+    z-index: 1
+    top: 8px
+    left: 8px
+  &:hover
+    .add-favorite
+      display: flex
+  &__img
+    width: 100%
+    height: 220px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    height: calc(100% - 220px)
+    padding: 16px
+    display: flex
+    flex-direction: column
+  .btn
+    margin: auto 0 0
+  &__name
+    width: 100%
+    margin: 0 0 24px
+    text-transform: uppercase
+    color: #000
+    min-height: 38px
+    letter-spacing: 0.03em
+    font-weight: bold
+    &:hover
+      color: $gold
+  .list-characteristics
+    margin: 0 0 39px
+
+.list-characteristics
+  width: 100%
+  li
+    margin: 0 0 16px
+    width: 100%
+    position: relative
+    z-index: 1
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 2px
+      width: 100%
+      height: 1px
+      z-index: -1
+      border-bottom: 1px dotted #D2D2D2
+  p
+    color: #9B9B9B
+    position: relative
+    background: #fff
+    padding: 0 3px 0 0
+  span, strong
+    position: relative
+    background: #fff
+    display: inline-block
+    text-align: right
+    padding: 0 0 0 3px

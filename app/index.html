@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jets.ru</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!--  <link rel="stylesheet" href="css/libs.min.css">-->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="content">
+
+    <div class="mobile-menu">
+
+    </div>
+    
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <form method="post" class="form-search form">
+              <label>
+                <input type="text" placeholder="Поиск" name="search">
+              </label>
+              <button type="submit" class="button-search"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></button>
+            </form>
+
+            <a href="comparison.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg></span>
+              <span class="header-links__text">Русский</span>
+            </a>
+            <a href="favorites.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#heart"></use></svg></span>
+              <span class="header-links__text">Избранное</span>
+            </a>
+            <a href="#" class="header-links links-chat">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chat"></use></svg></span>
+              <span class="header-links__text">Спросить</span>
+            </a>
+            <a href="#" class="header-links language-links">
+              <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+              <span class="header-links__text">Русский</span>
+            </a>
+            <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-12">
+            <ul class="menu">
+              <li><a href="news.html">НОВОСТИ</a></li>
+              <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+              <li><a href="rental.html">АРЕНДА</a></li>
+              <li><a href="realization.html">ПРОДАЖА</a></li>
+              <li><a href="publication.html">Публикации</a></li>
+              <li><a href="concierge.html">Консьерж</a></li>
+              <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="home">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-9">
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-8 mb-20 order-md-1 mb-20">
+                <div class="card-news card-news-overlay card-news-lg">
+                  <img src="img/news-card-bg1.png" class="card-news__bg" alt="">
+                  <div class="card-news__body">
+                    <a href="#" class="card-news__title">Airbus Corporate Jets подводит
+                      итоги успешного года</a>
+                    <div class="box-text">
+                      <p>Всего было поставлено 4 самолета <br>
+                        и получено твердых заказов на 13 самолетов,
+                        включая 6 на недавно презентованную новинку
+                        семейства - ACJ TwoTwenty</p>
+                    </div>
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Новости</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-4 order-md-1 md-20">
+                <div class="list-news">
+                  <div class="scroll-box">
+                    <div class="list-news-card">
+                      <div class="list-news-card__head">
+                        <div class="card-news__date">13.08.2021</div>
+                        <a href="#" class="category-name color-brown">Новости</a>
+                      </div>
+                      <div class="list-news-card__body">
+                        <a href="#" class="box-text">
+                          Embraer отмечает рекордные продажи бизнес-джетов во втором квартале
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="list-news-card">
+                      <div class="list-news-card__head">
+                        <div class="card-news__date">10.08.2021</div>
+                        <a href="#" class="category-name color-brown">Новости</a>
+                      </div>
+                      <div class="list-news-card__body">
+                        <a href="#" class="box-text">
+                          Продажи авионики увеличились во втором квартале, но уровень все еще низкий с начала года
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="list-news-card">
+                      <div class="list-news-card__head">
+                        <div class="card-news__date">13.08.2021</div>
+                        <a href="#" class="category-name color-brown">Новости</a>
+                      </div>
+                      <div class="list-news-card__body">
+                        <a href="#" class="box-text">
+                          Mодели Bombardier лидируют в парке бизнес-джетов России и СНГ
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="list-news-card">
+                      <div class="list-news-card__head">
+                        <div class="card-news__date">14.06.2021</div>
+                        <a href="#" class="category-name color-brown">Новости</a>
+                      </div>
+                      <div class="list-news-card__body">
+                        <a href="#" class="box-text">
+                          Вертолет Ми-171А2 сможет перевозить 24 пассажира
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="list-news-card">
+                      <div class="list-news-card__head">
+                        <div class="card-news__date">09.06.2021</div>
+                        <a href="#" class="category-name color-brown">Новости</a>
+                      </div>
+                      <div class="list-news-card__body">
+                        <a href="#" class="box-text">
+                          Airbus H145 совершил первый полет на экологически чистом топливе
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="list-news-card">
+                      <div class="list-news-card__head">
+                        <div class="card-news__date">28.05.2021</div>
+                        <a href="#" class="category-name color-brown">Новости</a>
+                      </div>
+                      <div class="list-news-card__body">
+                        <a href="#" class="box-text">
+                          Jet Aviation поставил первый самолет BBJ Max с VIP-статусом
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-8 order-md-1 mb-20 d-none d-md-block">
+                <div class="card-news card-news-row card-news-lg mb-20">
+                  <div class="card-news__content">
+                    <div class="card-news__img">
+                      <img src="img/news1.png" alt="">
+                    </div>
+
+                    <div class="card-news__body">
+                      <a href="#" class="card-news__title">Airbus Corporate Jets подводит
+                        итоги успешного года</a>
+                      <div class="box-text">
+                        <p>Всего было поставлено 4 самолета и получено твердых заказов на 13 самолетов, включая 6 на
+                          недавно презентованную новинку семейства - ACJ TwoTwenty</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-news__footer">
+                    <a href="#" class="category-name color-brown">Новости</a>
+                    <div class="card-news__date color-light-grey">15.12.2020</div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="card-news card-news-sm mb-20">
+                      <div class="card-news__body">
+                        <a href="#" class="card-news__title">Обновленный Helitech 2021 <br>
+                          вернется в октябре</a>
+                        <div class="card-news__footer">
+                          <a href="#" class="category-name color-brown">Новости</a>
+                          <div class="card-news__date">23.04.2021</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-news card-news-sm">
+                      <div class="card-news__body">
+                        <a href="#" class="card-news__title">Французский аэропорт Клермон-Ферран Овернь <br>
+                          предлагает SAF</a>
+                        <div class="card-news__footer">
+                          <a href="#" class="category-name color-brown">Новости</a>
+                          <div class="card-news__date">23.04.2021</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="card-news card-news-col card-news-lg">
+                      <div class="card-news__body">
+                        <a href="#" class="card-news__title">Flexjet пополняет европейский флот первым Praetor 600</a>
+                        <div class="box-text">
+                          <p>Компания Flexjet получила первый самолет Embraer Praetor 600, добавив его в свой
+                            европейский флот. </p>
+                        </div>
+                        <div class="card-news__footer">
+                          <a href="#" class="category-name color-brown">Новости</a>
+                          <div class="card-news__date">16.12.2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-20">
+                <form method="post" class="form-small bg-black">
+                  <label>
+                    <input type="text" placeholder="Откуда" name="where" required>
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Куда" name="where_2" required>
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Имя" name="name" required>
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Контакты" name="phone" required>
+                  </label>
+                  <button type="submit" class="btn btn-accent btn-xs">заказать перелет</button>
+                  <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
+                                                             class="d-inline text-decoration color-white">вы
+                    соглашаетесь
+                    на обработку персональных данных</a></div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3 mb-20">
+            <div class="banner-box mb-20">
+              <img src="img/banner1.jpeg" alt="" class="banner-box__bg">
+            </div>
+
+            <div class="news-slider-wrapper">
+              <div class="news-slider">
+                <div class="slide">
+                  <div class="news-slider-card">
+                    <div class="news-slider-card__img">
+                      <img src="img/news2.png" alt="">
+                      <div class="news-slider-card__footer">
+                        <a href="#" class="category-name color-brown">Новости</a>
+                        <div class="card-news__date">11.12.2020</div>
+                      </div>
+                    </div>
+                    <div class="news-slider-card__body">
+                      <a href="#" class="news-slider-card__name">Вертолет ACH130 Aston Martin Edition получил заказы по
+                        всему миру</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="news-slider-card">
+                    <div class="news-slider-card__img">
+                      <img src="img/news2.png" alt="">
+                      <div class="news-slider-card__footer">
+                        <a href="#" class="category-name color-brown">Новости</a>
+                        <div class="card-news__date">11.12.2020</div>
+                      </div>
+                    </div>
+                    <div class="news-slider-card__body">
+                      <a href="#" class="news-slider-card__name">Вертолет ACH130 Aston Martin Edition получил заказы по
+                        всему миру</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="news-slider-card">
+                    <div class="news-slider-card__img">
+                      <img src="img/news2.png" alt="">
+                      <div class="news-slider-card__footer">
+                        <a href="#" class="category-name color-brown">Новости</a>
+                        <div class="card-news__date">11.12.2020</div>
+                      </div>
+                    </div>
+                    <div class="news-slider-card__body">
+                      <a href="#" class="news-slider-card__name">Вертолет ACH130 Aston Martin Edition получил заказы по
+                        всему миру</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="news-slider-card">
+                    <div class="news-slider-card__img">
+                      <img src="img/news2.png" alt="">
+                      <div class="news-slider-card__footer">
+                        <a href="#" class="category-name color-brown">Новости</a>
+                        <div class="card-news__date">11.12.2020</div>
+                      </div>
+                    </div>
+                    <div class="news-slider-card__body">
+                      <a href="#" class="news-slider-card__name">Вертолет ACH130 Aston Martin Edition получил заказы по
+                        всему миру</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="news-slider-card">
+                    <div class="news-slider-card__img">
+                      <img src="img/news2.png" alt="">
+                      <div class="news-slider-card__footer">
+                        <a href="#" class="category-name color-brown">Новости</a>
+                        <div class="card-news__date">11.12.2020</div>
+                      </div>
+                    </div>
+                    <div class="news-slider-card__body">
+                      <a href="#" class="news-slider-card__name">Вертолет ACH130 Aston Martin Edition получил заказы по
+                        всему миру</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-nav slider-nav-v2 news-slider__nav"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-9 mb-20">
+            <div class="empty-legs">
+              <ul class="nav nav-pills nav-tabs empty-legs-tabs" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                     aria-controls="pills-home" aria-selected="true">Empty Legs</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                     aria-controls="pills-profile" aria-selected="false">Арендовать самолет</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                     aria-controls="pills-contact" aria-selected="false">Купить самолет</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="table table-empty">
+                    <div class="thead">
+                      <div class="tr">
+                        <div class="th">Даты вылета</div>
+                        <div class="th">направление</div>
+                        <div class="th">самолет</div>
+                        <div class="th">стоимость</div>
+                      </div>
+                    </div>
+                    <div class="tbody">
+                      <div class="tr">
+                        <div class="td">
+                          <div class="empty-date">31.08.21 - 3.09.21</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-direction">Москва – Константинополь</div>
+                        </div>
+                        <div class="td">
+                          <div class="airplane-name">Embraer Legacy 650</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-price">22 800 €</div>
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td">
+                          <div class="empty-date">31.08.21 - 3.09.21</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-direction">Москва – Константинополь</div>
+                        </div>
+                        <div class="td">
+                          <div class="airplane-name">Embraer Legacy 650</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-price">22 800 €</div>
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td">
+                          <div class="empty-date">31.08.21 - 3.09.21</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-direction">Москва – Константинополь</div>
+                        </div>
+                        <div class="td">
+                          <div class="airplane-name">Embraer Legacy 650</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-price">22 800 €</div>
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td">
+                          <div class="empty-date">31.08.21 - 3.09.21</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-direction">Москва – Константинополь</div>
+                        </div>
+                        <div class="td">
+                          <div class="airplane-name">Embraer Legacy 650</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-price">22 800 €</div>
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td">
+                          <div class="empty-date">31.08.21 - 3.09.21</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-direction">Москва – Константинополь</div>
+                        </div>
+                        <div class="td">
+                          <div class="airplane-name">Embraer Legacy 650</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-price">22 800 €</div>
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td">
+                          <div class="empty-date">31.08.21 - 3.09.21</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-direction">Москва – Константинополь</div>
+                        </div>
+                        <div class="td">
+                          <div class="airplane-name">Embraer Legacy 650</div>
+                        </div>
+                        <div class="td">
+                          <div class="empty-price">22 800 €</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="#" class="btn btn-accent d-flex d-sm-none btn-load-toggle">смотреть все</a>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <form method="post" class="form-rent">
+                    <div class="form-group">
+                      <label>
+                        <input type="text" placeholder="Имя" name="name" required>
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Фамилия" name="first_name" required>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label>
+                        <input type="text" placeholder="Телефон" name="phone" required>
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Email" name="mail" required>
+                      </label>
+                    </div>
+
+                    <label class="mb-16">
+                      <textarea name="message" placeholder="Сообщение"></textarea>
+                    </label>
+
+                    <button type="submit" class="btn btn-accent max-100">отправить</button>
+
+                    <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
+                                                               class="d-inline text-decoration color-white">вы соглашаетесь
+                      на обработку персональных данных</a></div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  <form method="post" class="form-rent">
+                    <div class="form-group">
+                      <label>
+                        <input type="text" placeholder="Имя" name="name" required>
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Фамилия" name="first_name" required>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label>
+                        <input type="text" placeholder="Телефон" name="phone" required>
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Email" name="mail" required>
+                      </label>
+                    </div>
+
+                    <label class="mb-16">
+                      <textarea name="message" placeholder="Сообщение"></textarea>
+                    </label>
+
+                    <button type="submit" class="btn btn-accent max-100">отправить</button>
+
+                    <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
+                                                               class="d-inline text-decoration color-white">вы соглашаетесь
+                      на обработку персональных данных</a></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-3 mb-20">
+            <div class="assistant-box">
+              <img src="img/assistant.jpeg" alt="" class="assistant-box__img">
+              <div class="assistant-box__body">
+                <div class="assistant-box__text">
+                  Здесь будет небольшой текст про помощницу
+                </div>
+                <a href="#" class="btn btn-border-brown btn-lg">подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="calculate">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="calculate-wrapper bg-black p-40">
+              <h3 class="text-center mb-32">Рассчитать стоимость полета</h3>
+              <form method="post" class="form-calculate">
+                <div class="form-group">
+                  <label>
+                    <input type="text" placeholder="Откуда" name="where" required>
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Куда" name="where_2" required>
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Дата вылета" class="datepicker" name="date" required>
+                    <span class="inp-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#calendar"></use></svg></span>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label>
+                    <input type="text" placeholder="Имя" name="name" required>
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Телефон" name="phone" required>
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Email" name="mail" required>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-accent max-100">рассчитать</button>
+
+                <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
+                                                           class="d-inline text-decoration color-white">вы соглашаетесь
+                  на обработку персональных данных</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="air-exchange m-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Авиабиржа</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="air-exchange-slider">
+              <div class="slide">
+                <div class="card-airplane">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Общий налет (ч)</p><span>2870</span>
+                        </li>
+                        <li>
+                          <p>Год выпуска</p><span>2009</span>
+                        </li>
+                        <li>
+                          <p>Цена</p><strong>1 750 000 $</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="product.html" class="btn btn-accent">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                      SOVEREIGN</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Общий налет (ч)</p><span>2870</span>
+                        </li>
+                        <li>
+                          <p>Год выпуска</p><span>2009</span>
+                        </li>
+                        <li>
+                          <p>Цена</p><strong>1 750 000 $</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="product.html" class="btn btn-accent">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Общий налет (ч)</p><span>2870</span>
+                        </li>
+                        <li>
+                          <p>Год выпуска</p><span>2009</span>
+                        </li>
+                        <li>
+                          <p>Цена</p><strong>1 750 000 $</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="product.html" class="btn btn-accent">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                      SOVEREIGN</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Общий налет (ч)</p><span>2870</span>
+                        </li>
+                        <li>
+                          <p>Год выпуска</p><span>2009</span>
+                        </li>
+                        <li>
+                          <p>Цена</p><strong>1 750 000 $</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="product.html" class="btn btn-accent">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Общий налет (ч)</p><span>2870</span>
+                        </li>
+                        <li>
+                          <p>Год выпуска</p><span>2009</span>
+                        </li>
+                        <li>
+                          <p>Цена</p><strong>1 750 000 $</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="product.html" class="btn btn-accent">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                      SOVEREIGN</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Общий налет (ч)</p><span>2870</span>
+                        </li>
+                        <li>
+                          <p>Год выпуска</p><span>2009</span>
+                        </li>
+                        <li>
+                          <p>Цена</p><strong>1 750 000 $</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="product.html" class="btn btn-accent">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Общий налет (ч)</p><span>2870</span>
+                        </li>
+                        <li>
+                          <p>Год выпуска</p><span>2009</span>
+                        </li>
+                        <li>
+                          <p>Цена</p><strong>1 750 000 $</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="product.html" class="btn btn-accent">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                      SOVEREIGN</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Общий налет (ч)</p><span>2870</span>
+                        </li>
+                        <li>
+                          <p>Год выпуска</p><span>2009</span>
+                        </li>
+                        <li>
+                          <p>Цена</p><strong>1 750 000 $</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="product.html" class="btn btn-accent">подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="slider-nav air-exchange-slider__nav"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journal">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="journal-wrapper">
+              <div class="journal-img"><img src="img/journal.png" alt=""></div>
+              <div class="journal-content">
+                <h2>Читайте онлайн свежий номер журнала Top Flight</h2>
+                <a href="#" class="btn btn-accent btn-lg">читать онлайн</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="bg-black p-60 color-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>По вопросам рекламы и сотрудничества обращаться по телефону:</h4>
+            <a href="tel:+74956616583" class="color-white footer-box__links font-600">+7 (495) 661-65-83</a>
+            <a href="mailto:sales@aviapromo.ru" class="color-white footer-box__links font-600">sales@aviapromo.ru</a>
+            <p class="font-600">Часы работы: с 10 до 19 пн-пт</p>
+
+            <ul class="footer-box__logos">
+              <li><a href="#"><img src="img/logo-footer1.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer2.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer3.png" alt=""></a></li>
+            </ul>
+
+            <div class="number-evidence">
+              Номер свидетельства ЭЛ № ФС 77 - 75020
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>Для пресс-релизов</h4>
+            <a href="mailto:press@jets.ru" class="color-white footer-box__links font-600">press@jets.ru</a>
+          </div>
+
+          <div class="footer-box">
+            <h4>Аренда и заказ частного самолета </h4>
+            <a href="tel:+74957737555" class="color-white footer-box__links font-600">+7 (495) 773-75-55</a>
+          </div>
+          <div class="footer-box">
+            <h4>Покупка и продажа частных <br>
+              самолетов и вертолетов</h4>
+            <a href="tel:+74957898404" class="color-white footer-box__links font-600">+7 (495) 789-84-04</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <div class="address">119048, Москва, ул. Усачёва д 35, стр. 1, БЦ "Спектр", 1 подъезд, 5 этаж</div>
+            <ul class="footer-box__menu">
+              <li><a href="https://jets.ru" class="color-white footer-box__links font-600">jets.ru</a></li>
+              <li><a href="mailto:info@jets.ru" class="color-white footer-box__links font-600">info@jets.ru</a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Медиакит
+                2021 </a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Тех.
+                требования к баннерам</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Выходные
+                данные</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Архив</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-8">
+          <div class="age">18+</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="cookie">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <h3>Мы используем файлы <a href="#" class="color-white d-inline text-decoration" target="_blank">cookies.</a></h3>
+        <div class="box-text d-block d-sm-none">
+          <p>На сайте используются cookies.</p>
+            <p>Продолжая использовать сайт, вы принимаете <a href="#" class="d-inline text-decoration">условия</a></p>
+        </div>
+        <a href="#" class="btn btn-accent btn-agree">
+          <span class="btn-text d-none d-sm-block">согласен</span>
+          <span class="btn-text d-block d-sm-none">OK</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

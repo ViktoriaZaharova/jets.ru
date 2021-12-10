@@ -1,0 +1,539 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+//*::-webkit-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*::-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-ms-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+//  color: #666
+//
+//body input:required:valid,
+//body textarea:required:valid
+//  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #F2F2F2
+  color: #000
+
+html, body
+  //height: 100%
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 14px
+  background: transparent
+  box-sizing: border-box
+  font-family: $default-font
+  font-size: 14px
+  color: #fff
+  width: 100%
+  height: 48px
+  border: 1px solid rgba(255, 255, 255, 0.5)
+    radius: 4px
+
+  &::placeholder
+    color: rgba(255, 255, 255, 0.3)
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+  &:hover
+    border: 1px solid #BA935F
+
+  &:focus
+    border: 1px solid #BA935F
+    color: #fff
+    font-weight: 500
+
+textarea
+  height: 191px
+  padding: 16px
+  &:focus, &:valid
+    border: 1px solid rgba(255, 255, 255, 0.5)
+      radius: 4px
+    font-weight: normal
+  &:focus
+    border: 1px solid #BA935F
+    color: #fff
+    font-weight: 500
+
+.inp-icon
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  right: 16px
+  top: 12px
+  fill: rgba(255, 255, 255, 0.5)
+
+
+label
+  width: 100%
+  display: block
+  position: relative
+
+.form
+  width: 100%
+  position: relative
+  button
+    max-width: none
+
+.form-search
+  max-width: 542px
+  width: 100%
+  margin: 0 0 0 auto
+  input
+    height: 48px
+
+  &:focus
+    button
+      background: #BA935F
+
+      svg
+        fill: #fff
+
+.button-search
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  right: 8px
+  width: 32px
+  height: 32px
+  padding: 8px
+  background: rgba(255, 255, 255, 0.2)
+  display: flex
+  align-items: center
+  justify-content: center
+  svg
+    fill: rgba(255, 255, 255, 0.6)
+
+  &:focus
+    background: #BA935F
+
+    svg
+      fill: #fff
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+
+button, .btn
+  border: none
+    radius: 4px
+  outline: none
+  font-family: $default-font
+  box-shadow: none
+  cursor: pointer
+  transition: .3s ease
+  padding: 0
+  margin: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 48px
+  border: none
+    radius: 4px
+  letter-spacing: 0.03em
+  font-size: 18px
+  font-weight: 600
+  text-transform: uppercase
+  width: 100%
+  max-width: 276px
+
+.btn-lg
+  height: 56px
+
+.btn-md
+  height: 40px
+
+.btn-xs
+  height: 32px
+
+.max-100
+  max-width: 100%
+
+.btn-accent
+  background: $brown
+  color: #fff
+
+  &:hover
+    background: $gold
+    color: #fff
+
+.btn-border-grey
+  border: 1px solid #727272
+  color: #727272
+  &:hover
+    color: $gold
+    border-color: $gold
+
+.btn-border-brown
+  border: 1px solid $brown
+  color: $brown
+  &:hover
+    color: $gold
+    border-color: $gold
+
+.container
+  padding: 0 10px
+  max-width: 1220px
+
+.row
+  margin: 0 -10px
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+  padding: 0 10px
+
+.wrapper
+  display: flex
+  flex-direction: column
+  min-height: 100%
+
+.content
+  flex: 1 0 auto
+.d-inline
+  display: inline-block
+
+.fill-none
+  fill: none
+
+.text-decoration
+  text-decoration: underline
+
+.bg-black
+  background: $black
+  color: #fff
+
+.color-white
+  color: #fff
+
+a.color-white
+  &:hover
+    color: $gold
+
+.color-brown
+  color: $brown
+
+a.color-brown
+  &:hover
+    color: $gold
+
+.color-black
+  color: #000
+
+.color-light-grey
+  color: $grey-light
+
+.p-60
+  padding: 60px 0
+
+.p-40
+  padding: 40px 0
+
+.m-120
+  margin: 120px 0
+
+.mb-40
+  margin-bottom: 40px
+
+.mb-32
+  margin-bottom: 32px
+
+.mb-20
+  margin-bottom: 20px
+
+.mb-16
+  margin-bottom: 16px
+
+.font-600
+  font-weight: 600
+
+strong
+  display: inline-block
+  font-weight: bold
+
+h1
+  font-size: 60px
+  font-weight: bold
+  width: 100%
+  line-height: 72px
+
+h2
+  width: 100%
+  font-size: 60px
+  font-weight: bold
+  margin: 0 0 60px
+
+h3
+  font-size: 32px
+  font-weight: bold
+  width: 100%
+
+//socials
+.list-social
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    margin: 0 16px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 1px solid #BA935F
+        radius: 50%
+      background: transparent
+      fill: $brown
+      padding: 10px
+      width: 40px
+      height: 40px
+      min-width: 40px
+      &:hover
+        background: $brown
+        fill: #fff
+
+//sliders
+.slider-nav
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 32px 0 0
+  .slick-arrow
+    margin: 0 8px 0 0
+
+    &:last-child
+      margin: 0
+
+.slider-nav-v2
+  .slick-arrow
+    margin: 0
+  .slick-next
+    order: 1
+  .slick-dots
+    width: fit-content
+
+
+
+
+.slick-slide
+  outline: none
+
+.slick-slider
+  width: 100%
+
+.slick-arrow
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  cursor: pointer
+  transition: .3s ease
+  outline: none
+  border: 0.808824px solid #000000
+    radius: 4px
+  background: transparent
+  width: 48px
+  height: 48px
+  padding: 12px
+  stroke: #000
+  &:hover, &:focus
+    border-color: $gold
+    stroke: $gold
+
+.slick-arrow-my
+  width: 24px
+  height: 24px
+  border: none
+    radius: 0
+  padding: 5px
+  svg
+    stroke: #DADADA
+    fill: #DADADA
+
+
+.slick-dots
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  bottom: 0
+  margin: 0 auto
+  li
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 4px 0 0
+    background: #DADADA
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    background: #BA935F
+
+.add-favorite
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  background: #fff
+  width: 32px
+  height: 32px
+  fill: $brown
+  padding: 8px 7px
+  &:hover
+    background: $brown
+    fill: #fff
+
+
+.scroll-box
+  overflow-y: auto
+  height: 100%
+  &::-webkit-scrollbar
+    width: 4px
+    background: transparent
+  &::-webkit-scrollbar-thumb
+    width: 4px
+    border-radius: 5px
+    background: #EBEFF3
+
+.nav-tabs
+  letter-spacing: 0.05em
+  font-size: 14px
+  font-weight: 600
+  text-transform: uppercase
+  text-align: center
+  width: 100%
+  border: none
+  .nav-item
+    margin: 0 -1px 0 0
+    flex: 1
+    &:first-child
+      .nav-link
+        border-radius: 4px 0 0 4px
+    &:last-child
+      .nav-link
+        border-radius: 0 4px 4px 0
+  .nav-link
+    border: 1px solid #727272
+      radius: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 48px
+    padding: 0
+    color: #727272
+  .nav-link.active
+    background: #151515
+    color: $brown
+    border: 1px solid #151515
+    z-index: 1
+    position: relative
+
+
+
+
+@import "header"
+@import "footer"
+@import "home"
+@import "catalog"
+@import "media"
+// Всегда в конце
