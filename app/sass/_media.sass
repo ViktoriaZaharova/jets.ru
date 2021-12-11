@@ -1,55 +1,907 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
-
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1200px)
+  .container
+    max-width: 988px
+  //padding: 0 28px
 
+  .phone
+    font-size: 15px
+    margin: 0 0 0 36px
+
+  .header-links
+    margin: 0 0 0 14px
+
+  .form-search
+    margin: 0 auto
+    max-width: 437px
+
+  header
+    margin: 0 0 15px
+    padding: 32px 0
+
+  .menu
+    font-size: 13px
+    margin: 32px 0 0
+
+  .form-small
+    padding: 13px 12px 10px
+
+    label
+      margin: 0 0 7px
+
+    input
+      height: 32px
+
+    button
+      height: 32px
+      font-size: 12px
+
+    .consent
+      margin: 6px 0 0
+
+  .card-news-lg
+    height: 233px
+
+  .card-news-overlay
+    padding: 14px 20px 13px 12px
+
+    .card-news__title
+      margin: 0 0 17px
+      max-width: 210px
+
+    .box-text
+      max-width: 280px
+
+    .card-news__date
+      font-size: 10px
+
+  .card-news__title
+    font-size: 15px
+    margin: 0 0 13px
+    line-height: 16px
+
+  .card-news
+    padding: 13px
+    font-size: 12px
+
+    .box-text
+      font-size: 12px
+      line-height: 16px
+
+  .card-news__date
+    font-size: 12px
+
+  .card-news__img
+    width: 195px
+    height: 145px
+
+  .card-news-row
+    .card-news__body
+      width: calc(100% - 195px)
+      padding: 0 0 0 19px
+
+  .card-news-sm
+    height: 109px
+
+    .card-news__title
+      font-size: 12px
+
+  .card-news-col
+    padding: 19px 13px 12px
+
+  .list-news-card
+    padding: 13px 0
+
+  .list-news
+    padding: 19px 5px 19px 0
+
+    &:before
+      height: 32px
+
+    .scroll-box
+      height: 443px
+
+  .banner-box
+    height: 484px
+
+  .news-slider-card__img
+    height: 116px
+
+    &:before
+      height: 32px
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.52) 44.46%, #000000 100%)
+      bottom: 0
+      top: auto
+
+  .news-slider-card__body
+    padding: 13px
+
+  .news-slider-wrapper
+    height: 234px
+
+    .slider-nav
+      padding: 13px
+
+  .news-slider-card
+    font-size: 12px
+
+    .card-news__date
+      font-size: 11px
+
+  .news-slider-card__footer
+    padding: 7px 13px 13px
+
+  .slick-dots
+    li
+      width: 6.45px
+      height: 6.45px
+
+  .slick-arrow-my
+    width: 19px
+    height: 19px
+    padding: 3px
+
+  .form-rent
+    padding: 24px 0 19px
+
+  textarea
+    height: 159px
+
+  .form-group
+    label
+      margin: 0 0 14px
+      width: calc(50% - 6px)
+
+  .consent
+    font-size: 10px
+    margin: 15px 0 0
+
+  .footer-box
+    h4
+      max-width: 230px
+
+  .footer-box__logos
+    li
+      margin: 0 32px 24px 0
+
+      &:last-child
+        margin: 0
+
+  .address
+    margin: 0 0 40px
+
+  .journal
+    margin: 100px 0
+
+    h2
+      font-size: 52px
+
+  .journal-wrapper
+    padding: 73px 76px
+
+  .journal-img
+    width: 250px
+    height: 326px
+
+  .journal-content
+    width: calc(100% - 250px)
+    padding: 0 0 0 60px
+
+  h2
+    font-size: 50px
+    margin: 0 0 45px
+
+  h3
+    font-size: 22px
+
+  .mb-32
+    margin-bottom: 28px
+
+  .mb-20
+    margin-bottom: 16px
+
+  .m-120
+    margin: 105px 0
+
+  .air-exchange-slider .slick-slide
+    margin: 0 16px 0 0
+
+  .calculate-wrapper
+    padding: 32px 0 28px
+
+  .form-group
+    label
+      width: calc(33.3% - 6.5px)
+      margin: 0 0 12px
+
+  input
+    height: 40px
+    padding: 0 13px
+    font-size: 12px
+
+  .inp-icon
+    right: 14px
+    top: 10px
+    width: 19px
+    height: 19px
+
+  .btn
+    height: 40px
+    font-size: 14px
+
+  .assistant-box
+    height: 465px
+    padding: 19px 13px
+
+    .btn
+      height: 45px
+      font-size: 15px
+
+    &:before
+      height: 86px
+
+    &__text
+      font-size: 18px
+
+  .empty-legs
+    padding: 19px 20px
+
+  .nav-tabs
+    font-size: 12px
+
+    .nav-link
+      height: 39px
+
+  .table-empty
+    margin: 38px 0 0
+
+    .th, .td
+      &:first-child
+        width: 25%
+
+      &:nth-child(2)
+        width: 35%
+
+  .thead
+    font-size: 12px
+
+  .tr
+    padding: 0 13px
+
+  .tbody
+    .tr
+      padding: 14px 13px 15px
+
+  .empty-price
+    width: 89px
+    height: 26px
+
+  .cookie
+    .btn
+      height: 48px
+
+  .list-news
+    .scroll-box
+      height: 461px
+
+  .list-news-card
+    padding: 16px 0
+    font-size: 11px
+    line-height: 15px
+
+    &__head
+      margin: 0 0 13px
+      font-size: 12px
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 992px)
+  .container
+    max-width: 756px
 
+  .form-search
+    max-width: 260px
+
+    input
+      height: 40px
+      font-size: 14px
+
+  .header-links
+    margin: 0 0 0 10px
+
+  header
+    margin: 0 0 17px
+
+  .button-search
+    width: 24px
+    height: 24px
+    padding: 5px
+
+  .phone
+    margin: 0 0 0 10px
+
+  .banner-box
+    height: auto
+    position: relative
+    color: #fff
+    background: linear-gradient(90deg, #0D2139 -32.29%, #0070BC 130.8%)
+    margin: 0
+
+    &__mobile
+      width: 100%
+      align-items: center
+      padding: 19px 32px
+
+    &__img
+      width: 183px
+      height: 205px
+      display: flex
+      align-items: center
+      justify-content: center
+
+      img
+        max-height: 100%
+        max-width: none
+
+    &__title
+      padding: 0 0 0 67px
+      width: calc(100% - 183px)
+      font-family: $text-font
+      font-size: 36px
+      max-width: 400px
+
+  .card-news-lg
+    padding: 20px 20px 11px
+
+  .card-news-overlay
+    padding: 14px 20px 15px 14px
+
+    .card-news__title
+      max-width: 300px
+
+  .card-news__img
+    width: 202px
+    height: 151px
+
+  .card-news-row
+    .card-news__body
+      width: calc(100% - 202px)
+      padding: 0 0 0 20px
+
+  .card-news-lg
+    height: 243px
+
+  .card-news-sm
+    height: 113px
+
+  .card-news-col
+    height: 242px
+    padding: 20px 13.4px 13.4px
+
+  .cookie
+    padding: 37px 0
+
+    h3
+      font-size: 18px
+
+    .btn
+      max-width: 176px
+      height: 40px
+      font-size: 14px
+
+  .form-small
+    padding: 10px 13px
+
+    label
+      margin: 0 0 8px
+
+    input
+      height: 33px
+
+
+  .empty-legs
+    padding: 20px
+
+  .nav-tabs
+    .nav-link
+      height: 40px
+
+  .table-empty
+    margin: 33px 0 0
+
+  .tr
+    padding: 0 14px 14px
+
+  .tbody
+    .tr
+      padding: 15px 14px
+
+  .form-rent
+    padding: 16px 0 0
+
+    .form-group
+      label
+        margin: 0 0 16px
+
+  .consent
+    margin: 13px 0 0
+
+  .empty-price
+    width: 92px
+    height: 27px
+    font-size: 15px
+
+  .assistant-box
+    background: linear-gradient(90deg, #A6AAEA 4.95%, #A7ABEB 32.35%, #97A2F4 67.29%, #9394D4 102.71%)
+    color: #fff
+    height: auto
+    padding: 0 29px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    overflow: hidden
+    text-align: left
+
+    &:before
+      display: none
+
+    &__body
+      width: calc(100% - 230px)
+      padding: 0 0 0 100px
+      align-items: flex-start
+
+    &__text
+      text-align: left
+      max-width: 240px
+      margin: 0
+
+    .btn
+      background: #151515
+      border-color: $black
+      margin: 18px 0 0
+      height: 40px
+      font-size: 14px
+      max-width: 160px
+
+  .assistant-photo
+    align-items: center
+    justify-content: center
+    max-width: 230px
+    height: 345px
+    position: relative
+    width: 100%
+    margin: -38px 0 -87px
+    z-index: 1
+
+    img
+      width: 100%
+
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      border-radius: 50%
+      background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(150, 156, 230, 0) 100%)
+      mix-blend-mode: soft-light
+      transform: translate(-50%, -50%)
+      z-index: -1
+      width: 309px
+      height: 309px
+
+  .calculate-wrapper
+    padding: 30px 20px
+
+  .form-group label
+    width: calc(33.3% - 6px)
+
+  .m-120
+    margin: 80px 0
+
+  .journal
+    margin: 80px 0
+
+    h2
+      margin: 0 0 31px
+      font-size: 40px
+
+    .btn
+      max-width: 210px
+      height: 43px
+      font-size: 12px
+
+  .journal-wrapper
+    padding: 56px
+
+  .journal-img
+    width: 190px
+    height: 248px
+
+  .journal-content
+    padding: 0 0 0 45px
+    width: calc(100% - 190px)
+
+  footer
+    .logo
+      margin: 0 0 40px
+
+  .footer-box__logos
+    max-width: 300px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 768px)
+  header
+    padding: 26px 0 27px
+
+    .menu, .header-links, .phone
+      display: none
+
+  .logo
+    max-width: 113px
+
+  .form-search
+    max-width: 398px
+
+  .btn-burger
+    display: block
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 640px)
+  .card-news__img
+    width: 150px
+
+
+  .card-news-row .card-news__body
+    width: calc(100% - 150px)
+
+  .card-news-sm .card-news__title
+    br
+      display: none
+
+@media only screen and (max-width: 576px)
+  body
+    background: #fff
+
+  header
+    padding: 26px 0
+    margin: 0 0 16px
+
+    .form-search
+      display: none
+
+
+  footer
+    padding: 40px 0
+
+  .footer-box
+    h4
+      margin: 0 0 8px
+      max-width: 343px
+
+  .footer-box__links
+    margin: 0 0 8px
+
+  .footer-box__logos
+    max-width: none
+    margin: 48px 0 56px
+
+    li
+      margin: 0 32px 0 0
+
+  .cookie
+    padding: 8px 12px
+    bottom: 16px
+    width: calc(100% - 16px)
+    left: 50%
+    transform: translate(-50%, 0)
+    filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.15))
+    font-size: 14px
+    line-height: 17px
+    color: #9F9F9F
+
+    a
+      color: #9F9F9F
+
+    .box-text
+      max-width: 216px
+
+    h3
+      display: none
+
+    .btn
+      max-width: 44px
+      height: 32px
+      font-size: 16px
+      color: #fff
+
+  .list-social
+    justify-content: flex-end
+
+  .p-60
+    padding: 40px 0
+
+  .m-120
+    margin: 40px 0
+
+
+  h2
+    font-size: 30px
+    line-height: 30px
+    margin: 0 0 24px
+
+  .journal
+    margin: 40px 0 60px
+
+    h2
+      max-width: 252px
+      margin: 0 auto 30px
+      font-size: 18px
+      line-height: 22px
+
+    .btn
+      margin: 0 auto
+      height: 48px
+      max-width: 276px
+      font-size: 16px
+
+  .journal-wrapper
+    padding: 40px 35px
+    flex-direction: column
+    align-items: center
+
+  .journal-img
+    width: 195px
+    height: 257px
+
+
+  .journal-content
+    margin: 16px auto 0
+    text-align: center
+    padding: 0
+    width: 100%
+
+  .slider-nav
+    margin: 24px 0 0
+
+  .mb-sm0
+    margin-bottom: 0
+
+  .assistant-box
+    padding: 17px 15px
+    height: 420px
+
+    &__text
+      text-align: center
+      width: 100%
+      font-size: 24px
+      max-width: 298px
+      margin: 0 auto
+
+    &__body
+      text-align: center
+      padding: 0
+      width: 100%
+
+    .btn
+      margin: auto auto 0
+      max-width: 314px
+      background: transparent
+      border-color: $brown
+      height: 56px
+      font-size: 18px
+
+    &:before
+      display: block
+      height: 107px
+      z-index: 1
+
+  .card-news-lg
+    height: 230px
+
+
+  .card-news-overlay
+    padding: 16px
+
+    .card-news__title
+      font-size: 18px
+      line-height: 22px
+      margin: 0 0 16px
+
+
+  .card-news
+    font-size: 14px
+
+    .box-text
+      font-size: 14px
+      line-height: 18px
+      max-width: 315px
+
+  .list-news
+    padding: 0
+    border: none
+
+    &:before
+      display: none
+
+    .scroll-box
+      padding: 0
+      height: auto
+      overflow: visible
+
+
+  .list-news-card
+    display: none
+    font-size: 16px
+
+    &__head
+      font-size: 14px
+
+    .box-text
+      line-height: 18px
+      font-weight: 600
+
+    &:nth-child(-n+3)
+      display: block
+
+  .form-small
+    padding: 16px
+
+    input
+      height: 48px
+
+    button
+      max-width: none
+      height: 48px
+      font-size: 16px
+
+    .consent
+      margin: 8px 0 0
+      max-width: none
+      font-size: 12px
+
+  input
+    padding: 0 16px
+    font-size: 14px
+    height: 48px
+
+  textarea
+    height: 180px
+
+  .banner-box
+    padding: 0
+    background: transparent
+    position: relative
+    overflow: hidden
+
+    &__img
+      width: 100%
+      height: 100%
+      max-width: none
+
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    &__mobile
+      position: absolute
+      height: 100%
+      width: 100%
+      padding: 0
+      top: 0
+      left: 9px
+      max-width: 232px
+      align-items: flex-start
+      justify-content: flex-end
+
+    &__title
+      font-size: 26px
+      line-height: 31px
+      padding: 0
+      max-width: none
+      width: 100%
+      z-index: 1
+      font-family: $default-font
+      transform: matrix(0.00, -1.00, 1.00, 0.00, -90, 80)
+
+  .empty-legs
+    padding: 0
+    border: none
+
+    .nav-tabs
+      min-width: 615px
+
+  .nav-tabs
+    .nav-link
+      height: 48px
+      font-size: 14px
+
+  .scroll-vertical
+    overflow-x: auto
+    padding: 0 0 16px
+
+  .empty-legs.bg-black
+    background: #fff
+    color: #000
+
+  .table-empty
+    margin: 0
+    font-size: 14px
+
+    .thead
+      display: none
+
+    .tr
+      margin: 0 0 16px
+      border: 1px solid #D7D7D7
+      background: #fff
+      flex-direction: column
+      align-items: flex-start
+      display: none
+
+      &:nth-child(-n+3)
+        display: flex
+
+    .td
+
+      width: 100%
+      margin: 0 0 16px
+      &:last-child
+        margin: 0
+
+      &:nth-child(2), &:nth-child(3), &:first-child, &:last-child
+        width: 100%
+
+      &:nth-child(2)
+        order: -1
+        margin: 0 0 18px
+
+  .empty-direction
+    font-size: 18px
+    font-weight: bold
+
+  .empty-date
+    color: #727272
+    font-size: 14px
+
+  .empty-price
+    margin: 24px 0 0 auto
+    width: 110px
+    height: 32px
+    font-size: 14px
+
+  .btn-load-toggle
+    height: 56px
+    width: 100%
+    max-width: none
+    font-size: 18px
+
+  .form-rent
+    padding: 16px
+    background: $black
+    h3
+      margin: 0 0 16px
+      font-size: 30px
+      line-height: 30px
+    .form-group
+      label
+        width: 100%
+        margin: 0 0 8px
+    .mb-16
+      margin-bottom: 8px
+    button
+      height: 48px
+      font-size: 16px
+
+  .consent
+    margin: 8px 0 0
+    font-size: 12px
+
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+@media only screen and (max-width: 320px)
+  /**/
 

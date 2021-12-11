@@ -1,10 +1,10 @@
 @import "fonts"
 @import "vars"
 
-//home
+/*==========  home section  ==========*/
 .form-small
   padding: 16px 16px 14px
-
+  height: 100%
   label
     margin: 0 0 8px
 
@@ -20,7 +20,16 @@
     margin: 8px 0 0
     max-width: 205px
 
+.banner-box
+  height: 600px
+  overflow: hidden
+  width: 100%
+  &__bg
+    width: 100%
+    height: 100%
+    object-fit: cover
 
+/*==========  card news  ==========*/
 .card-news
   width: 100%
   position: relative
@@ -212,9 +221,11 @@
   width: 100%
   background: #fff
   border: 1px solid #D7D7D7
-
+  height: 290px
+  display: flex
+  flex-direction: column
   .slider-nav
-    margin: 56px 0 0
+    margin: auto 0 0
     padding: 16px
 
 .news-slider-card
@@ -272,6 +283,9 @@
     &:hover
       color: $brown
 
+/*==========  card news end  ==========*/
+
+/*==========  table  ==========*/
 .empty-legs
   width: 100%
   background: #fff
@@ -342,6 +356,8 @@
     .nav-link.active
       border: 1px solid #BA935F
 
+/*==========  table end  ==========*/
+
 .assistant-box
   width: 100%
   height: 577px
@@ -382,9 +398,10 @@
     font-size: 24px
     font-weight: bold
 
+/*==========  home section end  ==========*/
 
 
-//calculate
+/*==========  calculate section  ==========*/
 .form-calculate
   max-width: 860px
   width: 100%
@@ -510,17 +527,16 @@
       color: #fff
       opacity: .7
 
-
-//air-exchange section
+/*==========  air-exchange section  ==========*/
 .air-exchange-slider
   min-width: 2000px
 
   .slick-slide
     max-width: 308px
     margin: 0 20px 0 0
+/*==========  air-exchange section end  ==========*/
 
-
-//journal section
+/*==========  journal section  ==========*/
 .journal
   margin: 120px 0 160px
 
@@ -554,3 +570,5 @@
 .journal-content
   width: calc(100% - 246px)
   padding: 0 0 0 90px
+
+/*==========  journal section end  ==========*/
