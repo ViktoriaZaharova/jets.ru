@@ -1,0 +1,194 @@
+@import "fonts"
+@import "vars"
+
+/*==========  read-also  ==========*/
+.card-article
+  width: 100%
+  background: #fff
+  height: 480px
+  font-size: 14px
+  border: 1px solid #E0DFDF
+  &__img
+    width: 100%
+    height: 220px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    height: calc(100% - 220px)
+    display: flex
+    flex-direction: column
+    padding: 16px 16px 14px
+  &__name
+    color: #000
+    margin: 0 0 16px
+    font-weight: bold
+    font-size: 18px
+    line-height: 20px
+    &:hover
+      color: $brown
+  .box-text
+    font-size: 15px
+    line-height: 22px
+    font-family: $text-font
+
+.read-also-slider
+  min-width: 2000px
+  .slick-slide
+    max-width: 280px
+    margin: 0 20px 0 0
+
+.read-also-slider__nav
+  margin: 32px 0 0
+
+/*==========  read-also end  ==========*/
+
+
+/*==========  article page  ==========*/
+.article-page
+  margin: 40px 0
+  .list-news-card__head
+    margin: 0 0 16px
+    font-size: 16px
+    .card-news__date
+      display: flex
+      font-size: 16px
+      &:after
+        content: '/'
+        display: inline-block
+        margin: 0 3px
+  .box-text
+    margin: 0 0 40px
+    line-height: 24px
+    font-size: 18px
+
+.article-author
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  padding: 16px 0
+  margin: 0 0 32px
+  border:
+    top: 1px solid #D7D7D7
+    bottom: 1px solid #D7D7D7
+  &:last-child
+    margin: 0
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border: 1px solid #B89B7B
+      radius: 50px
+    width: 40px
+    height: 40px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  h4
+    font-weight: 500
+    margin: 0 0 0 16px
+    font-size: 16px
+
+
+.social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 0 auto
+  li
+    margin: 0 16px 0 0
+    &:last-child
+      margin: 0
+    a
+      fill: #BCBCBC
+      width: 24px
+      height: 24px
+      display: flex
+      align-items: center
+      justify-content: center
+
+.article-image
+  width: 100%
+  margin: 0 0 16px
+  small
+    display: block
+    margin: 8px 0 0
+    width: 100%
+    font-style: italic
+    font-size: 12px
+    font-family: "Lora", sans-serif
+    color: #A5A5A5
+  &__wrap
+    width: 100%
+    height: 395px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.redactor-box
+  display: flex
+  align-items: flex-start
+  width: 100%
+  flex-wrap: wrap
+  margin: 0 0 40px
+  &__info
+    padding: 0 32px 0 0
+    width: 216px
+  &__photo
+    width: 184px
+    height: 184px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border-radius: 50%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__name
+    margin: 16px auto 0
+    text-align: center
+    h4
+      margin: 0 auto 8px
+      font-weight: bold
+      font-size: 18px
+  .position
+    line-height: 14px
+    font-size: 12px
+
+  &__quote
+    width: calc(100% - 216px)
+    padding: 0 0 0 23px
+    line-height: 20px
+    font-size: 14px
+    position: relative
+    border-left: 2px solid #B89B7B
+    &:before
+      content: ''
+      position: absolute
+      left: -6px
+      top: 20px
+      width: 10px
+      height: 10px
+      background: #fff
+      border: 2px solid $brown
+        right: none
+        top: none
+      transform: rotate(45deg)
+
+/*==========  article page end  ==========*/

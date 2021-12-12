@@ -5,7 +5,6 @@
 @media only screen and (max-width: 1200px)
   .container
     max-width: 988px
-  //padding: 0 28px
 
   .phone
     font-size: 15px
@@ -296,6 +295,77 @@
       margin: 0 0 13px
       font-size: 12px
 
+  h1
+    font-size: 50px
+    line-height: 50px
+
+  .data-processing
+    margin: 40px 0 80px
+    h1
+      margin: 0 0 40px
+
+  .politics-box
+    margin: 0 0 60px
+    .box-text
+      font-size: 14px
+      line-height: 24px
+    h3
+
+      font-size: 22px
+      line-height: 26px
+
+  .box-text
+    p
+      margin: 0 0 20px
+
+  .accordion
+    .card-header
+      margin: 0 0 24px
+
+  .cookie-section
+    padding: 0 0 227px
+    margin: 40px 0 0
+
+  .footnotes
+    font-size: 14px
+    padding: 32px 0 80px
+    p
+      margin: 0 0 20px
+
+  h1
+    margin: 0 0 40px
+
+  .article-image__wrap
+    height: 354px
+
+  .read-also-slider .slick-slide
+    margin: 0 16px 0 0
+
+  .article-author
+    padding: 14px 0 15px
+
+  .article-page .box-text
+    font-size: 16px
+    line-height: 22px
+    margin: 0 0 24px
+
+
+  .redactor-box
+    margin: 0 0 24px
+    &__photo
+      width: 165px
+      height: 165px
+    &__quote
+      font-size: 13px
+      width: calc(100% - 195px)
+      padding: 0 0 0 20px
+    &__info
+      width: 195px
+      font-size: 12px
+      h4
+        font-size: 16px
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .container
@@ -530,6 +600,20 @@
   .footer-box__logos
     max-width: 300px
 
+  .article-page
+    .banner-box
+      margin: 0 0 25px
+    .list-news-card__head
+      font-size: 14px
+      .card-news__date
+        font-size: 14px
+
+  h1
+    margin: 0 0 24px
+
+  .article-author
+    margin: 0 0 24px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   header
@@ -546,6 +630,25 @@
 
   .btn-burger
     display: block
+
+  .accordion
+    .card-header
+      margin: 0 0 16px
+
+  .data-processing
+    h1
+      margin: 0 0 53px
+
+  .cookie-section
+    padding: 0 0 250px
+    margin: 40px 0 0
+
+  .footnotes
+    font-size: 18px
+    padding: 30px 0 80px
+    p
+      margin: 0 0 16px
+
 
 
 @media only screen and (max-width: 640px)
@@ -626,7 +729,7 @@
     margin: 40px 0
 
 
-  h2
+  h2, h1
     font-size: 30px
     line-height: 30px
     margin: 0 0 24px
@@ -900,8 +1003,122 @@
     font-size: 12px
 
 
+  .mobile-menu
+    &__head
+      padding: 25px 15px
+    .form-search
+      max-width: 343px
+      margin: 0 auto 16px
+      input
+        height: 48px
+        font-size: 16px
+      button
+        width: 32px
+        height: 32px
+        padding: 8px
+    &__body
+      padding: 16px 16px 60px
+    .logo
+      margin: 0 auto 0 0
+      max-width: 109px
+    .list-social
+      margin: 98px auto 0
+    .menu
+      font-size: 16px
+      margin: 40px 0 0
+      li
+        margin: 0 auto 24px
+    .phone
+      margin: 40px auto 0
+      font-size: 18px
+
+
+  .btn-close-menu
+    width: 24px
+    height: 24px
+    &:before, &:after
+      top: 12px
+
+
+  .user-navigation
+    .header-links
+      margin: 0 0 0 20px
+      width: 71px
+      height: 55px
+      font-size: 10px
+      padding: 8px 0 0
+      &__val
+        right: 5px
+
+  .data-processing
+    margin: 40px 0 60px
+    h1
+      margin: 0 0 40px
+
+  .politics-box
+    margin: 0
+    padding: 24px 0
+    border-top: 1px solid #000000
+    &:last-child
+      border-bottom: 1px solid #000000
+    .box-text
+      font-size: 12px
+      line-height: 18px
+    h3
+      font-size: 14px
+      line-height: 18px
+      font-weight: 500
+
+  .box-text
+    max-width: 294px
+    p
+      margin: 0 0 17px
+
+  .accordion
+    .politics-box
+      border-top: 1px solid #000000
+      &:last-child
+        border-bottom: 1px solid #000000
+    .card
+      .card-header
+        margin: 0
+    .accordion-icon
+      display: flex
+
+  .data-processing
+    .collapse
+      padding: 24px 0 0
+      display: none
+    .show
+      display: block
+
+  .cookie-section-box
+    padding: 0
+    border: none
+    .box-text
+      max-width: none
+    &:last-child
+      margin-bottom: 40px
+      border: none
+
+  .cookie-section
+    padding: 0 0 188px
+    margin: 40px 0 0
+    .accordion .politics-box:last-child
+      border-bottom: none
+
+  .footnotes
+    font-size: 10px
+    padding: 30px 0 92px
+    &:before
+      background: #D7D7D7
+
+
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
+@media only screen and (max-width: 360px)
+  .user-navigation
+    justify-content: space-between
+    .header-links
+      margin: 0
 

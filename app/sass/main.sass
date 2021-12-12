@@ -166,7 +166,7 @@ label
   input
     height: 48px
 
-  &:focus
+  &:hover
     button
       background: #BA935F
 
@@ -280,6 +280,10 @@ button, .btn
 
 .content
   flex: 1 0 auto
+
+.content-page
+  background: #fff
+
 .d-inline
   display: inline-block
 
@@ -310,6 +314,18 @@ a.color-brown
 .color-black
   color: #000
 
+a.color-black
+  &:hover
+    color: $brown
+
+.color-blue
+  color: #0066FF
+
+a.color-blue
+  &:hover
+    color: $brown
+
+
 .color-light-grey
   color: $grey-light
 
@@ -322,11 +338,17 @@ a.color-brown
 .m-120
   margin: 120px 0
 
+.mb-80
+  margin-bottom: 80px
+
 .mb-40
   margin-bottom: 40px
 
 .mb-32
   margin-bottom: 32px
+
+.mb-25
+  margin-bottom: 25px
 
 .mb-20
   margin-bottom: 20px
@@ -337,6 +359,9 @@ a.color-brown
 .font-600
   font-weight: 600
 
+sup
+  font-size: 12px
+
 strong
   display: inline-block
   font-weight: bold
@@ -346,6 +371,7 @@ h1
   font-weight: bold
   width: 100%
   line-height: 72px
+  margin: 0 0 32px
 
 h2
   width: 100%
@@ -357,6 +383,16 @@ h3
   font-size: 32px
   font-weight: bold
   width: 100%
+
+.box-text
+  p
+    margin: 0 0 25px
+    &:last-child
+      margin: 0
+
+.list-disc
+  list-style: disc
+  padding: 0 0 0 20px
 
 //socials
 .list-social
@@ -533,11 +569,67 @@ h3
 
 /*==========  tabs end  ==========*/
 
+/*==========  accordion  ==========*/
+.accordion
+  border: none
+    radius: 0
+  .card
+    border: none
+      radius: 0
+    .card-header
+      border: none
+        radius: 0
+      cursor: pointer
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin: 0 0 30px
+      padding: 0
+      background: transparent
+    .card-body
+      padding: 0
+      background: transparent
+
+.accordion-icon
+  width: 32px
+  min-width: 32px
+  height: 32px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  border: 1.06667px solid #BA935F
+    radius: 50%
+  padding: 9px
+  &:before, &:after
+    content: ''
+    position: absolute
+    background: $brown
+    left: 50%
+    top: 50%
+    transition: .3s ease
+    transform: translate(-50%,-50%)
+  &:before
+    width: calc(100% - 16px)
+    height: 2px
+  &:after
+    width: 0
+    height: calc(100% - 16px)
+
+.collapsed
+  .accordion-icon
+    &:after
+      width: 2px
+
+/*==========  accordion end  ==========*/
+
 
 
 @import "header"
 @import "footer"
 @import "home"
+@import "article"
+@import "static-page"
 @import "catalog"
 @import "media"
 // Всегда в конце

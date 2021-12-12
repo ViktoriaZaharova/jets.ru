@@ -18,9 +18,11 @@ header
   text-transform: uppercase
   letter-spacing: 0.03em
   font-weight: 500
+
   li
     a
       color: #fff
+
       &:hover
         color: $gold
 
@@ -29,6 +31,7 @@ header
   width: 100%
   display: flex
   align-items: center
+
   img
     width: 100%
 
@@ -38,6 +41,7 @@ header
   font-size: 18px
   font-weight: 600
   margin: 0 0 0 53px
+
   &:hover
     color: $gold
 
@@ -50,8 +54,10 @@ header
   font-size: 10px
   margin: 0 0 0 25px
   position: relative
+
   &:last-child
     margin: 0
+
   &__icon
     display: flex
     align-items: center
@@ -60,6 +66,7 @@ header
     height: 24px
     margin: 0 auto 3px
     fill: #fff
+
   &:hover
     color: $gold
 
@@ -68,6 +75,7 @@ header
     border-radius: 50%
     border: 1px solid #BA935F
     overflow: hidden
+
     img
       width: 100%
       height: 100%
@@ -78,12 +86,139 @@ header
   cursor: pointer
   width: 30px
   display: none
+
   span
     width: 100%
     height: 2px
     background: #BA935F
     margin: 0 0 9px
     display: block
+
     &:last-child
       margin: 0
 /*==========  header end  ==========*/
+
+/*==========  mobile menu  ==========*/
+.mobile-menu
+  position: fixed
+  z-index: 5
+  left: 0
+  top: 0
+  width: 100%
+  max-width: 768px
+  height: 100%
+  overflow-y: auto
+  background: $black
+  color: #fff
+  display: none
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    padding: 26px 16px
+    border-bottom: 1.6125px solid #BA935F
+
+  .logo
+    max-width: 113px
+
+  .form-search
+    max-width: 398px
+    margin: 0 auto
+
+    button
+      width: 24px
+      height: 24px
+      right: 8px
+      padding: 5px 6px
+
+    input
+      height: 40px
+
+  &__body
+    width: 100%
+    padding: 37px 16px 60px
+    display: flex
+    flex-direction: column
+
+  .list-social
+    margin: 157px auto 0
+    justify-content: center
+
+  .phone
+    margin: 60px auto 0
+    font-size: 24px
+
+  .menu
+    flex-direction: column
+    align-items: center
+    font-size: 24px
+    margin: 70px 0 0
+
+    li
+      margin: 0 auto 40px
+
+      &:last-child
+        margin: 0 auto
+
+.user-navigation
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  .header-links
+    margin: 0 0 0 23px
+    border-radius: 4px
+    position: relative
+    width: 82px
+    height: 64px
+    background: rgba(255, 255, 255, 0.1)
+    padding: 11px 0 0
+    font-size: 12px
+    &__val
+      position: absolute
+      z-index: 1
+      top: 5px
+      right: 10px
+      width: 19px
+      height: 12px
+      border-radius: 18px
+      background: $brown
+      font-size: 8px
+      font-weight: 500
+      display: flex
+      align-items: center
+      justify-content: center
+      line-height: 10px
+    &:first-child
+      margin: 0
+    &:hover
+      .header-links__val
+        color: #fff
+
+.btn-close-menu
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  width: 30px
+  height: 30px
+  cursor: pointer
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 0
+    top: 15px
+    width: 100%
+    height: 2px
+    background: #BA935F
+
+  &:before
+    transform: rotate(45deg)
+
+  &:after
+    transform: rotate(135deg)
+
+
+/*==========  mobile menu end  ==========*/

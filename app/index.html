@@ -38,7 +38,87 @@
   <div class="content">
 
     <div class="mobile-menu">
+      <div class="mobile-menu__head">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <form method="post" class="form-search form d-none d-sm-block">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="btn-close-menu"></div>
+      </div>
+      <div class="mobile-menu__body">
+        <form method="post" class="form-search form d-block d-sm-none">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user-navigation">
+          <a href="comparison.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg></span>
+            <span class="header-links__text">Сравнение</span>
+          </a>
+          <a href="favorites.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#heart"></use></svg></span>
+            <span class="header-links__text">Избранное</span>
+          </a>
+          <a href="#" class="header-links links-chat">
+            <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chat"></use></svg></span>
+            <span class="header-links__text">Спросить</span>
+          </a>
+          <a href="#" class="header-links language-links">
+            <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+            <span class="header-links__text">Русский</span>
+          </a>
+        </div>
 
+        <ul class="menu">
+          <li><a href="news.html">НОВОСТИ</a></li>
+          <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+          <li><a href="rental.html">АРЕНДА</a></li>
+          <li><a href="realization.html">ПРОДАЖА</a></li>
+          <li><a href="publication.html">Публикации</a></li>
+          <li><a href="concierge.html">Консьерж</a></li>
+          <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+        </ul>
+
+        <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+        <ul class="list-social">
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
     </div>
 
     <header>
@@ -50,12 +130,16 @@
               <label>
                 <input type="text" placeholder="Поиск" name="search">
               </label>
-              <button type="submit" class="button-search"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></button>
+              <button type="submit" class="button-search">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
             </form>
 
             <a href="comparison.html" class="header-links">
               <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg></span>
-              <span class="header-links__text">Русский</span>
+              <span class="header-links__text">Сравнение</span>
             </a>
             <a href="favorites.html" class="header-links">
               <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#heart"></use></svg></span>
@@ -294,7 +378,8 @@
                 <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
 
                 <div class="banner-box__title">Путеводитель
-                  по миру суперяхт</div>
+                  по миру суперяхт
+                </div>
               </div>
             </div>
 
@@ -384,20 +469,20 @@
           <div class="col-12 col-lg-9 mb-20">
             <div class="empty-legs">
               <div class="scroll-vertical">
-              <ul class="nav nav-pills nav-tabs empty-legs-tabs" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                     aria-controls="pills-home" aria-selected="true">Empty Legs</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                     aria-controls="pills-profile" aria-selected="false">Арендовать самолет</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-                     aria-controls="pills-contact" aria-selected="false">Купить самолет</a>
-                </li>
-              </ul>
+                <ul class="nav nav-pills nav-tabs empty-legs-tabs" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                       aria-controls="pills-home" aria-selected="true">Empty Legs</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                       aria-controls="pills-profile" aria-selected="false">Арендовать самолет</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                       aria-controls="pills-contact" aria-selected="false">Купить самолет</a>
+                  </li>
+                </ul>
               </div>
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -528,7 +613,8 @@
                     <button type="submit" class="btn btn-accent max-100">отправить</button>
 
                     <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
-                                                               class="d-inline text-decoration color-white">вы соглашаетесь
+                                                               class="d-inline text-decoration color-white">вы
+                      соглашаетесь
                       на обработку персональных данных</a></div>
                   </form>
                 </div>
@@ -560,7 +646,8 @@
                     <button type="submit" class="btn btn-accent max-100">отправить</button>
 
                     <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
-                                                               class="d-inline text-decoration color-white">вы соглашаетесь
+                                                               class="d-inline text-decoration color-white">вы
+                      соглашаетесь
                       на обработку персональных данных</a></div>
                   </form>
                 </div>
@@ -641,11 +728,6 @@
             <div class="air-exchange-slider">
               <div class="slide">
                 <div class="card-airplane">
-                  <a href="#" class="add-favorite">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
                   <div class="card-airplane__body">
                     <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
@@ -669,11 +751,6 @@
               </div>
               <div class="slide">
                 <div class="card-airplane">
-                  <a href="#" class="add-favorite">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
                   <div class="card-airplane__body">
                     <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
@@ -698,11 +775,6 @@
               </div>
               <div class="slide">
                 <div class="card-airplane">
-                  <a href="#" class="add-favorite">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
                   <div class="card-airplane__body">
                     <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
@@ -726,11 +798,6 @@
               </div>
               <div class="slide">
                 <div class="card-airplane">
-                  <a href="#" class="add-favorite">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
                   <div class="card-airplane__body">
                     <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
@@ -755,11 +822,6 @@
               </div>
               <div class="slide">
                 <div class="card-airplane">
-                  <a href="#" class="add-favorite">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
                   <div class="card-airplane__body">
                     <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
@@ -783,11 +845,6 @@
               </div>
               <div class="slide">
                 <div class="card-airplane">
-                  <a href="#" class="add-favorite">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
                   <div class="card-airplane__body">
                     <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
@@ -812,11 +869,6 @@
               </div>
               <div class="slide">
                 <div class="card-airplane">
-                  <a href="#" class="add-favorite">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
                   <div class="card-airplane__body">
                     <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
@@ -840,11 +892,6 @@
               </div>
               <div class="slide">
                 <div class="card-airplane">
-                  <a href="#" class="add-favorite">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
                   <div class="card-airplane__body">
                     <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
@@ -993,10 +1040,11 @@
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex flex-wrap align-items-center">
-        <h3>Мы используем файлы <a href="#" class="color-white d-inline text-decoration" target="_blank">cookies.</a></h3>
+        <h3>Мы используем файлы <a href="cookie.html" class="color-white d-inline text-decoration" target="_blank">cookies.</a>
+        </h3>
         <div class="box-text d-block d-sm-none">
           <p>На сайте используются cookies.</p>
-            <p>Продолжая использовать сайт, вы принимаете <a href="#" class="d-inline text-decoration">условия</a></p>
+          <p>Продолжая использовать сайт, вы принимаете <a href="#" class="d-inline text-decoration">условия</a></p>
         </div>
         <a href="#" class="btn btn-accent btn-agree">
           <span class="btn-text d-none d-sm-block">согласен</span>

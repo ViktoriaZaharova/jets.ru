@@ -4,8 +4,17 @@ $('.air-exchange-slider').slick({
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
-    appendArrows: '.air-exchange-slider__nav'
+    appendArrows: '.read-also-slider__nav'
 });
+
+$('.read-also-slider').slick({
+    slidesToShow: 1,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
+    appendArrows: '.read-also-slider__nav'
+});
+
 
 $('.news-slider').slick({
     slidesToShow: 1,
@@ -38,6 +47,15 @@ $('.btn-burger').on('click', function () {
 
 $('.btn-close-menu').on('click', function () {
     $('.mobile-menu').fadeOut();
+});
+
+
+// accordion
+$('.accordion-my [data-toggle="collapse"]').click(function(e){
+    if ($(window).width() >= 576) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
 });
 
 // datepicker

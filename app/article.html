@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jets.ru</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!--  <link rel="stylesheet" href="css/libs.min.css">-->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="content content-page">
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__head">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <form method="post" class="form-search form d-none d-sm-block">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="btn-close-menu"></div>
+      </div>
+      <div class="mobile-menu__body">
+        <form method="post" class="form-search form d-block d-sm-none">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user-navigation">
+          <a href="comparison.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#comparison"></use></svg></span>
+            <span class="header-links__text">Сравнение</span>
+          </a>
+          <a href="favorites.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#heart"></use></svg></span>
+            <span class="header-links__text">Избранное</span>
+          </a>
+          <a href="#" class="header-links links-chat">
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#chat"></use></svg></span>
+            <span class="header-links__text">Спросить</span>
+          </a>
+          <a href="#" class="header-links language-links">
+            <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+            <span class="header-links__text">Русский</span>
+          </a>
+        </div>
+
+        <ul class="menu">
+          <li><a href="news.html">НОВОСТИ</a></li>
+          <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+          <li><a href="rental.html">АРЕНДА</a></li>
+          <li><a href="realization.html">ПРОДАЖА</a></li>
+          <li><a href="publication.html">Публикации</a></li>
+          <li><a href="concierge.html">Консьерж</a></li>
+          <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+        </ul>
+
+        <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+        <ul class="list-social">
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <form method="post" class="form-search form">
+              <label>
+                <input type="text" placeholder="Поиск" name="search">
+              </label>
+              <button type="submit" class="button-search">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+
+            <a href="comparison.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg></span>
+              <span class="header-links__text">Сравнение</span>
+            </a>
+            <a href="favorites.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#heart"></use></svg></span>
+              <span class="header-links__text">Избранное</span>
+            </a>
+            <a href="#" class="header-links links-chat">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chat"></use></svg></span>
+              <span class="header-links__text">Спросить</span>
+            </a>
+            <a href="#" class="header-links language-links">
+              <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+              <span class="header-links__text">Русский</span>
+            </a>
+            <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-12">
+            <ul class="menu">
+              <li><a href="news.html">НОВОСТИ</a></li>
+              <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+              <li><a href="rental.html">АРЕНДА</a></li>
+              <li><a href="realization.html">ПРОДАЖА</a></li>
+              <li><a href="publication.html">Публикации</a></li>
+              <li><a href="concierge.html">Консьерж</a></li>
+              <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="article-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 order-lg-1 offset-xl-1 d-none d-md-block">
+            <div class="banner-box">
+              <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-lg-block">
+              <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+              <div class="banner-box__mobile d-flex d-lg-none">
+                <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                <div class="banner-box__title">Путеводитель
+                  по миру суперяхт
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9 col-xl-8">
+            <div class="list-news-card__head">
+              <div class="card-news__date">31.01.2020</div>
+              <a href="#" class="category-name color-brown">Авто</a>
+            </div>
+            <h1>Будущее — за инвестициями в прошлое</h1>
+
+            <div class="article-author">
+              <div class="article-author__photo"><img src="img/author.png" alt=""></div>
+              <h4>Константин Константинопольский</h4>
+              <ul class="social">
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#telegram-icon"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk-icon"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+
+            <div class="article-image">
+              <div class="article-image__wrap">
+              <img src="img/article-img1.png" alt="">
+              </div>
+              <small>Подпись к фотографии или имя фотографа</small>
+            </div>
+
+            <div class="box-text">
+              <p>Автомобиль сегодня является не только средством передвижения, но и роскошью. В первую очередь речь идет
+                о ретромашинах, которые представляют коллекционную ценность. Анна Виноградская, главный редактор
+                Mercedes-Benz Club Magazine Russia, рассказала о нестандартном варианте вложения капиталов.</p>
+            </div>
+
+            <div class="redactor-box">
+              <div class="redactor-box__info">
+                <div class="redactor-box__photo"><img src="img/photo-redactor.png" alt=""></div>
+                <div class="redactor-box__name">
+                  <h4>Анна Виноградская </h4>
+                  <div class="position">главный редактор Mercedes-Benz Club Magazine Russia, специалист по связям
+                    с общественностью.
+                  </div>
+                </div>
+              </div>
+              <div class="redactor-box__quote">
+                <p>С давних пор человечество стремилось сохранить и приумножить свои накопления и капиталы. В прошлом
+                  веке в тренде считались инвестиции в недвижимость, в позапрошлом — в драгоценные металлы. На рубеже
+                  веков многие вкладывались в бизнес, открывая торговую или сервисную точку. Сейчас сделать это же с
+                  нуля довольно сложно, поскольку количество необходимых согласований и разрешений переходит разумные
+                  пределы. Да и новый век диктует свои правила. Деньги, вложенные в недвижимость, окупаются через долгие
+                  годы, и то не всегда, а только в случае сдачи недвижимости в аренду или ее перепродажи, что требует
+                  определенных временных и материальных затрат. Вложение капитала в золото и платину — эта история
+                  целиком зависит от человеческого фактора. На любителя, как говорится... Да и процесс этот длительный,
+                  хорошую прибыль в подобном случае надо ждать лет через 15 —
+                  не раньше.</p>
+              </div>
+            </div>
+
+            <div class="box-text">
+              <p>Анна начала карьеру в качестве журналиста в российском The Economist. До того, как зайти на сугубо
+                мужскую аудиторию, она работала на телеканалах ТНТ, ТВ-3 и в Московском музее современного искусства
+                ММОМА в должности PR-директора. Неоднократно участвовала в крупных культурных мероприятиях по всему
+                миру: художественной ярмарке в Вене, Art Basel в Майами, Венецианском биеннале.</p>
+            </div>
+
+            <div class="article-image">
+              <div class="article-image__wrap">
+              <img src="img/article-img2.png" alt="">
+              </div>
+              <small>Ретроавтомобиль 1955 Mercedes-Benz 300 SL</small>
+            </div>
+
+            <div class="box-text">
+              <p>Так куда же вкладываться современному инвестору? Счет в банке сегодня не кажется таким уж надежным:
+                отзывы лицензий случаются достаточно часто, да и прибыли депозиты приносят немного. Зарабатывать на
+                акциях и играть на бирже умеют только специалисты. Но есть множество нестандартных вложений
+                капиталов.</p>
+
+              <p>По данным агентства Knight Frank, специализирующегося на операциях с недвижимостью, самыми выгодными
+                для инвесторов за последнее время стали вложения в ретроавтомобили. За последние 10 лет доход, по
+                подсчетам агентства, составил 430%, за последние пять лет — 115%. Согласитесь, серьезные цифры.</p>
+              <p>Конечно, прежде всего речь идет об исключительных раритетных образцах. Так, на мартовском аукционе
+                «Сотбис» в этом году самыми дорогими автомобилями стали Ferrari 290MM by Scaglietti 1956 года, который
+                был продан за $28,05 млн, и Aston Martin DB4GT Zagato 1962 года, который купили за $14,3 млн, а самыми
+                «дешевыми» — BMW 507 Roadster Series II 1959 года ($2,6 млн), Bugatti Type 57C Atalante 1938 года ($2,5
+                млн) и Porsche 356 C 1600 SC Cabriolet 1964 года ($1,76 млн).</p>
+            </div>
+            <div class="article-image">
+              <div class="article-image__wrap">
+              <img src="img/article-img4.jpg" alt="">
+              </div>
+              <small>Mercedes-Benz 540K</small>
+            </div>
+
+            <div class="box-text">
+              <p>Как видим, вложения в олдтаймеры оказались лучшей инвестицией десятилетия. По данным мирового агентства
+                Bloomberg, на ретроавтомобилях можно заработать почти 500% — в разы больше, чем на вине, искусстве,
+                элитной недвижимости, акциях и хедж-фондах.</p>
+
+              <p>Ferrari и Mercedes легко обогнали самых известных управляющих хедж-фондами, принеся за последние 10 лет
+                трехзначный доход.</p>
+
+              <p>Как свидетельствует индекс инвестиций в предметы роскоши, составляемый международным агентством Knight
+                Frank, за 5- и 10-летний периоды, завершившиеся в конце I квартала 2016 года, вложения в топовые марки
+                классических автомобилей принесли 117% и 362% дохода соответственно. Это существенно больше, чем можно
+                было заработать на инвестициях, например, в золото, дорогую недвижимость или просто в акции.</p>
+
+              <p>Поэтому с уверенностью можно утверждать, что мировой рынок классических и коллекционных машин в
+                последние
+                годы уверенно развивается. Например, в июне 2018 года в России впервые состоялся аукцион редких и
+                классических автомобилей, где было выставлено несколько десятков лотов, среди которых оказались поистине
+                уникальные экземпляры, такие как, например, детский электромобиль Mercedes-Benz 300S, масштабная копия
+                своего старшего собрата, щедро отделанная хромом и с горящей знаменитой трехлучевой звездой на решетке
+                радиатора. Предполагалось, что детская игрушка будет продана за 18–22 тысячи рублей, но в итоге за нее
+                выручили 170 тысяч.</p>
+            </div>
+
+            <div class="article-image">
+              <div class="article-image__wrap">
+              <img src="img/article-img5.jpg" alt="">
+              </div>
+              <small>Детский электромобиль Mercedes-Benz 300S</small>
+            </div>
+
+            <div class="box-text">
+              <p>По данным аналитических агентств, за последние несколько лет количество выставляемых на продажу
+                классических автомобилей значительно увеличилось. Появилось больше аукционных домов, проводится больше
+                аукционов. Да и число дилеров, торгующих олдтаймерами, за последние пять лет выросло более чем
+                вдвое.</p>
+
+              <p>Британский банк Coutts составил рейтинг самых выгодных вложений, на вершине которого оказались
+                классические автомобили. Британские банкиры оценивали, как изменилась стоимость различных предметов
+                роскоши и искусства за последние 12 лет, и выяснили, что при покупке классического олдтаймера можно
+                получить до 300% прибыли.</p>
+
+              <p>Стоимость классических Porsche 911 за последний год увеличилась в 1,5 раза, что приносит хорошую
+                прибыль
+                владельцам, готовым с ними расстаться. Аналогичная ситуация и с Mercedes Pagoda: за последний год модель
+                прибавила в цене 40%.</p>
+
+              <p>Рынок старинных подержанных машин, так называемых олдтаймеров, быстрыми темпами развивается и в России.
+                Цены таких машин могут исчисляться миллионами рублей, однако к шедеврам советского автопрома понятие
+                «олдтаймер» можно применить с большой натяжкой. Все мы помним, что наши «Жигули», «Запорожцы» и даже
+                «Волги» по несколько десятилетий оставались в одной серии. Модели зачастую не менялись годами,
+                соответственно, интереса для коллекционеров они не представляют.</p>
+            </div>
+
+            <div class="article-image">
+              <div class="article-image__wrap">
+                <img src="img/article-img6.jpg" alt="">
+              </div>
+              <small>Mercedes-Benz 230 SL Pagoda</small>
+            </div>
+
+            <div class="box-text">
+              <p>На этом фоне очень выигрышно смотрятся классические модели — конечно же, Mercedes возраста от 30 лет и
+                выше. Цена каждого экземпляра зависит от качества оригинальной работы и реставрации, количества
+                выпущенных
+                автомобилей этой модели, кузова и двигателя, а также индивидуальной истории.</p>
+
+              <p>Рынок олдтаймеров постоянно пополняется, ретроавтомобили пользуются спросом как среди коллекционеров,
+                так
+                и среди просто состоятельных автолюбителей, которые хотят не только приумножить свой капитал, но и
+                получить колоссальное удовольствие от воплощения детской мечты любого мальчишки — покататься на
+                старинном
+                автомобиле.</p>
+            </div>
+
+            <div class="article-author">
+              <div class="article-author__photo"><img src="img/author.png" alt=""></div>
+              <h4>Константин Константинопольский</h4>
+              <ul class="social">
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#telegram-icon"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk-icon"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="read-also m-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Читайте также</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="read-also-slider">
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article1.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Новости</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article2.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article3.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Rolls-Royce Cullinan дебютировал в России</a>
+                    <div class="box-text">
+                      <p>Новый Rolls-Royce Cullinan дебютировал в России. Спустя всего несколько недель после мировой
+                        премьеры новинка Rolls-Royce впервые предстала перед публикой в Москве.</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article4.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Porsche Panamera — бескомпромиссный выбор</a>
+                    <div class="box-text">
+                      <p>Представители компании Porsche Russland, бренда с выдающейся историей, рассказали о том, почему
+                        модель Porsche Panamera — бескомпромиссный выбор.</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article5.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Сегодня Range Rover
+                      празднует 50 лет</a>
+                    <div class="box-text">
+                      <p>В честь 50-летнего юбилея Range Rover Jaguar Land Rover представляет эксклюзивную версию
+                        модели</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article2.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article5.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Внедорожник Lexus LX — удобство роскоши</a>
+                    <div class="box-text">
+                      <p>Lexus LX — тот самый автомобиль, который практически никогда не испортит ваше настроение из-за
+                        тряски или колебаний. Сомневаетесь?</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-nav read-also-slider__nav"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="bg-black p-60 color-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>По вопросам рекламы и сотрудничества обращаться по телефону:</h4>
+            <a href="tel:+74956616583" class="color-white footer-box__links font-600">+7 (495) 661-65-83</a>
+            <a href="mailto:sales@aviapromo.ru" class="color-white footer-box__links font-600">sales@aviapromo.ru</a>
+            <p class="font-600">Часы работы: с 10 до 19 пн-пт</p>
+
+            <ul class="footer-box__logos">
+              <li><a href="#"><img src="img/logo-footer1.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer2.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer3.png" alt=""></a></li>
+            </ul>
+
+            <div class="number-evidence">
+              Номер свидетельства ЭЛ № ФС 77 - 75020
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>Для пресс-релизов</h4>
+            <a href="mailto:press@jets.ru" class="color-white footer-box__links font-600">press@jets.ru</a>
+          </div>
+
+          <div class="footer-box">
+            <h4>Аренда и заказ частного самолета </h4>
+            <a href="tel:+74957737555" class="color-white footer-box__links font-600">+7 (495) 773-75-55</a>
+          </div>
+          <div class="footer-box">
+            <h4>Покупка и продажа частных <br>
+              самолетов и вертолетов</h4>
+            <a href="tel:+74957898404" class="color-white footer-box__links font-600">+7 (495) 789-84-04</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <div class="address">119048, Москва, ул. Усачёва д 35, стр. 1, БЦ "Спектр", 1 подъезд, 5 этаж</div>
+            <ul class="footer-box__menu">
+              <li><a href="https://jets.ru" class="color-white footer-box__links font-600">jets.ru</a></li>
+              <li><a href="mailto:info@jets.ru" class="color-white footer-box__links font-600">info@jets.ru</a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Медиакит
+                2021 </a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Тех.
+                требования к баннерам</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Выходные
+                данные</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Архив</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-3 col-lg-8">
+          <div class="age">18+</div>
+        </div>
+        <div class="col-9 col-lg-4">
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="cookie">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <h3>Мы используем файлы <a href="cookie.html" class="color-white d-inline text-decoration" target="_blank">cookies.</a>
+        </h3>
+        <div class="box-text d-block d-sm-none">
+          <p>На сайте используются cookies.</p>
+          <p>Продолжая использовать сайт, вы принимаете <a href="#" class="d-inline text-decoration">условия</a></p>
+        </div>
+        <a href="#" class="btn btn-accent btn-agree">
+          <span class="btn-text d-none d-sm-block">согласен</span>
+          <span class="btn-text d-block d-sm-none">OK</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
