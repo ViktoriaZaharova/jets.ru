@@ -72,7 +72,6 @@
   width: 100%
   display: flex
   align-items: center
-  flex-wrap: wrap
   padding: 16px 0
   margin: 0 0 32px
   border:
@@ -190,5 +189,73 @@
         right: none
         top: none
       transform: rotate(45deg)
+
+.dropdown-share
+  display: none
+  margin: 0 0 0 auto
+  .list-social
+    margin: 0
+    justify-content: center
+    li
+      margin: 0 8px 0 0
+      a
+        width: 32px
+        height: 32px
+        min-width: 32px
+        padding: 7px
+  .dropdown-menu
+    padding: 25px
+    right: -10px
+    left: auto !important
+    min-width: 235px
+    background: $black
+    border: none
+      radius: 0
+    margin: 11px 0 0
+    &:before
+      content: ''
+      position: absolute
+      width: 12px
+      height: 12px
+      transform: rotate(45deg)
+      background: $black
+      right: 24px
+      top: -6px
+  .btn-copy-link
+    height: 30px
+    font-size: 12px
+
+.btn-share
+  padding: 5px
+  fill: $brown
+  width: 32px
+  min-width: 32px
+  height: 32px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: transparent
+  border: 2px solid #BA935F
+    radius: 50%
+  &:after
+    display: none
+
+.btn-copy-link
+  margin: 19px auto 0
+  height: 30px
+  max-width: none
+  font-size: 12px
+  font-weight: 500
+  justify-content: center
+  text-transform: none
+  .btn-icon
+    fill: $brown
+    width: 20px
+    height: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 4px 0 0
+
 
 /*==========  article page end  ==========*/

@@ -907,7 +907,7 @@
       width: 100%
       z-index: 1
       font-family: $default-font
-      transform: matrix(0.00, -1.00, 1.00, 0.00, -90, 80)
+      transform: matrix(0.00, -1.00, 1.00, 0.00, -80, 90)
 
   .empty-legs
     padding: 0
@@ -1054,6 +1054,10 @@
     margin: 40px 0 60px
     h1
       margin: 0 0 40px
+    .box-text
+      max-width: 294px
+      p
+        margin: 0 0 17px
 
   .politics-box
     margin: 0
@@ -1069,10 +1073,7 @@
       line-height: 18px
       font-weight: 500
 
-  .box-text
-    max-width: 294px
-    p
-      margin: 0 0 17px
+
 
   .accordion
     .politics-box
@@ -1113,9 +1114,59 @@
     &:before
       background: #D7D7D7
 
+  .article-page
+    margin: 40px 0
+    .box-text
+      margin: 0 0 40px
 
+  .article-image
+    margin: 0 0 24px
+
+  .redactor-box
+    flex-direction: column
+    align-items: center
+    margin: 0 0 40px
+    &__info
+      width: 100%
+      padding: 0
+      margin: 0 auto 16px
+      max-width: 184px
+    &__photo
+      width: 184px
+      height: 184px
+    &__quote
+      font-size: 14px
+      width: 100%
+      padding: 23px 0 0
+      border: none
+       top: 2px solid $brown
+      &:before
+        left: 10px
+        top: -5px
+        border:
+          right: 2px solid $brown
+          left: none
+
+  .article-author
+    padding: 12px 8px
+    margin: 0 0 16px
+    .social
+      display: none
+    h4
+      max-width: 200px
+
+  .dropdown-share
+    display: block
+
+  .article-page .banner-box
+    margin: 0 0 40px
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .article-image__wrap
+    height: 171px
+
+
 @media only screen and (max-width: 360px)
   .user-navigation
     justify-content: space-between
