@@ -1,0 +1,316 @@
+@import "fonts"
+@import "vars"
+
+/*==========  empty-legs-page  ==========*/
+.empty-legs-page
+  padding: 34px 0 114px
+  h1
+    margin: 0 0 54px
+
+
+.not-result-section
+  text-align: center
+  h2
+    text-align: center
+    margin: 0 auto 39px
+  .btn-group
+    width: 100%
+    justify-content: center
+    margin: 0 0 50px
+    .btn
+      padding: 0 20px
+      max-width: 354px
+      width: 100%
+      margin: 0 16px 10px 0
+      border-radius: 4px
+      &:first-child, &:last-child
+        border-radius: 4px
+      &:last-child
+        margin-right: 0
+  .box-text
+    line-height: 20px
+
+
+.form-search-my
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 26px 24px
+  label, button
+    width: calc(20% - 12px)
+  button
+    font-size: 16px
+
+.empty-legs-page__wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 40px 0
+
+.sorting-box
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  p
+    margin: 0 16px 0 0
+    font-weight: bold
+
+.list-sorting
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 16px 0 0
+    &:last-child
+      margin: 0
+
+.sorting-box__val
+  color: #727272
+  &:hover
+    color: $brown
+
+.sorting-box__val.active
+  color: #BA935F
+  font-weight: 600
+  text-decoration: underline
+
+
+.empty-legs-tabs-v2
+  width: fit-content
+  .nav-link
+    width: 182px
+    max-width: 182px
+    white-space: nowrap
+
+.accordion
+  .empty-card
+    margin: 0 0 -1px
+    border:
+      top: 1px solid #D7D7D7
+      bottom: 1px solid #D7D7D7
+    .card-header
+      justify-content: flex-start
+      margin: 0
+    &:not(:last-of-type)
+      border:
+        top: 1px solid #D7D7D7
+        bottom: 1px solid #D7D7D7
+    .card-body
+      padding: 60px 0 0
+
+.empty-card
+  margin: 0
+  border:
+    top: 1px solid #D7D7D7
+    bottom: 1px solid #D7D7D7
+  padding: 40px 0
+
+.label-logo
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 48px
+  height: 48px
+  min-width: 48px
+  border: 1.6px solid #BA935F
+    radius: 50px
+  margin: 0 24px 0 0
+  color: #BA935F
+  font-size: 19px
+
+.flight-direction
+  display: flex
+  align-items: center
+  .icon-arrow
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: $brown
+    width: 81px
+    height: 16px
+    margin: 0 24px
+
+.point-of-departure
+  display: flex
+  align-items: center
+  font-size: 18px
+  font-weight: 500
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 24px
+    height: 24px
+    min-width: 24px
+    margin: 0 8px 0 0
+    border: 1px solid #727272
+      radius: 50%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.empty-box-right
+  margin: 0 75px 0 auto
+
+.all-price-air
+  text-align: right
+  p
+    color: #C4C4C4
+    margin: 0 0 16px
+
+.all-price-air__val
+  font-weight: bold
+  font-size: 18px
+
+.empty-box-left__bottom
+  margin: 16px 0 0
+
+.list-flight-details
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    position: relative
+    margin: 0 24px 0 0
+    display: flex
+    align-items: center
+    padding: 0 0 0 12px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      border-radius: 50%
+      left: 0
+      top: 7px
+      width: 8px
+      height: 8px
+      background: #C4C4C4
+  span
+    color: #D0D0D0
+    margin: 0 4px 0 0
+    display: inline-block
+  p
+    display: flex
+    &:after
+      content: '/'
+      display: inline-block
+      margin: 0 5px
+    &:last-child
+      &:after
+        display: none
+  .time
+    color: #BA935F
+
+.about-the-plane
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+
+.about-the-plane__gallery
+  max-width: 724px
+  width: 100%
+
+
+
+.about-the-plane-slider__box
+  width: 100%
+  height: 444px
+  overflow: hidden
+  border-radius: 20px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+
+.about-the-plane-slider__nav
+  width: 100%
+  margin: 16px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+  .slick-dots
+    margin: 0 82px
+    width: fit-content
+  .slick-next
+    order: 1
+  .slick-arrow
+    margin: 0
+
+.about-the-plane__content
+  width: calc(100% - 744px)
+  padding: 0 20px 0 0
+
+.list-characteristics-airplane
+  margin: 32px 0 0
+  color: #C4C4C4
+  font-size: 14px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+  li
+    max-width: 150px
+    width: 100%
+    margin: 0 30px 32px 0
+    &:last-child
+      margin-right: 0
+    span
+      display: block
+      font-size: 16px
+      font-weight: 500
+      color: #000
+      margin: 8px 0 0
+
+.about-the-plane__footer
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 56px 0 0
+
+.about-the-plane__box
+  color: #C4C4C4
+  font-size: 14px
+  h4
+    color: #000
+    font-size: 18px
+    font-weight: 500
+    margin: 0 0 8px
+
+.form-airplane
+  display: flex
+  align-items: flex-start
+  button, label
+    width: 218px
+  label
+    margin: 0 16px 0 0
+
+
+.form-style-grey
+  input, select
+    border: 1px solid rgba(0, 0, 0, 0.5)
+    color: rgba(0, 0, 0, 0.3)
+    &::placeholder
+      color: rgba(0, 0, 0, 0.3)
+  .inp-icon
+    fill: rgba(0, 0, 0, 0.5)
+  select
+    background: url("../img/caret-down-grey.svg") no-repeat calc(100% - 12px) center
+      size: 24px
+
+.btn-load-toggle
+  margin: 40px auto 0
+  max-width: 218px
+  font-size: 16px
+/*==========  empty-legs-page end  ==========*/

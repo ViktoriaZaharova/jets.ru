@@ -26,6 +26,22 @@ $('.news-slider').slick({
     appendDots: '.news-slider__nav',
 });
 
+
+$(document).ready(function () {
+    $('.about-the-plane-slider').each(function () {
+        $(this).slick({
+            slidesToShow: 1,
+            dots: true,
+            fade: true,
+            prevArrow: '<button type="button" class="slick-prev slick-arrow-my slick-prev-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next slick-arrow-my slick-next-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
+            appendArrows: $(this).parents('.about-the-plane__gallery').find('.about-the-plane-slider__nav'),
+            appendDots: $(this).parents('.about-the-plane__gallery').find('.about-the-plane-slider__nav'),
+        });
+    });
+});
+
+
 $('.empty-legs-tabs .nav-item').on('click', function () {
     $(this).parents('.empty-legs').addClass('bg-black');
 });
