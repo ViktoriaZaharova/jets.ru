@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jets.ru</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!--  <link rel="stylesheet" href="css/libs.min.css">-->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="content content-page">
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__head">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <form method="post" class="form-search form d-none d-sm-block">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="btn-close-menu"></div>
+      </div>
+      <div class="mobile-menu__body">
+        <form method="post" class="form-search form d-block d-sm-none">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user-navigation">
+          <a href="comparison.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#comparison"></use></svg></span>
+            <span class="header-links__text">Сравнение</span>
+          </a>
+          <a href="favorites.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#heart"></use></svg></span>
+            <span class="header-links__text">Избранное</span>
+          </a>
+          <a href="#" class="header-links links-chat">
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#chat"></use></svg></span>
+            <span class="header-links__text">Спросить</span>
+          </a>
+          <a href="#" class="header-links language-links">
+            <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+            <span class="header-links__text">Русский</span>
+          </a>
+        </div>
+
+        <ul class="menu">
+          <li><a href="news.html">НОВОСТИ</a></li>
+          <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+          <li><a href="rental.html">АРЕНДА</a></li>
+          <li><a href="realization.html">ПРОДАЖА</a></li>
+          <li><a href="publication.html">Публикации</a></li>
+          <li><a href="concierge.html">Консьерж</a></li>
+          <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+        </ul>
+
+        <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+        <ul class="list-social">
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <form method="post" class="form-search form">
+              <label>
+                <input type="text" placeholder="Поиск" name="search">
+              </label>
+              <button type="submit" class="button-search">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+
+            <a href="comparison.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg></span>
+              <span class="header-links__text">Сравнение</span>
+            </a>
+            <a href="favorites.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#heart"></use></svg></span>
+              <span class="header-links__text">Избранное</span>
+            </a>
+            <a href="#" class="header-links links-chat">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chat"></use></svg></span>
+              <span class="header-links__text">Спросить</span>
+            </a>
+            <a href="#" class="header-links language-links">
+              <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+              <span class="header-links__text">Русский</span>
+            </a>
+            <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-12">
+            <ul class="menu">
+              <li><a href="news.html">НОВОСТИ</a></li>
+              <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+              <li><a href="rental.html">АРЕНДА</a></li>
+              <li><a href="realization.html">ПРОДАЖА</a></li>
+              <li><a href="publication.html">Публикации</a></li>
+              <li><a href="concierge.html">Консьерж</a></li>
+              <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="article-page rental-air-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3 order-md-1 d-none d-sm-block">
+            <div class="banner-box">
+              <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-md-block">
+              <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+              <div class="banner-box__mobile d-flex d-md-none">
+                <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                <div class="banner-box__title">Путеводитель
+                  по миру суперяхт
+                </div>
+              </div>
+            </div>
+            <div class="rent-img-size d-none d-md-block"><img src="img/rent-img2.svg" alt=""></div>
+          </div>
+          <div class="col-12 col-md-9 col-xl-9">
+            <div class="rental-air-page-img">
+              <img src="img/rent-img1.png" alt="">
+            </div>
+            <h1>EMBRAER LEGACY 650</h1>
+
+            <div class="box-text">
+              <p>Новая модификация, Legacy 650, выпускается параллельно с Legacy 600, но именно на более свежий самолет
+                следует обратить внимание в связи с возросшей дальностью полета, улучшенной звукоизоляцией салона и
+                новыми вариантами и материалами отделки интерьера.
+              <p>
+              <p>Получить большую, чем у Legacy 600, дальность удалось за счет установки другого крыла, дополнительного
+                топливного бака в фюзеляже и более мощных двигателей Rolls-Royce AE 3007A2. Legacy 650 получил
+                сертификат HALTO (High Altitude Landing and Takeoff Operation), что дает право совершать взлет и посадку
+                в сложных условиях высокогорья. Лицом бренда и обладателем Legacy 650 в 2012 году стал известный
+                китайский актер Джеки Чан.</p>
+            </div>
+
+            <div class="banner-box d-flex d-sm-none">
+              <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-lg-block">
+              <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+              <div class="banner-box__mobile d-flex d-lg-none">
+                <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                <div class="banner-box__title">Путеводитель
+                  по миру суперяхт
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="info-airplane">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-block d-md-none">
+            <div class="rent-img-size"><img src="img/rent-img2.svg" alt=""></div>
+          </div>
+          <div class="col-12">
+            <div class="info-airplane-wrapper">
+              <div class="info-airplane__head">
+                <div class="info-airplane__icon"><img src="img/air-icon.svg" alt=""></div>
+                <div class="info-airplane__name">
+                  <p>Категория самолета:</p>
+                  <span>Большие</span>
+                </div>
+              </div>
+              <div class="info-airplane-list">
+                <div class="info-airplane__box">
+                  <p>Количество мест</p><span>14 – 18</span>
+                </div>
+                <div class="info-airplane__box">
+                  <p>Высота <br>
+                    салона (м)</p><span>6,76</span>
+                </div>
+                <div class="info-airplane__box">
+                  <p>Объем <br>багажника (м3)</p><span>8,1</span>
+                </div>
+                <div class="info-airplane__box">
+                  <p>Дальность полета (км)</p><span>7 222</span>
+                </div>
+                <div class="info-airplane__box">
+                  <p>Максимальное время (ч)</p><span>18-20</span>
+                </div>
+                <div class="info-airplane__box">
+                  <p>Взлетный вес
+                    (кг)</p><span>24 300</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="airplane-information">
+      <div class="gallery-airplane">
+        <div class="slide">
+          <div class="gallery-airplane__item"><img src="img/gallery-air.png" alt=""></div>
+        </div>
+        <div class="slide">
+          <div class="gallery-airplane__item"><img src="img/gallery-air.png" alt=""></div>
+        </div>
+        <div class="slide">
+          <div class="gallery-airplane__item"><img src="img/gallery-air.png" alt=""></div>
+        </div>
+      </div>
+      <div class="slider-nav gallery-airplane__nav"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="accordion accordion-legs accordion-rental" id="accordionExample">
+              <div class="card politics-box empty-card accordion-rental-card">
+                <div class="card-header collapsed" id="heading1" data-toggle="collapse" data-target="#collapse1"
+                     aria-expanded="true" aria-controls="collapse1">
+                  <h3>Основные характеристики</h3>
+                  <span class="accordion-icon"></span>
+                </div>
+
+                <div id="collapse1" class="collapse" aria-labelledby="heading1"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card politics-box empty-card accordion-rental-card">
+                <div class="card-header" id="heading2" data-toggle="collapse" data-target="#collapse2"
+                     aria-expanded="true" aria-controls="collapse2">
+                  <h3>Размеры самолета</h3>
+                  <span class="accordion-icon"></span>
+                </div>
+
+                <div id="collapse2" class="collapse show" aria-labelledby="heading2"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="sizes-airplane list-characteristics">
+                      <li>
+                        <p>Длина салона (м)</p><span>26,34</span>
+                      </li>
+                      <li>
+                        <p>Высота салона (м)</p><span>6,76</span>
+                      </li>
+                      <li>
+                        <p>Размах крыльев (м)</p><span>21,16</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card politics-box empty-card accordion-rental-card">
+                <div class="card-header collapsed" id="heading3" data-toggle="collapse" data-target="#collapse3"
+                     aria-expanded="true" aria-controls="collapse3">
+                  <h3>Габариты салона</h3>
+                  <span class="accordion-icon"></span>
+                </div>
+
+                <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+
+                  </div>
+                </div>
+              </div>
+              <div class="card politics-box empty-card accordion-rental-card">
+                <div class="card-header collapsed" id="heading4" data-toggle="collapse" data-target="#collapse4"
+                     aria-expanded="true" aria-controls="collapse4">
+                  <h3>Интерьер</h3>
+                  <span class="accordion-icon"></span>
+                </div>
+
+                <div id="collapse4" class="collapse" aria-labelledby="heading4"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card politics-box empty-card accordion-rental-card">
+                <div class="card-header collapsed" id="heading5" data-toggle="collapse" data-target="#collapse5"
+                     aria-expanded="true" aria-controls="collapse5">
+                  <h3>Модификации</h3>
+                  <span class="accordion-icon"></span>
+                </div>
+
+                <div id="collapse5" class="collapse" aria-labelledby="heading5"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card politics-box empty-card accordion-rental-card">
+                <div class="card-header" id="heading6" data-toggle="collapse" data-target="#collapse6"
+                     aria-expanded="true" aria-controls="collapse6">
+                  <h3>Компоновка салона</h3>
+                  <span class="accordion-icon"></span>
+                </div>
+
+                <div id="collapse6" class="collapse show" aria-labelledby="heading6"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="layout-air">
+                      <div class="layout-air__img"><img src="img/air-icon2.svg" alt=""></div>
+                      <div class="layout-air__body">
+                        <ul class="layout-air__list">
+                          <li>1 – Зона кухни</li>
+                          <li>2 – Основной зал</li>
+                          <li>3 – Туалет</li>
+                          <li>4 – Душевая</li>
+                          <li>5 – Багажный отсек</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="map-distance-section m-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            <h2>Карта дальности перелетов из Москвы</h2>
+          </div>
+          <div class="col-12">
+            <div class="map-distance"><img src="img/map-distance.jpeg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="popular-airplane p-120 bg-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-12"><h2>Предложения по продаже</h2></div>
+          <div class="col-12">
+            <div class="popular-airplane-slider">
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                      SOVEREIGN</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                      SOVEREIGN</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                      SOVEREIGN</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-nav popular-airplane-slider__nav"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="read-also m-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Читайте также</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="read-also-slider">
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article1.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Новости</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article2.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article3.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Rolls-Royce Cullinan дебютировал в России</a>
+                    <div class="box-text">
+                      <p>Новый Rolls-Royce Cullinan дебютировал в России. Спустя всего несколько недель после мировой
+                        премьеры новинка Rolls-Royce впервые предстала перед публикой в Москве.</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article4.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Porsche Panamera — бескомпромиссный выбор</a>
+                    <div class="box-text">
+                      <p>Представители компании Porsche Russland, бренда с выдающейся историей, рассказали о том, почему
+                        модель Porsche Panamera — бескомпромиссный выбор.</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article5.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Сегодня Range Rover
+                      празднует 50 лет</a>
+                    <div class="box-text">
+                      <p>В честь 50-летнего юбилея Range Rover Jaguar Land Rover представляет эксклюзивную версию
+                        модели</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article2.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article5.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Внедорожник Lexus LX — удобство роскоши</a>
+                    <div class="box-text">
+                      <p>Lexus LX — тот самый автомобиль, который практически никогда не испортит ваше настроение из-за
+                        тряски или колебаний. Сомневаетесь?</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-nav read-also-slider__nav"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="bg-black p-60 color-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>По вопросам рекламы и сотрудничества обращаться по телефону:</h4>
+            <a href="tel:+74956616583" class="color-white footer-box__links font-600">+7 (495) 661-65-83</a>
+            <a href="mailto:sales@aviapromo.ru" class="color-white footer-box__links font-600">sales@aviapromo.ru</a>
+            <p class="font-600">Часы работы: с 10 до 19 пн-пт</p>
+
+            <ul class="footer-box__logos">
+              <li><a href="#"><img src="img/logo-footer1.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer2.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer3.png" alt=""></a></li>
+            </ul>
+
+            <div class="number-evidence">
+              Номер свидетельства ЭЛ № ФС 77 - 75020
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>Для пресс-релизов</h4>
+            <a href="mailto:press@jets.ru" class="color-white footer-box__links font-600">press@jets.ru</a>
+          </div>
+
+          <div class="footer-box">
+            <h4>Аренда и заказ частного самолета </h4>
+            <a href="tel:+74957737555" class="color-white footer-box__links font-600">+7 (495) 773-75-55</a>
+          </div>
+          <div class="footer-box">
+            <h4>Покупка и продажа частных <br>
+              самолетов и вертолетов</h4>
+            <a href="tel:+74957898404" class="color-white footer-box__links font-600">+7 (495) 789-84-04</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <div class="address">119048, Москва, ул. Усачёва д 35, стр. 1, БЦ "Спектр", 1 подъезд, 5 этаж</div>
+            <ul class="footer-box__menu">
+              <li><a href="https://jets.ru" class="color-white footer-box__links font-600">jets.ru</a></li>
+              <li><a href="mailto:info@jets.ru" class="color-white footer-box__links font-600">info@jets.ru</a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Медиакит
+                2021 </a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Тех.
+                требования к баннерам</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Выходные
+                данные</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Архив</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-3 col-lg-8">
+          <div class="age">18+</div>
+        </div>
+        <div class="col-9 col-lg-4">
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="cookie">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <h3>Мы используем файлы <a href="cookie.html" class="color-white d-inline text-decoration" target="_blank">cookies.</a>
+        </h3>
+        <div class="box-text d-block d-sm-none">
+          <p>На сайте используются cookies.</p>
+          <p>Продолжая использовать сайт, вы принимаете <a href="#" class="d-inline text-decoration">условия</a></p>
+        </div>
+        <a href="#" class="btn btn-accent btn-agree">
+          <span class="btn-text d-none d-sm-block">согласен</span>
+          <span class="btn-text d-block d-sm-none">OK</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
