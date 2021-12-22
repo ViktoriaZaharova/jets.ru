@@ -3,8 +3,8 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
-  .container
-    max-width: 988px
+  //.container
+  //  max-width: 988px
 
   .phone
     font-size: 15px
@@ -497,10 +497,138 @@
         &:last-child
           margin: 0
 
+  .rental-air-page-img
+    min-width: 739px
+    height: 484px
+    margin: 0 0 45px
+
+  .rental-air-page
+    h1
+      margin: 0 0 29px
+    .box-text
+      max-width: 643px
+
+  .rent-img-size
+    margin: 16px 0 0
+
+  .info-airplane
+    padding: 57px 0
+    &__head
+      margin: 0 36px 0 0
+      min-width: 201px
+      font-size: 12px
+
+  .info-airplane__name
+    max-width: 109px
+    p
+      display: inline
+
+  .info-airplane__box
+    margin: 0 36px 0 0
+    font-size: 14px
+    span
+      font-size: 20px
+      margin: 5px 0 0
+
+  .gallery-airplane__item
+    height: 436px
+
+  .gallery-airplane__nav
+    margin: 16px 0 0
+
+  .accordion-rental
+    padding: 60px 0
+    .accordion-rental-card
+      padding: 30px 40px
+      .card-body
+        padding: 40px 0 0
+
+  .sizes-airplane
+    font-size: 20px
+
+  .layout-air__body
+    padding: 0 0 0 60px
+
+  .map-distance-section
+    margin: 40px 0 0
+    h2
+      margin: 0 0 50px
+
+  .map-distance
+    width: calc(100% + 30px)
+    margin: 0 -15px
+
+  .p-120
+    padding: 80px 0
+
+  .list-characteristics p
+    margin: 0
+
+  .modal-content
+    padding: 50px
+
+  .modal-header
+    max-width: 695px
+    .close
+      top: 28px
+      right: 28px
+
+  .modal-title
+    max-width: 553px
+    margin: 0 auto
+    font-size: 50px
+    line-height: 50px
+
+  .modal-body
+    padding: 34px 0 0
+    max-width: 695px
+
+  .airplane-information-total
+    padding: 0
+
+  .total-price-order
+    padding: 0 40px
+    &:before
+      width: calc(100% - 80px)
+      left: 50%
+      transform: translate(-50%,0)
+    span
+      font-size: 40px
+
+  .seller-contacts
+    margin: 80px 0 100px
+    text-align: center
+    h2
+      margin: 0 auto 40px
+
+  .seller-contacts-box
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    &__body
+      width: 100%
+      padding: 0
+      margin: 26px 0 0
+    &__photo
+      width: 140px
+      height: 140px
+    h3
+      font-weight: bold
+      margin: 0 0 16px
+      font-size: 28px
+
+  .seller-links
+    font-size: 22px
+
+
+  .reference-number
+    font-size: 16px
+    margin: 0 0 24px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
-  .container
-    max-width: 756px
+  //.container
+  //  max-width: 756px
 
   .form-search
     max-width: 260px
@@ -850,7 +978,21 @@
       max-width: 510px
       margin: 0 auto 40px
 
+  .map-distance-section
+    margin: 40px 0 0
+
+  .p-120
+    padding: 60px 0
+
+  .popular-airplane
+    h2
+      margin: 0 0 40px
+
 /* Small Devices, Tablets */
+@media only screen and (max-width: 860px)
+  .info-airplane__box
+    margin: 0 auto 0 0
+
 @media only screen and (max-width: 768px)
   header
     padding: 26px 0 27px
@@ -886,6 +1028,97 @@
       margin: 0 0 16px
 
 
+  .rental-air-page-img
+    min-width: auto
+    margin: 0 0 40px
+    width: 100%
+    float: none
+
+  .rental-air-page
+    margin: 16px 0 40px
+    .banner-box
+      margin: 0 0 16px
+    .box-text
+      max-width: 643px
+
+  .info-airplane
+    padding: 0
+
+  .rent-img-size
+    margin: 0 auto
+    max-width: 242px
+
+  .info-airplane-wrapper
+    flex-wrap: wrap
+    padding: 40px 70px 0
+
+  .info-airplane-list
+    padding: 0 0 0 40px
+    width: calc(100% - 201px)
+    justify-content: space-between
+    flex-wrap: wrap
+
+  .info-airplane__head
+    margin: 0
+    max-width: 201px
+    width: 100%
+    min-width: auto
+
+  .info-airplane__icon
+    margin: 0 0 14px
+
+  .info-airplane__box
+    margin: 0 0 40px
+    width: 33.3%
+
+  .layout-air__body
+    width: 100%
+    margin: 40px 0 0
+    padding: 0
+    text-align: center
+
+  .layout-air__img
+    margin: 0 auto
+    max-width: 430px
+
+  .map-distance-section h2
+    margin: 0 0 40px
+
+  .map-distance
+    overflow: hidden
+    height: 512px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .gallery-airplane__item
+    height: 300px
+
+  .gallery-airplane__nav
+    margin: 8px 0 0
+
+  .modal-content
+    padding: 50px 36px
+
+  .modal-header
+    .close
+      top: 24px
+      right: 24px
+      width: 40px
+      height: 40px
+
+  .reference-number
+    margin: 0 0 16px
+
+  .total-price-order
+    font-size: 36px
+    line-height: 43px
+    span
+      font-size: 36px
+
+  .seller-contacts
+    margin: 80px 0
 
 @media only screen and (max-width: 640px)
   .card-news__img
@@ -898,6 +1131,11 @@
   .card-news-sm .card-news__title
     br
       display: none
+
+  .info-airplane-wrapper
+    padding: 40px 0 0
+
+
 
 @media only screen and (max-width: 576px)
   body
@@ -1564,6 +1802,181 @@
       a
         color: #000
         display: block !important
+
+  .info-airplane__head
+    margin: 0 auto 40px
+    max-width: 343px
+
+  .info-airplane-list
+    padding: 0
+    width: 100%
+
+  .info-airplane__box
+    width: 50%
+    font-size: 18px
+    span
+      font-size: 24px
+      margin: 8px 0 0
+
+  .info-airplane__name
+    margin: 0 auto
+    max-width: none
+    text-align: center
+    p
+      display: block
+
+  .info-airplane__icon
+    margin: 0 0 24px
+
+  .rental-air-page
+    margin: 16px 0 40px
+    h1
+      margin: 0 0 24px
+    .banner-box
+      margin: 0
+
+  .rental-air-page-img
+    height: auto
+
+  .rent-img-size
+    max-width: 375px
+
+  .accordion-rental
+    padding: 40px 0
+    .card
+      .card-header
+        flex-wrap: nowrap
+        .accordion-icon
+          width: 32px
+          height: 32px
+          min-width: 32px
+
+    .accordion-rental-card
+      padding: 24px 0
+    h3
+      width: fit-content
+      margin: 0 auto 0 0
+      font-size: 18px
+    .card-body
+      padding: 24px 0 0
+
+  .sizes-airplane
+    max-width: 250px
+    font-size: 14px
+    li
+      margin: 0 0 11px
+    span
+      font-size: 16px
+
+  .layout-air__img
+    max-width: 257px
+
+
+  .layout-air__body
+    margin: 24px 0 0
+
+  .layout-air__list
+    font-weight: normal
+    font-size: 14px
+    li
+      margin: 0 0 8px
+
+  .map-distance
+    height: 315px
+
+
+
+  .map-distance-section
+    margin: 0
+    h2
+      margin: 0 0 24px
+
+  .p-120
+    padding: 40px 0
+
+  .popular-airplane h2
+    margin: 0 0 24px
+
+  .modal-content
+    padding: 16px
+
+  .reference-number
+    margin: 8px 0 0
+    width: 100%
+    justify-content: space-between
+    font-size: 14px
+    p
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+  .rental-air-page-img
+    margin: 0
+
+  .rental-air-page
+    h1
+      margin: 40px 0 24px
+
+  .total-price-order
+    padding: 0
+    font-size: 20px
+    margin: 0 0 40px
+    line-height: 24px
+    &:before
+      width: 100%
+    span
+      font-size: 20px
+
+  .airplane-information-total
+    .btn-group
+      flex-wrap: wrap
+    .btn
+      max-width: 343px
+      margin: 0 auto 8px
+      width: 100%
+      height: 56px
+      font-size: 18px
+      &:last-child
+        margin: 0 auto
+
+  .seller-contacts
+    margin: 40px 0
+    h2
+      margin: 0 auto 24px
+
+  .seller-contacts-box
+    &__photo
+      width: 120px
+      height: 120px
+    &__body
+      margin: 24px 0 0
+    h3
+      font-size: 24px
+
+  .seller-links
+    font-size: 16px
+    margin: 0 auto 16px
+    
+  .modal-title
+    text-align: left
+    max-width: 286px
+    margin: 0
+    font-size: 30px
+    line-height: 30px
+
+  .modal-header
+    .close
+      width: 32px
+      height: 32px
+      top: 16px
+      right: 16px
+
+  .modal-body
+    padding: 29px 0 0
+    .form-rent
+      padding: 16px 0 0
+      textarea
+        height: 150px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)

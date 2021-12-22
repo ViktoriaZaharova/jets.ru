@@ -1,0 +1,138 @@
+@import "fonts"
+@import "vars"
+
+/*========== order rental-air page  ==========*/
+.reference-number
+  margin: 0 0 10px
+  color: #9F9F9F
+  font-size: 24px
+  span
+    color: #000000
+    display: inline-block
+    margin: 0 0 0 4px
+    font-weight: 500
+
+.accordion-order
+  .box-text
+    max-width: 612px
+    font-size: 16px
+  .accordion-rental-card
+    &:last-child
+      border-bottom: none
+
+    .card-body
+      padding: 40px 0 0
+
+.airplane-information-total
+  padding: 80px 60px 0
+  .btn
+    height: 60px
+    max-width: 410px
+    font-size: 24px
+
+.total-price-order
+  display: flex
+  align-items: center
+  justify-content: space-between
+  position: relative
+  max-width: 740px
+  width: 100%
+  font-size: 40px
+  line-height: 48px
+  font-weight: 500
+  margin: 0 0 60px
+  p, span
+    position: relative
+    background: #fff
+    z-index: 1
+  span
+    font-size: 48px
+    font-weight: bold
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 5px
+    width: 100%
+    height: 2px
+    border-bottom: 2px dotted #D2D2D2
+
+.seller-contacts
+  margin: 120px 0 0
+  h2
+    margin: 0 0 60px
+
+.seller-contacts-box
+  display: flex
+  align-items: center
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 160px
+    height: 160px
+    border: 2px solid #BA935F
+     radius: 50%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 0 0 0 32px
+  h3
+    margin: 0 0 32px
+    font-weight: 500
+
+.seller-links
+  color: #000
+  font-size: 24px
+  margin: 0 0 16px
+  &:last-child
+    margin: 0
+  &:hover
+    color: $brown
+
+.modal-content
+  border: none
+    radius: 0
+  padding: 60px
+  background: #151515
+  color: #fff
+  .nav-tabs
+    justify-content: flex-start
+    .nav-item
+      max-width: 204px
+    .nav-link.active
+      border: 1px solid #BA935F
+
+.modal-dialog
+  max-width: 1600px
+
+.modal-header
+  padding: 0
+  border: none
+  margin: 0 auto
+  max-width: 832px
+  width: 100%
+  .close
+    position: absolute
+    padding: 0
+    opacity: 1
+    margin: 0
+    top: 60px
+    width: 48px
+    height: 48px
+    fill: $brown
+    right: 200px
+
+.modal-title
+  text-align: center
+
+.modal-body
+  padding: 40px 0 0
+  margin: 0 auto
+  max-width: 832px
+  width: 100%
+
+/*========== order rental-air end  ==========*/

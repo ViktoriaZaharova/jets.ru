@@ -262,6 +262,14 @@ button, .btn {
     color: #AE762C;
     border-color: #AE762C; }
 
+.btn-border {
+  color: #000;
+  border: 1px solid #000; }
+  .btn-border:hover {
+    border-color: #BA935F;
+    background: #BA935F;
+    color: #fff; }
+
 .container {
   padding: 0 10px;
   max-width: 1220px; }
@@ -272,8 +280,15 @@ button, .btn {
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
   padding: 0 10px; }
 
-.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child) {
   border-radius: 4px; }
+
+.btn-group {
+  width: 100%; }
+  .btn-group .btn {
+    margin: 0 16px 0 0; }
+    .btn-group .btn:last-child {
+      margin: 0; }
 
 .wrapper {
   display: -webkit-box;
@@ -306,6 +321,9 @@ button, .btn {
   background: #151515;
   color: #fff; }
 
+.bg-grey {
+  background: #F2F2F2; }
+
 .color-white {
   color: #fff; }
 
@@ -332,6 +350,9 @@ a.color-blue:hover {
 
 .color-light-grey {
   color: #9F9F9F; }
+
+.p-120 {
+  padding: 120px 0; }
 
 .p-60 {
   padding: 60px 0; }
@@ -2564,7 +2585,8 @@ footer {
     color: #9B9B9B;
     position: relative;
     background: #fff;
-    padding: 0 3px 0 0; }
+    padding: 0 3px 0 0;
+    margin: 0; }
   .list-characteristics span, .list-characteristics strong {
     position: relative;
     background: #fff;
@@ -2573,11 +2595,380 @@ footer {
     padding: 0 0 0 3px; }
 
 /*==========  card airplane end  ==========*/
+/*==========  rental-air page  ==========*/
+.rental-air-page .box-text {
+  max-width: 727px; }
+
+.rental-air-page-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 1080px;
+  float: right;
+  height: 600px;
+  overflow: hidden;
+  margin: 0 0 60px; }
+  .rental-air-page-img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.rent-img-size {
+  margin: 20px 0 0;
+  width: 100%;
+  max-width: 375px; }
+  .rent-img-size img {
+    width: 100%; }
+
+.info-airplane {
+  padding: 104px 0 103px;
+  background: #000;
+  color: #fff; }
+
+.info-airplane-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.info-airplane__head {
+  width: 250px;
+  min-width: 250px;
+  font-size: 14px;
+  margin: 0 44px 0 0; }
+  .info-airplane__head p {
+    color: rgba(255, 255, 255, 0.6); }
+
+.info-airplane__icon {
+  margin: 0 0 16px;
+  width: 100%; }
+  .info-airplane__icon img {
+    width: 100%; }
+
+.info-airplane__box {
+  margin: 0 50px 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto; }
+  .info-airplane__box span {
+    display: block;
+    color: #BA935F;
+    margin: 8px 0 0;
+    font-size: 24px;
+    font-weight: bold; }
+  .info-airplane__box:last-child {
+    margin: 0; }
+
+.info-airplane-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.gallery-airplane__item {
+  width: 100%;
+  height: 660px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden; }
+  .gallery-airplane__item img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.gallery-airplane__nav {
+  margin: 24px 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .gallery-airplane__nav .slick-dots {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 82px; }
+  .gallery-airplane__nav .slick-next {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0; }
+
+.accordion-rental {
+  padding: 80px 0 0; }
+  .accordion-rental .accordion-rental-card {
+    padding: 27px 60px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000; }
+    .accordion-rental .accordion-rental-card:not(:last-of-type) {
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000; }
+    .accordion-rental .accordion-rental-card .card-body {
+      padding: 60px 0 13px; }
+
+.map-distance {
+  width: 100%; }
+  .map-distance img {
+    width: 100%; }
+
+.layout-air {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .layout-air__img {
+    max-width: 470px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .layout-air__body {
+    padding: 0 0 0 180px;
+    width: calc(100% - 470px); }
+
+.layout-air__list {
+  font-size: 18px;
+  font-weight: 500; }
+  .layout-air__list li {
+    margin: 0 0 24px; }
+    .layout-air__list li:last-child {
+      margin: 0; }
+
+.sizes-airplane {
+  font-size: 24px;
+  max-width: 612px;
+  width: 100%; }
+  .sizes-airplane li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    margin: 0 0 24px; }
+    .sizes-airplane li:last-child {
+      margin: 0; }
+    .sizes-airplane li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 3px;
+      width: 100%;
+      height: 2px;
+      border-bottom: 2px dotted #9F9F9F; }
+  .sizes-airplane p, .sizes-airplane span {
+    position: relative;
+    background: #fff;
+    display: block; }
+  .sizes-airplane p {
+    color: #9F9F9F;
+    padding: 0 4px 0 0; }
+  .sizes-airplane span {
+    color: #000;
+    text-align: right;
+    font-weight: bold; }
+
+.popular-airplane-slider {
+  min-width: 2000px; }
+  .popular-airplane-slider .slick-slide {
+    margin: 0 20px 0 0;
+    max-width: 308px; }
+
+.popular-airplane-card .box-text {
+  font-size: 14px; }
+
+.popular-airplane-card .list-characteristics {
+  margin: 0 0 24px; }
+
+/*==========  rental-air end  ==========*/
+/*========== order rental-air page  ==========*/
+.reference-number {
+  margin: 0 0 10px;
+  color: #9F9F9F;
+  font-size: 24px; }
+  .reference-number span {
+    color: #000000;
+    display: inline-block;
+    margin: 0 0 0 4px;
+    font-weight: 500; }
+
+.accordion-order .box-text {
+  max-width: 612px;
+  font-size: 16px; }
+
+.accordion-order .accordion-rental-card:last-child {
+  border-bottom: none; }
+
+.accordion-order .accordion-rental-card .card-body {
+  padding: 40px 0 0; }
+
+.airplane-information-total {
+  padding: 80px 60px 0; }
+  .airplane-information-total .btn {
+    height: 60px;
+    max-width: 410px;
+    font-size: 24px; }
+
+.total-price-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  max-width: 740px;
+  width: 100%;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+  margin: 0 0 60px; }
+  .total-price-order p, .total-price-order span {
+    position: relative;
+    background: #fff;
+    z-index: 1; }
+  .total-price-order span {
+    font-size: 48px;
+    font-weight: bold; }
+  .total-price-order:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px dotted #D2D2D2; }
+
+.seller-contacts {
+  margin: 120px 0 0; }
+  .seller-contacts h2 {
+    margin: 0 0 60px; }
+
+.seller-contacts-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .seller-contacts-box__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    border: 2px solid #BA935F;
+      border-radius: 50%; }
+    .seller-contacts-box__photo img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .seller-contacts-box__body {
+    padding: 0 0 0 32px; }
+  .seller-contacts-box h3 {
+    margin: 0 0 32px;
+    font-weight: 500; }
+
+.seller-links {
+  color: #000;
+  font-size: 24px;
+  margin: 0 0 16px; }
+  .seller-links:last-child {
+    margin: 0; }
+  .seller-links:hover {
+    color: #BA935F; }
+
+.modal-content {
+  border: none;
+    border-radius: 0;
+  padding: 60px;
+  background: #151515;
+  color: #fff; }
+  .modal-content .nav-tabs {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .modal-content .nav-tabs .nav-item {
+      max-width: 204px; }
+    .modal-content .nav-tabs .nav-link.active {
+      border: 1px solid #BA935F; }
+
+.modal-dialog {
+  max-width: 1600px; }
+
+.modal-header {
+  padding: 0;
+  border: none;
+  margin: 0 auto;
+  max-width: 832px;
+  width: 100%; }
+  .modal-header .close {
+    position: absolute;
+    padding: 0;
+    opacity: 1;
+    margin: 0;
+    top: 60px;
+    width: 48px;
+    height: 48px;
+    fill: #BA935F;
+    right: 200px; }
+
+.modal-title {
+  text-align: center; }
+
+.modal-body {
+  padding: 40px 0 0;
+  margin: 0 auto;
+  max-width: 832px;
+  width: 100%; }
+
+/*========== order rental-air end  ==========*/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  .container {
-    max-width: 988px; }
   .phone {
     font-size: 15px;
     margin: 0 0 0 36px; }
@@ -2936,12 +3327,119 @@ footer {
       height: 56px;
       font-size: 18px; }
       .not-result-section .btn-group .btn:last-child {
-        margin: 0; } }
+        margin: 0; }
+  .rental-air-page-img {
+    min-width: 739px;
+    height: 484px;
+    margin: 0 0 45px; }
+  .rental-air-page h1 {
+    margin: 0 0 29px; }
+  .rental-air-page .box-text {
+    max-width: 643px; }
+  .rent-img-size {
+    margin: 16px 0 0; }
+  .info-airplane {
+    padding: 57px 0; }
+    .info-airplane__head {
+      margin: 0 36px 0 0;
+      min-width: 201px;
+      font-size: 12px; }
+  .info-airplane__name {
+    max-width: 109px; }
+    .info-airplane__name p {
+      display: inline; }
+  .info-airplane__box {
+    margin: 0 36px 0 0;
+    font-size: 14px; }
+    .info-airplane__box span {
+      font-size: 20px;
+      margin: 5px 0 0; }
+  .gallery-airplane__item {
+    height: 436px; }
+  .gallery-airplane__nav {
+    margin: 16px 0 0; }
+  .accordion-rental {
+    padding: 60px 0; }
+    .accordion-rental .accordion-rental-card {
+      padding: 30px 40px; }
+      .accordion-rental .accordion-rental-card .card-body {
+        padding: 40px 0 0; }
+  .sizes-airplane {
+    font-size: 20px; }
+  .layout-air__body {
+    padding: 0 0 0 60px; }
+  .map-distance-section {
+    margin: 40px 0 0; }
+    .map-distance-section h2 {
+      margin: 0 0 50px; }
+  .map-distance {
+    width: calc(100% + 30px);
+    margin: 0 -15px; }
+  .p-120 {
+    padding: 80px 0; }
+  .list-characteristics p {
+    margin: 0; }
+  .modal-content {
+    padding: 50px; }
+  .modal-header {
+    max-width: 695px; }
+    .modal-header .close {
+      top: 28px;
+      right: 28px; }
+  .modal-title {
+    max-width: 553px;
+    margin: 0 auto;
+    font-size: 50px;
+    line-height: 50px; }
+  .modal-body {
+    padding: 34px 0 0;
+    max-width: 695px; }
+  .airplane-information-total {
+    padding: 0; }
+  .total-price-order {
+    padding: 0 40px; }
+    .total-price-order:before {
+      width: calc(100% - 80px);
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
+    .total-price-order span {
+      font-size: 40px; }
+  .seller-contacts {
+    margin: 80px 0 100px;
+    text-align: center; }
+    .seller-contacts h2 {
+      margin: 0 auto 40px; }
+  .seller-contacts-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .seller-contacts-box__body {
+      width: 100%;
+      padding: 0;
+      margin: 26px 0 0; }
+    .seller-contacts-box__photo {
+      width: 140px;
+      height: 140px; }
+    .seller-contacts-box h3 {
+      font-weight: bold;
+      margin: 0 0 16px;
+      font-size: 28px; }
+  .seller-links {
+    font-size: 22px; }
+  .reference-number {
+    font-size: 16px;
+    margin: 0 0 24px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  .container {
-    max-width: 756px; }
   .form-search {
     max-width: 260px; }
     .form-search input {
@@ -3234,9 +3732,19 @@ footer {
     margin: 38px 0 0; }
   .not-result-section h2 {
     max-width: 510px;
-    margin: 0 auto 40px; } }
+    margin: 0 auto 40px; }
+  .map-distance-section {
+    margin: 40px 0 0; }
+  .p-120 {
+    padding: 60px 0; }
+  .popular-airplane h2 {
+    margin: 0 0 40px; } }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 860px) {
+  .info-airplane__box {
+    margin: 0 auto 0 0; } }
+
 @media only screen and (max-width: 768px) {
   header {
     padding: 26px 0 27px; }
@@ -3259,7 +3767,83 @@ footer {
     font-size: 18px;
     padding: 30px 0 80px; }
     .footnotes p {
-      margin: 0 0 16px; } }
+      margin: 0 0 16px; }
+  .rental-air-page-img {
+    min-width: auto;
+    margin: 0 0 40px;
+    width: 100%;
+    float: none; }
+  .rental-air-page {
+    margin: 16px 0 40px; }
+    .rental-air-page .banner-box {
+      margin: 0 0 16px; }
+    .rental-air-page .box-text {
+      max-width: 643px; }
+  .info-airplane {
+    padding: 0; }
+  .rent-img-size {
+    margin: 0 auto;
+    max-width: 242px; }
+  .info-airplane-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 40px 70px 0; }
+  .info-airplane-list {
+    padding: 0 0 0 40px;
+    width: calc(100% - 201px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .info-airplane__head {
+    margin: 0;
+    max-width: 201px;
+    width: 100%;
+    min-width: auto; }
+  .info-airplane__icon {
+    margin: 0 0 14px; }
+  .info-airplane__box {
+    margin: 0 0 40px;
+    width: 33.3%; }
+  .layout-air__body {
+    width: 100%;
+    margin: 40px 0 0;
+    padding: 0;
+    text-align: center; }
+  .layout-air__img {
+    margin: 0 auto;
+    max-width: 430px; }
+  .map-distance-section h2 {
+    margin: 0 0 40px; }
+  .map-distance {
+    overflow: hidden;
+    height: 512px; }
+    .map-distance img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .gallery-airplane__item {
+    height: 300px; }
+  .gallery-airplane__nav {
+    margin: 8px 0 0; }
+  .modal-content {
+    padding: 50px 36px; }
+  .modal-header .close {
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px; }
+  .reference-number {
+    margin: 0 0 16px; }
+  .total-price-order {
+    font-size: 36px;
+    line-height: 43px; }
+    .total-price-order span {
+      font-size: 36px; }
+  .seller-contacts {
+    margin: 80px 0; } }
 
 @media only screen and (max-width: 640px) {
   .card-news__img {
@@ -3267,7 +3851,9 @@ footer {
   .card-news-row .card-news__body {
     width: calc(100% - 150px); }
   .card-news-sm .card-news__title br {
-    display: none; } }
+    display: none; }
+  .info-airplane-wrapper {
+    padding: 40px 0 0; } }
 
 @media only screen and (max-width: 576px) {
   body {
@@ -3836,7 +4422,156 @@ footer {
       font-weight: normal; }
     .not-result-section .box-text a {
       color: #000;
-      display: block !important; } }
+      display: block !important; }
+  .info-airplane__head {
+    margin: 0 auto 40px;
+    max-width: 343px; }
+  .info-airplane-list {
+    padding: 0;
+    width: 100%; }
+  .info-airplane__box {
+    width: 50%;
+    font-size: 18px; }
+    .info-airplane__box span {
+      font-size: 24px;
+      margin: 8px 0 0; }
+  .info-airplane__name {
+    margin: 0 auto;
+    max-width: none;
+    text-align: center; }
+    .info-airplane__name p {
+      display: block; }
+  .info-airplane__icon {
+    margin: 0 0 24px; }
+  .rental-air-page {
+    margin: 16px 0 40px; }
+    .rental-air-page h1 {
+      margin: 0 0 24px; }
+    .rental-air-page .banner-box {
+      margin: 0; }
+  .rental-air-page-img {
+    height: auto; }
+  .rent-img-size {
+    max-width: 375px; }
+  .accordion-rental {
+    padding: 40px 0; }
+    .accordion-rental .card .card-header {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+      .accordion-rental .card .card-header .accordion-icon {
+        width: 32px;
+        height: 32px;
+        min-width: 32px; }
+    .accordion-rental .accordion-rental-card {
+      padding: 24px 0; }
+    .accordion-rental h3 {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 0 auto 0 0;
+      font-size: 18px; }
+    .accordion-rental .card-body {
+      padding: 24px 0 0; }
+  .sizes-airplane {
+    max-width: 250px;
+    font-size: 14px; }
+    .sizes-airplane li {
+      margin: 0 0 11px; }
+    .sizes-airplane span {
+      font-size: 16px; }
+  .layout-air__img {
+    max-width: 257px; }
+  .layout-air__body {
+    margin: 24px 0 0; }
+  .layout-air__list {
+    font-weight: normal;
+    font-size: 14px; }
+    .layout-air__list li {
+      margin: 0 0 8px; }
+  .map-distance {
+    height: 315px; }
+  .map-distance-section {
+    margin: 0; }
+    .map-distance-section h2 {
+      margin: 0 0 24px; }
+  .p-120 {
+    padding: 40px 0; }
+  .popular-airplane h2 {
+    margin: 0 0 24px; }
+  .modal-content {
+    padding: 16px; }
+  .reference-number {
+    margin: 8px 0 0;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 14px; }
+    .reference-number p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+  .rental-air-page-img {
+    margin: 0; }
+  .rental-air-page h1 {
+    margin: 40px 0 24px; }
+  .total-price-order {
+    padding: 0;
+    font-size: 20px;
+    margin: 0 0 40px;
+    line-height: 24px; }
+    .total-price-order:before {
+      width: 100%; }
+    .total-price-order span {
+      font-size: 20px; }
+  .airplane-information-total .btn-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .airplane-information-total .btn {
+    max-width: 343px;
+    margin: 0 auto 8px;
+    width: 100%;
+    height: 56px;
+    font-size: 18px; }
+    .airplane-information-total .btn:last-child {
+      margin: 0 auto; }
+  .seller-contacts {
+    margin: 40px 0; }
+    .seller-contacts h2 {
+      margin: 0 auto 24px; }
+  .seller-contacts-box__photo {
+    width: 120px;
+    height: 120px; }
+  .seller-contacts-box__body {
+    margin: 24px 0 0; }
+  .seller-contacts-box h3 {
+    font-size: 24px; }
+  .seller-links {
+    font-size: 16px;
+    margin: 0 auto 16px; }
+  .modal-title {
+    text-align: left;
+    max-width: 286px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px; }
+  .modal-header .close {
+    width: 32px;
+    height: 32px;
+    top: 16px;
+    right: 16px; }
+  .modal-body {
+    padding: 29px 0 0; }
+    .modal-body .form-rent {
+      padding: 16px 0 0; }
+      .modal-body .form-rent textarea {
+        height: 150px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {

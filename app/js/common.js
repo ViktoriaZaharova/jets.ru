@@ -41,6 +41,24 @@ $(document).ready(function () {
     });
 });
 
+$('.gallery-airplane').slick({
+    slidesToShow: 1,
+    dots: true,
+    fade: true,
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-my slick-prev-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-my slick-next-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
+    appendArrows: '.gallery-airplane__nav',
+    appendDots: '.gallery-airplane__nav',
+});
+
+
+$('.popular-airplane-slider').slick({
+    slidesToShow: 1,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
+    variableWidth: true,
+    appendArrows: '.popular-airplane-slider__nav'
+});
 
 $('.empty-legs-tabs .nav-item').on('click', function () {
     $(this).parents('.empty-legs').addClass('bg-black');

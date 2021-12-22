@@ -1,0 +1,184 @@
+@import "fonts"
+@import "vars"
+
+/*==========  rental-air page  ==========*/
+.rental-air-page
+  .box-text
+    max-width: 727px
+
+
+.rental-air-page-img
+  display: flex
+  align-items: center
+  min-width: 1080px
+  float: right
+  height: 600px
+  overflow: hidden
+  margin: 0 0 60px
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+.rent-img-size
+  margin: 20px 0 0
+  width: 100%
+  max-width: 375px
+  img
+    width: 100%
+
+.info-airplane
+  padding: 104px 0 103px
+  background: #000
+  color: #fff
+
+.info-airplane-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+
+.info-airplane__head
+  width: 250px
+  min-width: 250px
+  font-size: 14px
+  margin: 0 44px 0 0
+  p
+    color: rgba(#fff, .6)
+
+.info-airplane__icon
+  margin: 0 0 16px
+  width: 100%
+  img
+    width: 100%
+
+.info-airplane__box
+  margin: 0 50px 0 0
+  color: rgba(255, 255, 255, 0.6)
+  font-size: 18px
+  flex: auto
+  span
+    display: block
+    color: #BA935F
+    margin: 8px 0 0
+    font-size: 24px
+    font-weight: bold
+
+  &:last-child
+    margin: 0
+
+.info-airplane-list
+  display: flex
+  align-items: flex-start
+
+
+//gallery-airplane
+.gallery-airplane
+  &__item
+    width: 100%
+    height: 660px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      height: 100%
+      width: 100%
+      object-fit: cover
+
+.gallery-airplane__nav
+  margin: 24px 0 0
+  justify-content: center
+  .slick-dots
+    width: fit-content
+    margin: 0 82px
+  .slick-next
+    order: 1
+    margin: 0
+
+.accordion-rental
+  padding: 80px 0 0
+  .accordion-rental-card
+    padding: 27px 60px
+    border:
+      top: 1px solid #000
+      bottom: 1px solid #000
+    &:not(:last-of-type)
+      border:
+        top: 1px solid #000
+        bottom: 1px solid #000
+    .card-body
+      padding: 60px 0 13px
+
+.map-distance
+  width: 100%
+  img
+    width: 100%
+
+.layout-air
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  &__img
+    max-width: 470px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+  &__body
+    padding: 0 0 0 180px
+    width: calc(100% - 470px)
+
+.layout-air__list
+  font-size: 18px
+  font-weight: 500
+  li
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
+
+.sizes-airplane
+  font-size: 24px
+  max-width: 612px
+  width: 100%
+  li
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 3px
+      width: 100%
+      height: 2px
+      border-bottom: 2px dotted #9F9F9F
+  p, span
+    position: relative
+    background: #fff
+    display: block
+  p
+    color: #9F9F9F
+    padding: 0 4px 0 0
+  span
+    color: #000
+    text-align: right
+    font-weight: bold
+
+.popular-airplane-slider
+  min-width: 2000px
+  .slick-slide
+    margin: 0 20px 0 0
+    max-width: 308px
+
+.popular-airplane-card
+  .box-text
+    font-size: 14px
+  .list-characteristics
+    margin: 0 0 24px
+
+/*==========  rental-air end  ==========*/
