@@ -51,14 +51,19 @@ $('.gallery-airplane').slick({
     appendDots: '.gallery-airplane__nav',
 });
 
-
-$('.popular-airplane-slider').slick({
-    slidesToShow: 1,
-    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
-    variableWidth: true,
-    appendArrows: '.popular-airplane-slider__nav'
+$(document).ready(function () {
+    $('.popular-airplane-slider').each(function () {
+        $(this).slick({
+            slidesToShow: 1,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
+            variableWidth: true,
+            appendArrows: $(this).next('.popular-airplane-slider__nav'),
+        });
+    });
 });
+
+
 
 $('.empty-legs-tabs .nav-item').on('click', function () {
     $(this).parents('.empty-legs').addClass('bg-black');

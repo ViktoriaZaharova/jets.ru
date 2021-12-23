@@ -321,6 +321,9 @@ button, .btn {
   background: #151515;
   color: #fff; }
 
+.bg-white {
+  background: #fff; }
+
 .bg-grey {
   background: #F2F2F2; }
 
@@ -2188,10 +2191,16 @@ footer {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content; }
+  .empty-legs-tabs-v2 .nav-item {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none; }
   .empty-legs-tabs-v2 .nav-link {
-    width: 182px;
-    max-width: 182px;
-    white-space: nowrap; }
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: none;
+    padding: 0 28px; }
 
 .accordion .empty-card {
   margin: 0 0 -1px;
@@ -2538,7 +2547,9 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
   .card-airplane .btn {
-    margin: auto 0 0; }
+    margin: auto 0 0;
+    width: 100%;
+    max-width: none; }
   .card-airplane__name {
     width: 100%;
     margin: 0 0 24px;
@@ -2551,6 +2562,13 @@ footer {
       color: #AE762C; }
   .card-airplane .list-characteristics {
     margin: 0 0 39px; }
+  .card-airplane .prices-popular-distance-item {
+    font-size: 18px;
+    margin: 0 0 25px; }
+    .card-airplane .prices-popular-distance-item:last-child {
+      margin: 0; }
+  .card-airplane .prices-popular-distance-item strong {
+    font-size: 18px; }
 
 .list-characteristics {
   width: 100%; }
@@ -2966,6 +2984,139 @@ footer {
   width: 100%; }
 
 /*========== order rental-air end  ==========*/
+/*========== rental page  ==========*/
+.contacts h2 {
+  margin: 0 0 19px; }
+
+.form-contacts label {
+  margin: 0 0 16px; }
+
+.form-contacts .consent {
+  max-width: 311px; }
+
+.contacts-box {
+  margin: 0 0 40px;
+  font-size: 20px; }
+  .contacts-box:last-child {
+    margin: 0; }
+  .contacts-box h3 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 16px;
+    font-weight: normal;
+    max-width: 397px; }
+  .contacts-box .address {
+    max-width: 251px; }
+
+.contacts-links {
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0 16px; }
+  .contacts-links:hover {
+    color: #BA935F; }
+  .contacts-links:last-child {
+    margin: 0; }
+
+.contacts-phone {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  margin: 24px 0 0; }
+  .contacts-phone:hover {
+    color: #BA935F; }
+
+.representation-map {
+  width: 100%; }
+  .representation-map img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.seo-section .box-text {
+  font-size: 18px;
+  line-height: 34px; }
+  .seo-section .box-text p {
+    margin: 0; }
+
+.helicopter-rental .btn-load-toggle {
+  max-width: none;
+  margin: 0; }
+
+.nav-tabs-rental {
+  margin: 0 0 20px; }
+
+.prices-popular-distance-wrapper {
+  background: #fff;
+  padding: 40px 24px;
+  max-width: 879px;
+  width: 100%; }
+
+.prices-popular-distance-head {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 16px;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.prices-popular-distance__direction {
+  width: 35%; }
+
+.prices-popular-distance__type, .prices-popular-distance__passengers {
+  width: 25%; }
+
+.prices-popular-distance__price {
+  width: 15%; }
+
+.prices-popular-distance-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.prices-popular-distance-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #D7D7D7; }
+
+.price-val {
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #000000;
+    border-radius: 5px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 32px;
+  max-width: 110px; }
+
+.prices-popular-distance-item__icon {
+  margin: 0 8px 0 0;
+  width: 20px;
+  height: 20px; }
+
+/*========== rental page end ==========*/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {

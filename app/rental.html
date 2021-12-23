@@ -1,0 +1,3221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jets.ru</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!--  <link rel="stylesheet" href="css/libs.min.css">-->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="content content-page">
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__head">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <form method="post" class="form-search form d-none d-sm-block">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="btn-close-menu"></div>
+      </div>
+      <div class="mobile-menu__body">
+        <form method="post" class="form-search form d-block d-sm-none">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user-navigation">
+          <a href="comparison.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#comparison"></use></svg></span>
+            <span class="header-links__text">Сравнение</span>
+          </a>
+          <a href="favorites.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#heart"></use></svg></span>
+            <span class="header-links__text">Избранное</span>
+          </a>
+          <a href="#" class="header-links links-chat">
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#chat"></use></svg></span>
+            <span class="header-links__text">Спросить</span>
+          </a>
+          <a href="#" class="header-links language-links">
+            <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+            <span class="header-links__text">Русский</span>
+          </a>
+        </div>
+
+        <ul class="menu">
+          <li><a href="news.html">НОВОСТИ</a></li>
+          <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+          <li><a href="rental.html">АРЕНДА</a></li>
+          <li><a href="realization.html">ПРОДАЖА</a></li>
+          <li><a href="publication.html">Публикации</a></li>
+          <li><a href="concierge.html">Консьерж</a></li>
+          <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+        </ul>
+
+        <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+        <ul class="list-social">
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <form method="post" class="form-search form">
+              <label>
+                <input type="text" placeholder="Поиск" name="search">
+              </label>
+              <button type="submit" class="button-search">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+
+            <a href="comparison.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg></span>
+              <span class="header-links__text">Сравнение</span>
+            </a>
+            <a href="favorites.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#heart"></use></svg></span>
+              <span class="header-links__text">Избранное</span>
+            </a>
+            <a href="#" class="header-links links-chat">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chat"></use></svg></span>
+              <span class="header-links__text">Спросить</span>
+            </a>
+            <a href="#" class="header-links language-links">
+              <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+              <span class="header-links__text">Русский</span>
+            </a>
+            <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-12">
+            <ul class="menu">
+              <li><a href="news.html">НОВОСТИ</a></li>
+              <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+              <li><a href="rental.html">АРЕНДА</a></li>
+              <li><a href="realization.html">ПРОДАЖА</a></li>
+              <li><a href="publication.html">Публикации</a></li>
+              <li><a href="concierge.html">Консьерж</a></li>
+              <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="article-page rental-air-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3 order-md-1 d-none d-sm-block">
+            <div class="banner-box">
+              <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-md-block">
+              <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+              <div class="banner-box__mobile d-flex d-md-none">
+                <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                <div class="banner-box__title">Путеводитель
+                  по миру суперяхт
+                </div>
+              </div>
+            </div>
+            <div class="rent-img-size d-none d-md-block"><img src="img/rent-img2.svg" alt=""></div>
+          </div>
+          <div class="col-12 col-md-9 col-xl-9">
+            <div class="rental-air-page-img">
+              <img src="img/rent-img1.png" alt="">
+            </div>
+            <h1>EMBRAER LEGACY 650</h1>
+
+            <div class="box-text">
+              <p>Новая модификация, Legacy 650, выпускается параллельно с Legacy 600, но именно на более свежий самолет
+                следует обратить внимание в связи с возросшей дальностью полета, улучшенной звукоизоляцией салона и
+                новыми вариантами и материалами отделки интерьера.
+              <p>
+              <p>Получить большую, чем у Legacy 600, дальность удалось за счет установки другого крыла, дополнительного
+                топливного бака в фюзеляже и более мощных двигателей Rolls-Royce AE 3007A2. Legacy 650 получил
+                сертификат HALTO (High Altitude Landing and Takeoff Operation), что дает право совершать взлет и посадку
+                в сложных условиях высокогорья. Лицом бренда и обладателем Legacy 650 в 2012 году стал известный
+                китайский актер Джеки Чан.</p>
+            </div>
+
+            <div class="banner-box d-flex d-sm-none">
+              <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-lg-block">
+              <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+              <div class="banner-box__mobile d-flex d-lg-none">
+                <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                <div class="banner-box__title">Путеводитель
+                  по миру суперяхт
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-empty bg-grey p-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Популярные Empty Legs</h2>
+          </div>
+          <div class="col-12">
+            <div class="popular-airplane-slider">
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal"
+                       data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA
+                      CITATION
+                      SOVEREIGN</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal"
+                       data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">Москва – Ницца</a>
+                    <div class="box-text">
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">Citation XLS</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/date.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">31/08 - 03/09</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/tag.svg" alt=""></div>
+                        <strong class="prices-popular-distance-item__text">22 800  €</strong>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal"
+                       data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA
+                      CITATION
+                      SOVEREIGN</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal"
+                       data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal"
+                       data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA
+                      CITATION
+                      SOVEREIGN</a>
+                    <div class="box-text">
+                      <ul class="list-characteristics">
+                        <li>
+                          <p>Скорость (км/ч)</p><span>850</span>
+                        </li>
+                        <li>
+                          <p>Дальность (км)</p><span>5741</span>
+                        </li>
+                        <li>
+                          <p>Пассажиры (чел.)</p><span>9</span>
+                        </li>
+                        <li>
+                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal"
+                       data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-nav popular-airplane-slider__nav"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="prices-popular-distance bg-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-9">
+            <h2>Примерные цены
+              на популярные направления</h2>
+          </div>
+
+          <div class="col-12 col-lg-9">
+            <div class="prices-popular-distance-wrapper">
+              <div class="prices-popular-distance-head">
+                <div class="prices-popular-distance__direction">Направление</div>
+                <div class="prices-popular-distance__type">Тип борта</div>
+                <div class="prices-popular-distance__passengers">Пассажиры</div>
+                <div class="prices-popular-distance__price">стоимость</div>
+              </div>
+
+              <div class="prices-popular-distance-row">
+                <div class="prices-popular-distance__direction">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/location.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">Mосква – Ницца </div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__type">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">Citation XLS</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__passengers">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/user.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">8 человек</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__price">
+                  <div class="price-val">21 000 €</div>
+                </div>
+              </div>
+
+              <div class="prices-popular-distance-row">
+                <div class="prices-popular-distance__direction">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/location.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">Mосква – Нью Йорк </div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__type">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">Challenger</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__passengers">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/user.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">12 человек</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__price">
+                  <div class="price-val">63 000 €</div>
+                </div>
+              </div>
+
+              <div class="prices-popular-distance-row">
+                <div class="prices-popular-distance__direction">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/location.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text"> Москва – Афины</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__type">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">Falcon</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__passengers">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/user.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">10 человек</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__price">
+                  <div class="price-val">25 000 €</div>
+                </div>
+              </div>
+
+              <div class="prices-popular-distance-row">
+                <div class="prices-popular-distance__direction">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/location.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">Москва – Токио
+                      Нью-Йорк</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__type">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">Gulfstream</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__passengers">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/user.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">8 человек</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__price">
+                  <div class="price-val">28 000 €</div>
+                </div>
+              </div>
+
+              <div class="prices-popular-distance-row">
+                <div class="prices-popular-distance__direction">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/location.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">Москва – Мальдивы
+                      Нью-Йорк</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__type">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">Gulfstream</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__passengers">
+                  <div class="prices-popular-distance-item">
+                    <div class="prices-popular-distance-item__icon"><img src="img/user.svg" alt=""></div>
+                    <div class="prices-popular-distance-item__text">12 человек</div>
+                  </div>
+                </div>
+                <div class="prices-popular-distance__price">
+                  <div class="price-val">70 000 €</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-airplane p-120 bg-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7"><h2>Популярные самолеты и вертолеты</h2></div>
+          <div class="col-12">
+            <ul class="nav nav-pills nav-tabs nav-tabs-rental empty-legs-tabs empty-legs-tabs-v2" id="pills-tab3"
+                role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-8-tab" data-toggle="pill" href="#pills-8" role="tab"
+                   aria-controls="pills-8" aria-selected="false">самолеты</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-9-tab" data-toggle="pill" href="#pills-9" role="tab"
+                   aria-controls="pills-9" aria-selected="false">вертолеты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <div class="tab-content" id="pills-tabContent3">
+              <div class="tab-pane fade show active" id="pills-8" role="tabpanel" aria-labelledby="pills-8-tab">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="popular-airplane-slider">
+                      <div class="slide">
+                        <div class="card-airplane popular-airplane-card">
+                          <a href="#" class="add-favorite">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                          </a>
+                          <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                          <div class="card-airplane__body">
+                            <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                            <div class="box-text">
+                              <ul class="list-characteristics">
+                                <li>
+                                  <p>Скорость (км/ч)</p><span>850</span>
+                                </li>
+                                <li>
+                                  <p>Дальность (км)</p><span>5741</span>
+                                </li>
+                                <li>
+                                  <p>Пассажиры (чел.)</p><span>9</span>
+                                </li>
+                                <li>
+                                  <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-accent" data-toggle="modal"
+                               data-target="#orderModal">заказать</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="card-airplane popular-airplane-card">
+                          <a href="#" class="add-favorite">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                          </a>
+                          <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                          <div class="card-airplane__body">
+                            <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA
+                              CITATION
+                              SOVEREIGN</a>
+                            <div class="box-text">
+                              <ul class="list-characteristics">
+                                <li>
+                                  <p>Скорость (км/ч)</p><span>850</span>
+                                </li>
+                                <li>
+                                  <p>Дальность (км)</p><span>5741</span>
+                                </li>
+                                <li>
+                                  <p>Пассажиры (чел.)</p><span>9</span>
+                                </li>
+                                <li>
+                                  <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-accent" data-toggle="modal"
+                               data-target="#orderModal">заказать</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="card-airplane popular-airplane-card">
+                          <a href="#" class="add-favorite">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                          </a>
+                          <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                          <div class="card-airplane__body">
+                            <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                            <div class="box-text">
+                              <ul class="list-characteristics">
+                                <li>
+                                  <p>Скорость (км/ч)</p><span>850</span>
+                                </li>
+                                <li>
+                                  <p>Дальность (км)</p><span>5741</span>
+                                </li>
+                                <li>
+                                  <p>Пассажиры (чел.)</p><span>9</span>
+                                </li>
+                                <li>
+                                  <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-accent" data-toggle="modal"
+                               data-target="#orderModal">заказать</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="card-airplane popular-airplane-card">
+                          <a href="#" class="add-favorite">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                          </a>
+                          <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                          <div class="card-airplane__body">
+                            <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA
+                              CITATION
+                              SOVEREIGN</a>
+                            <div class="box-text">
+                              <ul class="list-characteristics">
+                                <li>
+                                  <p>Скорость (км/ч)</p><span>850</span>
+                                </li>
+                                <li>
+                                  <p>Дальность (км)</p><span>5741</span>
+                                </li>
+                                <li>
+                                  <p>Пассажиры (чел.)</p><span>9</span>
+                                </li>
+                                <li>
+                                  <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-accent" data-toggle="modal"
+                               data-target="#orderModal">заказать</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="card-airplane popular-airplane-card">
+                          <a href="#" class="add-favorite">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                          </a>
+                          <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                          <div class="card-airplane__body">
+                            <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                            <div class="box-text">
+                              <ul class="list-characteristics">
+                                <li>
+                                  <p>Скорость (км/ч)</p><span>850</span>
+                                </li>
+                                <li>
+                                  <p>Дальность (км)</p><span>5741</span>
+                                </li>
+                                <li>
+                                  <p>Пассажиры (чел.)</p><span>9</span>
+                                </li>
+                                <li>
+                                  <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-accent" data-toggle="modal"
+                               data-target="#orderModal">заказать</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="card-airplane popular-airplane-card">
+                          <a href="#" class="add-favorite">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#heart"></use>
+                            </svg>
+                          </a>
+                          <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                          <div class="card-airplane__body">
+                            <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA
+                              CITATION
+                              SOVEREIGN</a>
+                            <div class="box-text">
+                              <ul class="list-characteristics">
+                                <li>
+                                  <p>Скорость (км/ч)</p><span>850</span>
+                                </li>
+                                <li>
+                                  <p>Дальность (км)</p><span>5741</span>
+                                </li>
+                                <li>
+                                  <p>Пассажиры (чел.)</p><span>9</span>
+                                </li>
+                                <li>
+                                  <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-accent" data-toggle="modal"
+                               data-target="#orderModal">заказать</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slider-nav popular-airplane-slider__nav"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-9" role="tabpanel" aria-labelledby="pills-9-tab">
+                <div class="col-12">
+                  <div class="popular-airplane-slider">
+                    <div class="slide">
+                      <div class="card-airplane popular-airplane-card">
+                        <a href="#" class="add-favorite">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </a>
+                        <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                        <div class="card-airplane__body">
+                          <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                          <div class="box-text">
+                            <ul class="list-characteristics">
+                              <li>
+                                <p>Скорость (км/ч)</p><span>850</span>
+                              </li>
+                              <li>
+                                <p>Дальность (км)</p><span>5741</span>
+                              </li>
+                              <li>
+                                <p>Пассажиры (чел.)</p><span>9</span>
+                              </li>
+                              <li>
+                                <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="card-airplane popular-airplane-card">
+                        <a href="#" class="add-favorite">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </a>
+                        <a href="product.html" class="card-airplane__img"><img src="img/helicopter2.png" alt=""></a>
+                        <div class="card-airplane__body">
+                          <a href="product.html" class="card-airplane__name">AIRBUS HELICOPTERS AS332 L1E CESSNA
+                            CITATION SOVEREIGN</a>
+                          <div class="box-text">
+                            <ul class="list-characteristics">
+                              <li>
+                                <p>Скорость (км/ч)</p><span>850</span>
+                              </li>
+                              <li>
+                                <p>Дальность (км)</p><span>5741</span>
+                              </li>
+                              <li>
+                                <p>Пассажиры (чел.)</p><span>9</span>
+                              </li>
+                              <li>
+                                <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="card-airplane popular-airplane-card">
+                        <a href="#" class="add-favorite">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </a>
+                        <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                        <div class="card-airplane__body">
+                          <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                          <div class="box-text">
+                            <ul class="list-characteristics">
+                              <li>
+                                <p>Скорость (км/ч)</p><span>850</span>
+                              </li>
+                              <li>
+                                <p>Дальность (км)</p><span>5741</span>
+                              </li>
+                              <li>
+                                <p>Пассажиры (чел.)</p><span>9</span>
+                              </li>
+                              <li>
+                                <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="card-airplane popular-airplane-card">
+                        <a href="#" class="add-favorite">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </a>
+                        <a href="product.html" class="card-airplane__img"><img src="img/helicopter2.png" alt=""></a>
+                        <div class="card-airplane__body">
+                          <a href="product.html" class="card-airplane__name">AIRBUS HELICOPTERS AS332 L1E CESSNA
+                            CITATION SOVEREIGN</a>
+                          <div class="box-text">
+                            <ul class="list-characteristics">
+                              <li>
+                                <p>Скорость (км/ч)</p><span>850</span>
+                              </li>
+                              <li>
+                                <p>Дальность (км)</p><span>5741</span>
+                              </li>
+                              <li>
+                                <p>Пассажиры (чел.)</p><span>9</span>
+                              </li>
+                              <li>
+                                <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="card-airplane popular-airplane-card">
+                        <a href="#" class="add-favorite">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </a>
+                        <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                        <div class="card-airplane__body">
+                          <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                          <div class="box-text">
+                            <ul class="list-characteristics">
+                              <li>
+                                <p>Скорость (км/ч)</p><span>850</span>
+                              </li>
+                              <li>
+                                <p>Дальность (км)</p><span>5741</span>
+                              </li>
+                              <li>
+                                <p>Пассажиры (чел.)</p><span>9</span>
+                              </li>
+                              <li>
+                                <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="card-airplane popular-airplane-card">
+                        <a href="#" class="add-favorite">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                          </svg>
+                        </a>
+                        <a href="product.html" class="card-airplane__img"><img src="img/helicopter2.png" alt=""></a>
+                        <div class="card-airplane__body">
+                          <a href="product.html" class="card-airplane__name">AIRBUS HELICOPTERS AS332 L1E CESSNA
+                            CITATION SOVEREIGN</a>
+                          <div class="box-text">
+                            <ul class="list-characteristics">
+                              <li>
+                                <p>Скорость (км/ч)</p><span>850</span>
+                              </li>
+                              <li>
+                                <p>Дальность (км)</p><span>5741</span>
+                              </li>
+                              <li>
+                                <p>Пассажиры (чел.)</p><span>9</span>
+                              </li>
+                              <li>
+                                <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slider-nav popular-airplane-slider__nav"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="helicopter-rental bg-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Аренда самолетов</h2>
+          </div>
+          <div class="col-12">
+            <ul class="nav nav-pills nav-tabs nav-tabs-rental empty-legs-tabs empty-legs-tabs-v2" id="pills-tab2"
+                role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab"
+                   aria-controls="pills-home" aria-selected="true">Бизнес лайнеры</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab"
+                   aria-controls="pills-2" aria-selected="false">Дальнемагистральные</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab"
+                   aria-controls="pills-3" aria-selected="false">Большие</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab"
+                   aria-controls="pills-4" aria-selected="false">Средние</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab"
+                   aria-controls="pills-5" aria-selected="false">Малые</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-6-tab" data-toggle="pill" href="#pills-6" role="tab"
+                   aria-controls="pills-6" aria-selected="false">Легкие</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-7-tab" data-toggle="pill" href="#pills-7" role="tab"
+                   aria-controls="pills-7" aria-selected="false">Турбопропы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <div class="tab-content" id="pills-tabContent2">
+              <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-7" role="tabpanel" aria-labelledby="pills-7-tab">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="helicopter-rental bg-grey p-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Аренда вертолетов</h2>
+          </div>
+          <div class="col-12">
+            <ul class="nav nav-pills nav-tabs nav-tabs-rental empty-legs-tabs empty-legs-tabs-v2" id="pills-tab"
+                role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                   aria-controls="pills-home" aria-selected="true">Однодвигательные</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                   aria-controls="pills-profile" aria-selected="false">Двухдвигательные</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">AIRBUS HELICOPTERS AS332 L1E CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">AIRBUS HELICOPTERS AS332 L1E CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">AIRBUS HELICOPTERS AS332 L1E CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter2.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">AIRBUS HELICOPTERS AS332 L1E CESSNA CITATION
+                          SOVEREIGN</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                    <div class="card-airplane popular-airplane-card">
+                      <a href="#" class="add-favorite">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                      </a>
+                      <a href="product.html" class="card-airplane__img"><img src="img/helicopter1.png" alt=""></a>
+                      <div class="card-airplane__body">
+                        <a href="product.html" class="card-airplane__name">MD HELICOPTERS MD EXPLORER</a>
+                        <div class="box-text">
+                          <ul class="list-characteristics">
+                            <li>
+                              <p>Скорость (км/ч)</p><span>850</span>
+                            </li>
+                            <li>
+                              <p>Дальность (км)</p><span>5741</span>
+                            </li>
+                            <li>
+                              <p>Пассажиры (чел.)</p><span>9</span>
+                            </li>
+                            <li>
+                              <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#orderModal">заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="seo-section bg-white p-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et morbi volutpat, in. Sagittis at est sed
+                enim eget. Amet mattis varius porta gravida ac dui ultrices maecenas. Sed volutpat fermentum habitant ac
+                vestibulum non et suspendisse.</p>
+              <p>Aenean dictum sed egestas quisque hendrerit viverra. Diam sodales at donec vel tempor purus sed ipsum
+                pulvinar. Vestibulum, ante et quis dolor turpis amet, consectetur tortor. Et eget eleifend erat aliquet
+                dignissim magna gravida felis, ipsum. Mauris praesent etiam ipsum nibh tincidunt et adipiscing faucibus.
+                Sed et tempor morbi in. Massa varius eget risus viverra aenean egestas elementum convallis aliquam. Nam
+                sed pellentesque sed integer. Odio mus consectetur purus tortor. Vel enim aliquam, duis semper auctor.
+                Massa tristique ut nullam ac sed faucibus varius. Pellentesque pellentesque placerat euismod dui
+                vestibulum. Sit leo orci nisl tellus habitasse vulputate egestas sapien et. Tincidunt dictum porttitor
+                sollicitudin justo, in tellus diam ornare.</p>
+              <p>Posuere odio nisl nunc, sed. Lorem mauris sed elementum facilisi arcu. Orci faucibus ut egestas id.
+                Pharetra neque orci, nibh consequat mauris pharetra orci. Lorem facilisis tempor faucibus cursus rhoncus
+                ante nunc.</p>
+              <p>Tincidunt nibh quis nulla tellus. Ante facilisi volutpat, cursus egestas magna tellus id. Tellus vitae
+                aliquam bibendum tincidunt elementum vel hendrerit pulvinar bibendum. Non malesuada tellus lectus a
+                sagittis. Porttitor in blandit consequat adipiscing fames amet pretium. Imperdiet amet, ullamcorper
+                magna pretium eu. Tempus, penatibus pellentesque tempus, porta. Dolor egestas sit dolor a. Non rhoncus
+                adipiscing amet, ornare ut condimentum risus. Pharetra ac vitae arcu imperdiet at molestie congue et.
+                Integer a, pellentesque tristique laoreet velit ac nunc et. Arcu, mattis cursus enim, duis purus euismod
+                enim viverra. Lobortis facilisis ridiculus elementum id urna ultrices justo metus.</p>
+              <p>A arcu vel eu in tortor blandit. Tincidunt est in et sem ipsum sit adipiscing vitae erat. At mi
+                scelerisque massa at in quis auctor. Enim tempus sed orci, sed maecenas justo massa euismod. Metus et
+                scelerisque eu, tellus ligula mi. Ultricies in viverra sagittis viverra tortor at tempor. Felis, semper
+                vitae, magna aliquam est sed. Auctor lacinia pellentesque vitae, vestibulum purus quis nullam donec
+                viverra. Cras neque, est nunc sit. Curabitur eget in in feugiat sit adipiscing. Suspendisse at
+                scelerisque euismod diam.</p>
+              <p>Enim nunc ut sodales tellus at convallis arcu amet. Eu, leo id quis nunc pellentesque ac augue
+                pulvinar.
+                Nulla eu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="representation">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2>Представительство в других городах</h2>
+          </div>
+        </div>
+      </div>
+      <div class="representation-map"><img src="img/map2.svg" alt=""></div>
+    </section>
+
+    <section class="contacts p-120 bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Наши контакты</h2>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="contacts-content">
+              <div class="contacts-box">
+                <h3>Аренда и заказ частного самолета:</h3>
+                <a href="tel:+74957737555" class="contacts-phone">+7 (495) 773-75-55</a>
+              </div>
+              <div class="contacts-box">
+                <h3>По вопросам рекламы и сотрудничества обращаться по телефону:</h3>
+                <a href="tel:+74957737555" class="contacts-links">+7 (495) 773-75-55</a>
+                <a href="mailto:sales@aviapromo.ru" class="contacts-links">sales@aviapromo.ru</a>
+              </div>
+              <div class="contacts-box">
+                <h3>Покупка и продажа частных <br>самолетов и вертолетов:</h3>
+                <a href="tel:+74957898404" class="contacts-links">+7 (495) 789-84-04</a>
+              </div>
+
+              <div class="contacts-box">
+                <h3 class="address">119048, Москва, ул. Усачёва д 35, стр. 1, БЦ "Спектр", 1 подъезд, 5 этаж</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <form method="post" class="form-contacts">
+              <label>
+                <input type="text" placeholder="Имя" name="name" required>
+              </label>
+              <label>
+                <input type="text" placeholder="Телефон" name="phone" required>
+              </label>
+              <label>
+                <input type="text" placeholder="Email" name="mail" required>
+              </label>
+              <label>
+                <textarea name="message" placeholder="Сообщение"></textarea>
+              </label>
+              <button type="submit" class="btn btn-accent max-100">рассчитать</button>
+
+              <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
+                                                         class="d-inline text-decoration color-white">вы соглашаетесь
+                на обработку персональных данных</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="read-also m-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Читайте также</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="read-also-slider">
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article1.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Новости</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article2.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article3.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Rolls-Royce Cullinan дебютировал в России</a>
+                    <div class="box-text">
+                      <p>Новый Rolls-Royce Cullinan дебютировал в России. Спустя всего несколько недель после мировой
+                        премьеры новинка Rolls-Royce впервые предстала перед публикой в Москве.</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article4.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Porsche Panamera — бескомпромиссный выбор</a>
+                    <div class="box-text">
+                      <p>Представители компании Porsche Russland, бренда с выдающейся историей, рассказали о том, почему
+                        модель Porsche Panamera — бескомпромиссный выбор.</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article5.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Сегодня Range Rover
+                      празднует 50 лет</a>
+                    <div class="box-text">
+                      <p>В честь 50-летнего юбилея Range Rover Jaguar Land Rover представляет эксклюзивную версию
+                        модели</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article2.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article5.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Внедорожник Lexus LX — удобство роскоши</a>
+                    <div class="box-text">
+                      <p>Lexus LX — тот самый автомобиль, который практически никогда не испортит ваше настроение из-за
+                        тряски или колебаний. Сомневаетесь?</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-nav read-also-slider__nav"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="bg-black p-60 color-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>По вопросам рекламы и сотрудничества обращаться по телефону:</h4>
+            <a href="tel:+74956616583" class="color-white footer-box__links font-600">+7 (495) 661-65-83</a>
+            <a href="mailto:sales@aviapromo.ru" class="color-white footer-box__links font-600">sales@aviapromo.ru</a>
+            <p class="font-600">Часы работы: с 10 до 19 пн-пт</p>
+
+            <ul class="footer-box__logos">
+              <li><a href="#"><img src="img/logo-footer1.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer2.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer3.png" alt=""></a></li>
+            </ul>
+
+            <div class="number-evidence">
+              Номер свидетельства ЭЛ № ФС 77 - 75020
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>Для пресс-релизов</h4>
+            <a href="mailto:press@jets.ru" class="color-white footer-box__links font-600">press@jets.ru</a>
+          </div>
+
+          <div class="footer-box">
+            <h4>Аренда и заказ частного самолета </h4>
+            <a href="tel:+74957737555" class="color-white footer-box__links font-600">+7 (495) 773-75-55</a>
+          </div>
+          <div class="footer-box">
+            <h4>Покупка и продажа частных <br>
+              самолетов и вертолетов</h4>
+            <a href="tel:+74957898404" class="color-white footer-box__links font-600">+7 (495) 789-84-04</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <div class="address">119048, Москва, ул. Усачёва д 35, стр. 1, БЦ "Спектр", 1 подъезд, 5 этаж</div>
+            <ul class="footer-box__menu">
+              <li><a href="https://jets.ru" class="color-white footer-box__links font-600">jets.ru</a></li>
+              <li><a href="mailto:info@jets.ru" class="color-white footer-box__links font-600">info@jets.ru</a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Медиакит
+                2021 </a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Тех.
+                требования к баннерам</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Выходные
+                данные</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Архив</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-3 col-lg-8">
+          <div class="age">18+</div>
+        </div>
+        <div class="col-9 col-lg-4">
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="cookie">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <h3>Мы используем файлы <a href="cookie.html" class="color-white d-inline text-decoration" target="_blank">cookies.</a>
+        </h3>
+        <div class="box-text d-block d-sm-none">
+          <p>На сайте используются cookies.</p>
+          <p>Продолжая использовать сайт, вы принимаете <a href="#" class="d-inline text-decoration">условия</a></p>
+        </div>
+        <a href="#" class="btn btn-accent btn-agree">
+          <span class="btn-text d-none d-sm-block">согласен</span>
+          <span class="btn-text d-block d-sm-none">OK</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
