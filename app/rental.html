@@ -179,10 +179,13 @@
       </div>
     </header>
 
-    <section class="article-page rental-air-page">
+    <section class="article-page rental-page bg-grey">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-3 order-md-1 d-none d-sm-block">
+          <div class="col-12">
+            <h1>Аренда самолетов и вертолетов</h1>
+          </div>
+          <div class="col-12 col-md-3 order-md-1 d-none d-md-block">
             <div class="banner-box">
               <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-md-block">
               <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
@@ -194,27 +197,131 @@
                 </div>
               </div>
             </div>
-            <div class="rent-img-size d-none d-md-block"><img src="img/rent-img2.svg" alt=""></div>
+
+            <div class="description-box-service">
+              <p>Сервис предоставляется клубом “Бизнес Авиация”. Чтобы заказать самолет, вам необходимо лишь заполнить
+                информацию о маршруте, времени перелета, указать свои личные данные и сотрудники клуба помогут вам
+                получить лучшие предложения на рынке деловой авиации и организовать перелеты в любую точку мира. Для
+                получения более детальной информации и уточнения цен вы можете позвонить по нашему круглосуточному
+                номеру
+                <a href="tel:+74957737555" class="tel-info">+7 (495) 773 75 55</a>
+              </p>
+            </div>
           </div>
+
           <div class="col-12 col-md-9 col-xl-9">
-            <div class="rental-air-page-img">
-              <img src="img/rent-img1.png" alt="">
-            </div>
-            <h1>EMBRAER LEGACY 650</h1>
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav nav-pills nav-tabs nav-tabs-rental empty-legs-tabs empty-legs-tabs-v2" id="pills-tab4"
+                    role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-10-tab" data-toggle="pill" href="#pills-10" role="tab"
+                       aria-controls="pills-10" aria-selected="false">заказать самолет</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-11-tab" data-toggle="pill" href="#pills-11" role="tab"
+                       aria-controls="pills-11" aria-selected="false">заказать вертолет</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent4">
+                  <div class="tab-pane fade show active" id="pills-10" role="tabpanel" aria-labelledby="pills-10-tab">
+                    <div class="order-airplane-wrapper bg-black">
+                      <form method="post" class="form-rent">
+                        <div class="form-group">
+                          <label>
+                            <input type="text" placeholder="Откуда" name="where" required>
+                          </label>
+                          <label>
+                            <input type="text" placeholder="Куда" name="where_2" required>
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <input type="text" placeholder="Дата вылета" class="datepicker" name="date" required>
+                            <span class="inp-icon"><svg class="svg-icon"><use
+                                xlink:href="img/sprite.svg#calendar"></use></svg></span>
+                          </label>
+                          <label>
+                            <input type="text" placeholder="Имя" name="name" required>
+                          </label>
 
-            <div class="box-text">
-              <p>Новая модификация, Legacy 650, выпускается параллельно с Legacy 600, но именно на более свежий самолет
-                следует обратить внимание в связи с возросшей дальностью полета, улучшенной звукоизоляцией салона и
-                новыми вариантами и материалами отделки интерьера.
-              <p>
-              <p>Получить большую, чем у Legacy 600, дальность удалось за счет установки другого крыла, дополнительного
-                топливного бака в фюзеляже и более мощных двигателей Rolls-Royce AE 3007A2. Legacy 650 получил
-                сертификат HALTO (High Altitude Landing and Takeoff Operation), что дает право совершать взлет и посадку
-                в сложных условиях высокогорья. Лицом бренда и обладателем Legacy 650 в 2012 году стал известный
-                китайский актер Джеки Чан.</p>
-            </div>
+                        </div>
 
-            <div class="banner-box d-flex d-sm-none">
+                        <div class="form-group">
+                          <label>
+                            <input type="text" placeholder="Фамилия" name="first_name" required>
+                          </label>
+                          <label>
+                            <input type="text" placeholder="Email" name="mail" required>
+                          </label>
+                        </div>
+
+                        <a href="#" class="btn btn-border-white btn-add-label">Обратный перелет</a>
+                        <a href="#" class="btn btn-border-white btn-add-label">
+                          <span class="icon-plus"><svg class="svg-icon"><use
+                              xlink:href="img/sprite.svg#plus"></use></svg></span>
+                          Добавить перелет</a>
+
+                        <button type="submit" class="btn btn-accent max-100">Отправить</button>
+
+                        <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
+                                                                   class="d-inline text-decoration color-white">вы
+                          соглашаетесь
+                          на обработку персональных данных</a></div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-11" role="tabpanel" aria-labelledby="pills-11-tab">
+                    <div class="order-airplane-wrapper bg-black">
+                      <form method="post" class="form-rent">
+                        <div class="form-group">
+                          <label>
+                            <input type="text" placeholder="Откуда" name="where" required>
+                          </label>
+                          <label>
+                            <input type="text" placeholder="Куда" name="where_2" required>
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <input type="text" placeholder="Дата вылета" class="datepicker" name="date" required>
+                            <span class="inp-icon"><svg class="svg-icon"><use
+                                xlink:href="img/sprite.svg#calendar"></use></svg></span>
+                          </label>
+                          <label>
+                            <input type="text" placeholder="Имя" name="name" required>
+                          </label>
+
+                        </div>
+
+                        <div class="form-group">
+                          <label>
+                            <input type="text" placeholder="Фамилия" name="first_name" required>
+                          </label>
+                          <label>
+                            <input type="text" placeholder="Email" name="mail" required>
+                          </label>
+                        </div>
+
+                        <a href="#" class="btn btn-border-white btn-add-label">Обратный перелет</a>
+                        <a href="#" class="btn btn-border-white btn-add-label">
+                          <span class="icon-plus"><svg class="svg-icon"><use
+                              xlink:href="img/sprite.svg#plus"></use></svg></span>
+                          Добавить перелет</a>
+
+                        <button type="submit" class="btn btn-accent max-100">Отправить</button>
+
+                        <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
+                                                                   class="d-inline text-decoration color-white">вы
+                          соглашаетесь
+                          на обработку персональных данных</a></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-box d-flex d-md-none">
               <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-lg-block">
               <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
               <div class="banner-box__mobile d-flex d-lg-none">
@@ -222,6 +329,164 @@
 
                 <div class="banner-box__title">Путеводитель
                   по миру суперяхт
+                </div>
+              </div>
+            </div>
+
+            <div class="description-box-service d-flex d-md-none">
+              <p>Сервис предоставляется клубом “Бизнес Авиация”. Чтобы заказать самолет, вам необходимо лишь заполнить
+                информацию о маршруте, времени перелета, указать свои личные данные и сотрудники клуба помогут вам
+                получить лучшие предложения на рынке деловой авиации и организовать перелеты в любую точку мира. Для
+                получения более детальной информации и уточнения цен вы можете позвонить по нашему круглосуточному
+                номеру
+                <a href="tel:+74957737555" class="tel-info">+7 (495) 773 75 55</a>
+              </p>
+            </div>
+
+            <div class="rental-calculate-form">
+              <div class="row">
+                <div class="col-12">
+                  <h2>Калькулятор: рассчитать
+                    стоимость аренды самолета</h2>
+                </div>
+                <div class="col-12">
+                  <div class="search-empty bg-black">
+                    <form method="post" class="form-search-my">
+                      <label>
+                        <input type="text" placeholder="Москва" name="where" required>
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Сантк-Петербург" name="where_2" required>
+                      </label>
+                      <label>
+                        <select name="select" class="select-my">
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </label>
+                      <button type="submit" class="btn btn-accent">рассчитать</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="result-calculate-rental">
+              <div class="row">
+                <div class="col-12">
+                  <div class="title-line">
+                    <h3>Результаты расчета</h3>
+
+                    <div class="links-wrapper">
+                      <a href="#" class="links-wrapper-item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#share2"></use>
+                        </svg>
+                        <span class="links-wrapper-item__text">Поделиться результатом</span>
+                      </a>
+                      <a href="#" class="links-wrapper-item">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#print"></use>
+                        </svg>
+                        <span class="links-wrapper-item__text">Распечатать результат</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="result-calculate-rental__wrapper">
+                    <div class="result-calculate-rental-dot">
+                      <p>Москва, <br>
+                        Россия</p>
+                      <div class="date">10.09.21</div>
+                    </div>
+                    <div class="result-calculate-rental-line">
+
+                      <div class="line-visual">
+                        <div class="line-visual__stage"></div>
+                        <span class="dot-visual__text d-block d-sm-none">VKO</span>
+                        <div class="dot-visual dot-visual-start">
+
+                        </div>
+                        <div class="dot-visual dot-visual-end">
+
+                        </div>
+                        <span class="dot-visual__text dot-visual__text-end d-block d-sm-none">LED</span>
+                      </div>
+
+                      <div class="travel-time d-none d-sm-block">
+                        <p>Время в пути</p>
+                        <span>1 ч.14 мин.</span>
+                      </div>
+                    </div>
+
+
+                    <div class="result-calculate-rental-dot">
+                      <p>Санкт-Петербург, <br>
+                        Россия</p>
+                      <div class="date">10.09.21</div>
+                    </div>
+
+                    <div class="travel-time d-block d-sm-none">
+                      <p>Время в пути</p>
+                      <span>1 ч.14 мин.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="recommended-model">
+              <div class="row">
+                <div class="col-12">
+                  <h3>Рекомендуем</h3>
+
+                  <div class="table-recommended-model">
+                    <div class="thead">
+                      <div class="tr">
+                        <div class="td td-image"></div>
+                        <div class="td td-model">Модель</div>
+                        <div class="td td-capacity">Вместимость</div>
+                        <div class="td td-price">Стоимость</div>
+                        <div class="td-btn"></div>
+                      </div>
+                    </div>
+                    <div class="tbody">
+                      <div class="tr">
+                        <div class="td td-image">
+                          <div class="td-image-box"><img src="img/airplane3.png" alt=""></div>
+                        </div>
+                        <div class="td td-model"><p>Embraer Legasy 650</p></div>
+                        <div class="td td-capacity" data-table="Вместимость"><p>14 – 18 чел.</p></div>
+                        <div class="td td-price" data-table="Стоимость"><p>22 800 €</p></div>
+                        <div class="td td-btn">
+                          <a href="#" class="btn btn-accent">Арендовать</a>
+                        </div>
+                      </div>
+                      <div class="tr">
+                        <div class="td td-image">
+                          <div class="td-image-box"><img src="img/airplane4.png" alt=""></div>
+                        </div>
+                        <div class="td td-model"><p>Hawker 800 XP</p></div>
+                        <div class="td td-capacity" data-table="Вместимость"><p>8 – 9 чел.</p></div>
+                        <div class="td td-price" data-table="Стоимость"><p>12 500 €</p></div>
+                        <div class="td td-btn">
+                          <a href="#" class="btn btn-accent">Арендовать</a>
+                        </div>
+                      </div>
+                      <div class="tr tr-last">
+                        <div class="td td-image">
+                          <div class="td-image-box"><img src="img/airplane5.png" alt=""></div>
+                        </div>
+                        <div class="td td-model"><p>Gulfstream G550</p></div>
+                        <div class="td td-capacity" data-table="Вместимость"><p>14 – 18 чел.</p></div>
+                        <div class="td td-price" data-table="Стоимость"><p>22 800 €</p></div>
+                        <div class="td td-btn">
+                          <a href="#" class="btn btn-accent">Арендовать</a>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -240,73 +505,7 @@
           <div class="col-12">
             <div class="popular-airplane-slider">
               <div class="slide">
-                <div class="card-airplane popular-airplane-card">
-                  <a href="#" class="add-favorite">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
-                  <div class="card-airplane__body">
-                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
-                    <div class="box-text">
-                      <ul class="list-characteristics">
-                        <li>
-                          <p>Скорость (км/ч)</p><span>850</span>
-                        </li>
-                        <li>
-                          <p>Дальность (км)</p><span>5741</span>
-                        </li>
-                        <li>
-                          <p>Пассажиры (чел.)</p><span>9</span>
-                        </li>
-                        <li>
-                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <a href="#" class="btn btn-accent" data-toggle="modal"
-                       data-target="#orderModal">заказать</a>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="card-airplane popular-airplane-card">
-                  <a href="#" class="add-favorite">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#heart"></use>
-                    </svg>
-                  </a>
-                  <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
-                  <div class="card-airplane__body">
-                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA
-                      CITATION
-                      SOVEREIGN</a>
-                    <div class="box-text">
-                      <ul class="list-characteristics">
-                        <li>
-                          <p>Скорость (км/ч)</p><span>850</span>
-                        </li>
-                        <li>
-                          <p>Дальность (км)</p><span>5741</span>
-                        </li>
-                        <li>
-                          <p>Пассажиры (чел.)</p><span>9</span>
-                        </li>
-                        <li>
-                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <a href="#" class="btn btn-accent" data-toggle="modal"
-                       data-target="#orderModal">заказать</a>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="card-airplane popular-airplane-card">
+                <div class="card-airplane popular-airplane-card popular-empty-card">
                   <a href="#" class="add-favorite">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#heart"></use>
@@ -326,7 +525,7 @@
                       </div>
                       <div class="prices-popular-distance-item">
                         <div class="prices-popular-distance-item__icon"><img src="img/tag.svg" alt=""></div>
-                        <strong class="prices-popular-distance-item__text">22 800  €</strong>
+                        <strong class="prices-popular-distance-item__text">22 800 €</strong>
                       </div>
                     </div>
 
@@ -336,7 +535,7 @@
                 </div>
               </div>
               <div class="slide">
-                <div class="card-airplane popular-airplane-card">
+                <div class="card-airplane popular-airplane-card popular-empty-card">
                   <a href="#" class="add-favorite">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#heart"></use>
@@ -344,24 +543,21 @@
                   </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
                   <div class="card-airplane__body">
-                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA
-                      CITATION
-                      SOVEREIGN</a>
+                    <a href="product.html" class="card-airplane__name">екатеринбург –
+                      пальма-де-майорка</a>
                     <div class="box-text">
-                      <ul class="list-characteristics">
-                        <li>
-                          <p>Скорость (км/ч)</p><span>850</span>
-                        </li>
-                        <li>
-                          <p>Дальность (км)</p><span>5741</span>
-                        </li>
-                        <li>
-                          <p>Пассажиры (чел.)</p><span>9</span>
-                        </li>
-                        <li>
-                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
-                        </li>
-                      </ul>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">Bombardier Global</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/date.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">31/08 - 03/09</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/tag.svg" alt=""></div>
+                        <strong class="prices-popular-distance-item__text">22 800 €</strong>
+                      </div>
                     </div>
 
                     <a href="#" class="btn btn-accent" data-toggle="modal"
@@ -370,7 +566,7 @@
                 </div>
               </div>
               <div class="slide">
-                <div class="card-airplane popular-airplane-card">
+                <div class="card-airplane popular-airplane-card popular-empty-card">
                   <a href="#" class="add-favorite">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#heart"></use>
@@ -378,22 +574,20 @@
                   </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
                   <div class="card-airplane__body">
-                    <a href="product.html" class="card-airplane__name">EMBRAER PHENOM 100</a>
+                    <a href="product.html" class="card-airplane__name">Москва – Ницца</a>
                     <div class="box-text">
-                      <ul class="list-characteristics">
-                        <li>
-                          <p>Скорость (км/ч)</p><span>850</span>
-                        </li>
-                        <li>
-                          <p>Дальность (км)</p><span>5741</span>
-                        </li>
-                        <li>
-                          <p>Пассажиры (чел.)</p><span>9</span>
-                        </li>
-                        <li>
-                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
-                        </li>
-                      </ul>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">Citation XLS</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/date.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">31/08 - 03/09</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/tag.svg" alt=""></div>
+                        <strong class="prices-popular-distance-item__text">22 800 €</strong>
+                      </div>
                     </div>
 
                     <a href="#" class="btn btn-accent" data-toggle="modal"
@@ -402,7 +596,37 @@
                 </div>
               </div>
               <div class="slide">
-                <div class="card-airplane popular-airplane-card">
+                <div class="card-airplane popular-airplane-card popular-empty-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">Москва – Ницца</a>
+                    <div class="box-text">
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">Citation XLS</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/date.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">31/08 - 03/09</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/tag.svg" alt=""></div>
+                        <strong class="prices-popular-distance-item__text">22 800 €</strong>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal"
+                       data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card popular-empty-card">
                   <a href="#" class="add-favorite">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#heart"></use>
@@ -410,24 +634,51 @@
                   </a>
                   <a href="product.html" class="card-airplane__img"><img src="img/airplane2.png" alt=""></a>
                   <div class="card-airplane__body">
-                    <a href="product.html" class="card-airplane__name">BOMBARDIER GLOBAL EXPRESS XRS CESSNA
-                      CITATION
-                      SOVEREIGN</a>
+                    <a href="product.html" class="card-airplane__name">екатеринбург –
+                      пальма-де-майорка</a>
                     <div class="box-text">
-                      <ul class="list-characteristics">
-                        <li>
-                          <p>Скорость (км/ч)</p><span>850</span>
-                        </li>
-                        <li>
-                          <p>Дальность (км)</p><span>5741</span>
-                        </li>
-                        <li>
-                          <p>Пассажиры (чел.)</p><span>9</span>
-                        </li>
-                        <li>
-                          <p>Стоимость летного часа</p><strong>5400 – 6500 €</strong>
-                        </li>
-                      </ul>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">Bombardier Global</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/date.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">31/08 - 03/09</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/tag.svg" alt=""></div>
+                        <strong class="prices-popular-distance-item__text">22 800 €</strong>
+                      </div>
+                    </div>
+
+                    <a href="#" class="btn btn-accent" data-toggle="modal"
+                       data-target="#orderModal">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-airplane popular-airplane-card popular-empty-card">
+                  <a href="#" class="add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="product.html" class="card-airplane__img"><img src="img/airplane1.png" alt=""></a>
+                  <div class="card-airplane__body">
+                    <a href="product.html" class="card-airplane__name">Москва – Ницца</a>
+                    <div class="box-text">
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">Citation XLS</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/date.svg" alt=""></div>
+                        <div class="prices-popular-distance-item__text">31/08 - 03/09</div>
+                      </div>
+                      <div class="prices-popular-distance-item">
+                        <div class="prices-popular-distance-item__icon"><img src="img/tag.svg" alt=""></div>
+                        <strong class="prices-popular-distance-item__text">22 800 €</strong>
+                      </div>
                     </div>
 
                     <a href="#" class="btn btn-accent" data-toggle="modal"
@@ -437,7 +688,10 @@
               </div>
             </div>
 
-            <div class="slider-nav popular-airplane-slider__nav"></div>
+            <div class="btn-group">
+              <div class="slider-nav popular-airplane-slider__nav popular-empty-nav"></div>
+              <a href="#" class="btn btn-border btn-view-all">смотреть все</a>
+            </div>
           </div>
         </div>
       </div>
@@ -462,123 +716,125 @@
               </div>
 
               <div class="prices-popular-distance-row">
-                <div class="prices-popular-distance__direction">
+                <div class="prices-popular-distance__direction" data-table="Направление">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/location.svg" alt=""></div>
-                    <div class="prices-popular-distance-item__text">Mосква – Ницца </div>
+                    <div class="prices-popular-distance-item__text">Mосква – Ницца</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__type">
+                <div class="prices-popular-distance__type" data-table="Тип борта">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">Citation XLS</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__passengers">
+                <div class="prices-popular-distance__passengers" data-table="Пассажиры">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/user.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">8 человек</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__price">
+                <div class="prices-popular-distance__price" data-table="Стоимость">
                   <div class="price-val">21 000 €</div>
                 </div>
               </div>
 
               <div class="prices-popular-distance-row">
-                <div class="prices-popular-distance__direction">
+                <div class="prices-popular-distance__direction" data-table="Направление">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/location.svg" alt=""></div>
-                    <div class="prices-popular-distance-item__text">Mосква – Нью Йорк </div>
+                    <div class="prices-popular-distance-item__text">Mосква – Нью Йорк</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__type">
+                <div class="prices-popular-distance__type" data-table="Тип борта">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">Challenger</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__passengers">
+                <div class="prices-popular-distance__passengers" data-table="Пассажиры">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/user.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">12 человек</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__price">
+                <div class="prices-popular-distance__price" data-table="Стоимость">
                   <div class="price-val">63 000 €</div>
                 </div>
               </div>
 
               <div class="prices-popular-distance-row">
-                <div class="prices-popular-distance__direction">
+                <div class="prices-popular-distance__direction" data-table="Направление">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/location.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text"> Москва – Афины</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__type">
+                <div class="prices-popular-distance__type" data-table="Тип борта">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">Falcon</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__passengers">
+                <div class="prices-popular-distance__passengers" data-table="Пассажиры">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/user.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">10 человек</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__price">
+                <div class="prices-popular-distance__price" data-table="Стоимость">
                   <div class="price-val">25 000 €</div>
                 </div>
               </div>
 
               <div class="prices-popular-distance-row">
-                <div class="prices-popular-distance__direction">
+                <div class="prices-popular-distance__direction" data-table="Направление">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/location.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">Москва – Токио
-                      Нью-Йорк</div>
+                      Нью-Йорк
+                    </div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__type">
+                <div class="prices-popular-distance__type" data-table="Тип борта">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">Gulfstream</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__passengers">
+                <div class="prices-popular-distance__passengers" data-table="Пассажиры">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/user.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">8 человек</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__price">
+                <div class="prices-popular-distance__price" data-table="Стоимость">
                   <div class="price-val">28 000 €</div>
                 </div>
               </div>
 
               <div class="prices-popular-distance-row">
-                <div class="prices-popular-distance__direction">
+                <div class="prices-popular-distance__direction" data-table="Направление">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/location.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">Москва – Мальдивы
-                      Нью-Йорк</div>
+                      Нью-Йорк
+                    </div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__type">
+                <div class="prices-popular-distance__type" data-table="Тип борта">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/air-icon3.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">Gulfstream</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__passengers">
+                <div class="prices-popular-distance__passengers" data-table="Пассажиры">
                   <div class="prices-popular-distance-item">
                     <div class="prices-popular-distance-item__icon"><img src="img/user.svg" alt=""></div>
                     <div class="prices-popular-distance-item__text">12 человек</div>
                   </div>
                 </div>
-                <div class="prices-popular-distance__price">
+                <div class="prices-popular-distance__price" data-table="Стоимость">
                   <div class="price-val">70 000 €</div>
                 </div>
               </div>
@@ -593,6 +849,7 @@
         <div class="row">
           <div class="col-12 col-lg-7"><h2>Популярные самолеты и вертолеты</h2></div>
           <div class="col-12">
+
             <ul class="nav nav-pills nav-tabs nav-tabs-rental empty-legs-tabs empty-legs-tabs-v2" id="pills-tab3"
                 role="tablist">
               <li class="nav-item" role="presentation">
@@ -1026,37 +1283,39 @@
             <h2>Аренда самолетов</h2>
           </div>
           <div class="col-12">
-            <ul class="nav nav-pills nav-tabs nav-tabs-rental empty-legs-tabs empty-legs-tabs-v2" id="pills-tab2"
-                role="tablist">
-              <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab"
-                   aria-controls="pills-home" aria-selected="true">Бизнес лайнеры</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab"
-                   aria-controls="pills-2" aria-selected="false">Дальнемагистральные</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab"
-                   aria-controls="pills-3" aria-selected="false">Большие</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab"
-                   aria-controls="pills-4" aria-selected="false">Средние</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab"
-                   aria-controls="pills-5" aria-selected="false">Малые</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-6-tab" data-toggle="pill" href="#pills-6" role="tab"
-                   aria-controls="pills-6" aria-selected="false">Легкие</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-7-tab" data-toggle="pill" href="#pills-7" role="tab"
-                   aria-controls="pills-7" aria-selected="false">Турбопропы</a>
-              </li>
-            </ul>
+            <div class="scroll-vertical">
+              <ul class="nav nav-pills nav-tabs nav-tabs-rental empty-legs-tabs empty-legs-tabs-v2" id="pills-tab2"
+                  role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab"
+                     aria-controls="pills-home" aria-selected="true">Бизнес лайнеры</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab"
+                     aria-controls="pills-2" aria-selected="false">Дальнемагистральные</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab"
+                     aria-controls="pills-3" aria-selected="false">Большие</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab"
+                     aria-controls="pills-4" aria-selected="false">Средние</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab"
+                     aria-controls="pills-5" aria-selected="false">Малые</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-6-tab" data-toggle="pill" href="#pills-6" role="tab"
+                     aria-controls="pills-6" aria-selected="false">Легкие</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-7-tab" data-toggle="pill" href="#pills-7" role="tab"
+                     aria-controls="pills-7" aria-selected="false">Турбопропы</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="col-12">
             <div class="tab-content" id="pills-tabContent2">
@@ -2454,7 +2713,7 @@
             <div class="tab-content" id="pills-tabContent">
               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div class="row">
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2485,7 +2744,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2517,7 +2776,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2548,7 +2807,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2579,7 +2838,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2611,7 +2870,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2649,7 +2908,7 @@
               </div>
               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="row">
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2680,7 +2939,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2712,7 +2971,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2743,7 +3002,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2774,7 +3033,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2806,7 +3065,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-lg-4 mb-20">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
                     <div class="card-airplane popular-airplane-card">
                       <a href="#" class="add-favorite">
                         <svg class="svg-icon">
@@ -2909,7 +3168,7 @@
           <div class="col-12">
             <h2>Наши контакты</h2>
           </div>
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-xl-6 col-md-7">
             <div class="contacts-content">
               <div class="contacts-box">
                 <h3>Аренда и заказ частного самолета:</h3>
@@ -2930,7 +3189,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-xl-4 col-md-5">
             <form method="post" class="form-contacts">
               <label>
                 <input type="text" placeholder="Имя" name="name" required>
@@ -2944,7 +3203,7 @@
               <label>
                 <textarea name="message" placeholder="Сообщение"></textarea>
               </label>
-              <button type="submit" class="btn btn-accent max-100">рассчитать</button>
+              <button type="submit" class="btn btn-accent max-100">отправить</button>
 
               <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
                                                          class="d-inline text-decoration color-white">вы соглашаетесь

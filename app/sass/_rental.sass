@@ -26,6 +26,7 @@
 
   .address
     max-width: 251px
+    margin: 0
 
 .contacts-links
   font-weight: bold
@@ -77,7 +78,7 @@
 .prices-popular-distance-head
   text-transform: uppercase
   font-weight: 600
-  margin: 0 0 16px
+  padding: 0 16px 16px
   letter-spacing: 0.03em
   font-size: 14px
   display: flex
@@ -122,5 +123,225 @@
   width: 20px
   height: 20px
 
+.popular-empty-card
+  .btn
+    margin: 29px auto 0
+  .prices-popular-distance-item
+    font-size: 16px
+
+.popular-empty-nav
+  width: fit-content
+
+.popular-empty
+  .btn-group
+    .btn-view-all
+      margin: 32px 0 0 16px
+      max-width: 150px
+
+.description-box-service
+  margin: 20px 0 0
+  width: 100%
+  padding: 16px
+  font-size: 12px
+  line-height: 24px
+  color: #151515
+  border: 1px solid #BA935F
+    radius: 4px
+
+.tel-info
+  font-weight: bold
+  color: #151515
+  &:hover
+    color: $brown
+
+.rental-calculate-form
+  margin: 120px 0 60px
+  label, button
+    width: calc(25% - 5px)
+
+.order-airplane-wrapper
+  padding: 24px 24px 32px
+
+.btn-add-label
+  max-width: none
+  width: 100%
+  margin: 0 0 16px
+
+.icon-plus
+  stroke: $brown
+  margin: 0 8px 0 0
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.links-wrapper
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.links-wrapper-item
+  display: flex
+  align-items: center
+  color: #000000
+  font-size: 16px
+  margin: 0 24px 0 0
+  &:last-child
+    margin: 0
+  .svg-icon
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: #000
+    margin: 0 8px 0 0
+    width: 24px
+    height: 24px
+    min-width: 24px
+  &:hover
+    color: $brown
+
+.title-line
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  h3
+    width: fit-content
+    margin: 0 auto 0 0
+
+.result-calculate-rental__wrapper
+  width: 100%
+  background: #fff
+  margin: 40px 0 20px
+  padding: 36px 102px 43px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+
+.result-calculate-rental-dot
+  font-size: 16px
+  p
+    font-weight: bold
+  .date
+    color: #727272
+    font-size: 14px
+    margin: 3px 0 0
+
+.result-calculate-rental-line
+  max-width: 409px
+  width: 100%
+  position: relative
+  padding: 23px 0 0
+
+.line-visual
+  width: 100%
+  position: relative
+  height: 1px
+  border: 1px dashed #D0D0D0
+
+.line-visual__stage
+  position: absolute
+  left: 0
+  top: -1px
+  height: 1px
+  border: 1px dashed #BA935F
+  width: 50%
+
+.dot-visual
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  width: 15px
+  height: 15px
+  border-radius: 50%
+  background: #fff
+  border: 1px solid #D0D0D0
+  &:before
+    content: ''
+    position: absolute
+    top: 2px
+    left: 2px
+    border-radius: 50%
+    width: 9px
+    height: 9px
+    background: #D0D0D0
+
+.dot-visual-start
+  border: 1px solid #BA935F
+  left: -14px
+  &:before
+    background: #BA935F
+
+.dot-visual-end
+  right: -14px
+
+.travel-time
+  text-align: center
+  margin: 15px auto 0
+  color: #727272
+  font-size: 14px
+  span
+    display: block
+    color: #000000
+    font-weight: 500
+
+.recommended-model
+  width: 100%
+  background: #fff
+  padding: 32px 24px
+  .btn
+    max-width: none
+    margin: 24px 0 0
+
+.table-recommended-model
+  margin: 40px 0 0
+  font-size: 14px
+  font-weight: 500
+  .thead
+
+    text-transform: uppercase
+    font-weight: 600
+    .tr
+
+      padding: 0 0 16px
+      border-bottom: 1px solid #D7D7D7
+  .tr
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    padding: 24px 0
+    .btn
+      margin: 0
+
+.td-image
+  width: 19%
+
+.td-image-box
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 140px
+  width: 100%
+  img
+    width: 100%
+
+.td-model
+  width: 26%
+  padding: 0 0 0 40px
+
+.td-capacity
+  width: 20%
+
+.td-price
+  width: 16%
+
+.td-btn
+  width: 19%
+
+.rental-page
+  padding: 40px 0 0
 
 /*========== rental page end ==========*/

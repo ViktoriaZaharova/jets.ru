@@ -35,7 +35,7 @@
 <body>
 
 <div class="wrapper">
-  <div class="content">
+  <div class="content content-page">
 
     <div class="mobile-menu">
       <div class="mobile-menu__head">
@@ -66,16 +66,19 @@
         <div class="user-navigation">
           <a href="comparison.html" class="header-links">
             <span class="header-links__val">10</span>
-            <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg></span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#comparison"></use></svg></span>
             <span class="header-links__text">Сравнение</span>
           </a>
           <a href="favorites.html" class="header-links">
             <span class="header-links__val">10</span>
-            <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#heart"></use></svg></span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#heart"></use></svg></span>
             <span class="header-links__text">Избранное</span>
           </a>
           <a href="#" class="header-links links-chat">
-            <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chat"></use></svg></span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#chat"></use></svg></span>
             <span class="header-links__text">Спросить</span>
           </a>
           <a href="#" class="header-links language-links">
@@ -176,132 +179,78 @@
       </div>
     </header>
 
-    <div class="section">
+    <section class="error-page color-white">
       <div class="container">
         <div class="row">
-        <div class="col-12">
-          <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="article.html">Статья</a></li>
-            <li><a href="data-processing.html">Обработка данных</a></li>
-            <li><a href="cookie.html">Соглашение
-              об использовании
-              файлов cookie</a></li>
-            <li><a href="empty-legs.html">Empty Legs</a></li>
-            <li><a href="rental-air.html">Аренда Карточка самолета</a></li>
-            <li><a href="order-air.html">Продажа Карточка самолета</a></li>
-            <li><a href="encyclopedia-airplane.html">Энциклопедия Карточка самолета</a></li>
-            <li><a href="rental.html">Аренда</a></li>
-            <li><a href="404.html">404</a></li>
-            <li><a href="output.html">Выходные данные</a></li>
-          </ul>
-        </div>
+          <div class="col-12">
+            <h1>
+              4 <span class="error-page__img"><img src="img/404.png" alt=""></span> 4
+            </h1>
+
+            <a href="#" class="color-brown text-decoration font-600 links-accent" data-toggle="modal" data-target="#callModal">Нашите нам</a>
+            <a href="index.html" class="color-brown text-decoration font-600 links-accent">На главную</a>
+          </div>
+          
         </div>
       </div>
-    </div>
+    </section>
+
   </div>
 
-  <footer class="bg-black p-60 color-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-        </div>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Напишите нам</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg>
+        </button>
       </div>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-4 mb-40">
-          <div class="footer-box">
-            <h4>По вопросам рекламы и сотрудничества обращаться по телефону:</h4>
-            <a href="tel:+74956616583" class="color-white footer-box__links font-600">+7 (495) 661-65-83</a>
-            <a href="mailto:sales@aviapromo.ru" class="color-white footer-box__links font-600">sales@aviapromo.ru</a>
-            <p class="font-600">Часы работы: с 10 до 19 пн-пт</p>
-
-            <ul class="footer-box__logos">
-              <li><a href="#"><img src="img/logo-footer1.png" alt=""></a></li>
-              <li><a href="#"><img src="img/logo-footer2.png" alt=""></a></li>
-              <li><a href="#"><img src="img/logo-footer3.png" alt=""></a></li>
-            </ul>
-
-            <div class="number-evidence">
-              Номер свидетельства ЭЛ № ФС 77 - 75020
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-4 mb-40">
-          <div class="footer-box">
-            <h4>Для пресс-релизов</h4>
-            <a href="mailto:press@jets.ru" class="color-white footer-box__links font-600">press@jets.ru</a>
+      <div class="modal-body">
+        <form method="post" class="form-rent">
+          <div class="form-group">
+            <label>
+              <input type="text" placeholder="Имя" name="name" required>
+            </label>
+            <label>
+              <input type="text" placeholder="Фамилия" name="first_name" required>
+            </label>
           </div>
 
-          <div class="footer-box">
-            <h4>Аренда и заказ частного самолета </h4>
-            <a href="tel:+74957737555" class="color-white footer-box__links font-600">+7 (495) 773-75-55</a>
+          <div class="form-group">
+            <label>
+              <input type="text" placeholder="Телефон" name="phone" required>
+            </label>
+            <label>
+              <input type="text" placeholder="Email" name="mail" required>
+            </label>
           </div>
-          <div class="footer-box">
-            <h4>Покупка и продажа частных <br>
-              самолетов и вертолетов</h4>
-            <a href="tel:+74957898404" class="color-white footer-box__links font-600">+7 (495) 789-84-04</a>
-          </div>
-        </div>
 
-        <div class="col-12 col-md-6 col-lg-4 mb-40">
-          <div class="footer-box">
-            <div class="address">119048, Москва, ул. Усачёва д 35, стр. 1, БЦ "Спектр", 1 подъезд, 5 этаж</div>
-            <ul class="footer-box__menu">
-              <li><a href="https://jets.ru" class="color-white footer-box__links font-600">jets.ru</a></li>
-              <li><a href="mailto:info@jets.ru" class="color-white footer-box__links font-600">info@jets.ru</a></li>
-              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Медиакит
-                2021 </a></li>
-              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Тех.
-                требования к баннерам</a></li>
-              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Выходные
-                данные</a></li>
-              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Архив</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+          <label class="mb-16">
+            <textarea name="message" placeholder="Сообщение"></textarea>
+          </label>
 
+          <button type="submit" class="btn btn-accent max-100">отправить</button>
+
+          <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
+                                                     class="d-inline text-decoration color-white">вы
+            соглашаетесь
+            на обработку персональных данных</a></div>
+        </form>
       </div>
-      <div class="row">
-        <div class="col-3 col-lg-8">
-          <div class="age">18+</div>
-        </div>
-        <div class="col-9 col-lg-4">
-          <ul class="list-social">
-            <li><a href="#">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#fb"></use>
-              </svg>
-            </a></li>
-            <li><a href="#">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg>
-            </a></li>
-            <li><a href="#">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#vk"></use>
-              </svg>
-            </a></li>
-            <li><a href="#">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#telegram"></use>
-              </svg>
-            </a></li>
-          </ul>
-        </div>
-      </div>
+
     </div>
-  </footer>
+  </div>
 </div>
 
 <div class="cookie">
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex flex-wrap align-items-center">
-        <h3>Мы используем файлы <a href="#" class="color-white d-inline text-decoration" target="_blank">cookies.</a>
+        <h3>Мы используем файлы <a href="cookie.html" class="color-white d-inline text-decoration" target="_blank">cookies.</a>
         </h3>
         <div class="box-text d-block d-sm-none">
           <p>На сайте используются cookies.</p>

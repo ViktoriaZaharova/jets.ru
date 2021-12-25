@@ -270,6 +270,19 @@ button, .btn {
     background: #BA935F;
     color: #fff; }
 
+.btn-border-white {
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .btn-border-white:hover {
+    border-color: #BA935F;
+    background: #BA935F;
+    color: #fff; }
+    .btn-border-white:hover .icon-plus {
+      stroke: #fff; }
+
 .container {
   padding: 0 10px;
   max-width: 1220px; }
@@ -701,7 +714,6 @@ h3 {
 /*==========  header  ==========*/
 header {
   background: #151515;
-  margin: 0 0 20px;
   color: #fff;
   padding: 40px 0; }
 
@@ -1096,6 +1108,9 @@ footer {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+
+.home {
+  padding: 20px 0 0; }
 
 /*==========  card news  ==========*/
 .card-news {
@@ -1771,7 +1786,7 @@ footer {
 /*==========  read-also end  ==========*/
 /*==========  article page  ==========*/
 .article-page {
-  margin: 40px 0; }
+  padding: 40px 0; }
   .article-page .list-news-card__head {
     margin: 0 0 16px;
     font-size: 16px; }
@@ -2983,6 +2998,12 @@ footer {
   max-width: 832px;
   width: 100%; }
 
+.modal-backdrop.show {
+  opacity: .8; }
+
+.modal-title {
+  line-height: normal; }
+
 /*========== order rental-air end  ==========*/
 /*========== rental page  ==========*/
 .contacts h2 {
@@ -3006,7 +3027,8 @@ footer {
     font-weight: normal;
     max-width: 397px; }
   .contacts-box .address {
-    max-width: 251px; }
+    max-width: 251px;
+    margin: 0; }
 
 .contacts-links {
   font-weight: bold;
@@ -3055,7 +3077,7 @@ footer {
 .prices-popular-distance-head {
   text-transform: uppercase;
   font-weight: 600;
-  margin: 0 0 16px;
+  padding: 0 16px 16px;
   letter-spacing: 0.03em;
   font-size: 14px;
   display: -webkit-box;
@@ -3116,7 +3138,334 @@ footer {
   width: 20px;
   height: 20px; }
 
+.popular-empty-card .btn {
+  margin: 29px auto 0; }
+
+.popular-empty-card .prices-popular-distance-item {
+  font-size: 16px; }
+
+.popular-empty-nav {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+.popular-empty .btn-group .btn-view-all {
+  margin: 32px 0 0 16px;
+  max-width: 150px; }
+
+.description-box-service {
+  margin: 20px 0 0;
+  width: 100%;
+  padding: 16px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #151515;
+  border: 1px solid #BA935F;
+    border-radius: 4px; }
+
+.tel-info {
+  font-weight: bold;
+  color: #151515; }
+  .tel-info:hover {
+    color: #BA935F; }
+
+.rental-calculate-form {
+  margin: 120px 0 60px; }
+  .rental-calculate-form label, .rental-calculate-form button {
+    width: calc(25% - 5px); }
+
+.order-airplane-wrapper {
+  padding: 24px 24px 32px; }
+
+.btn-add-label {
+  max-width: none;
+  width: 100%;
+  margin: 0 0 16px; }
+
+.icon-plus {
+  stroke: #BA935F;
+  margin: 0 8px 0 0;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.links-wrapper-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  font-size: 16px;
+  margin: 0 24px 0 0; }
+  .links-wrapper-item:last-child {
+    margin: 0; }
+  .links-wrapper-item .svg-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    fill: #000;
+    margin: 0 8px 0 0;
+    width: 24px;
+    height: 24px;
+    min-width: 24px; }
+  .links-wrapper-item:hover {
+    color: #BA935F; }
+
+.title-line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .title-line h3 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 0 0; }
+
+.result-calculate-rental__wrapper {
+  width: 100%;
+  background: #fff;
+  margin: 40px 0 20px;
+  padding: 36px 102px 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.result-calculate-rental-dot {
+  font-size: 16px; }
+  .result-calculate-rental-dot p {
+    font-weight: bold; }
+  .result-calculate-rental-dot .date {
+    color: #727272;
+    font-size: 14px;
+    margin: 3px 0 0; }
+
+.result-calculate-rental-line {
+  max-width: 409px;
+  width: 100%;
+  position: relative;
+  padding: 23px 0 0; }
+
+.line-visual {
+  width: 100%;
+  position: relative;
+  height: 1px;
+  border: 1px dashed #D0D0D0; }
+
+.line-visual__stage {
+  position: absolute;
+  left: 0;
+  top: -1px;
+  height: 1px;
+  border: 1px dashed #BA935F;
+  width: 50%; }
+
+.dot-visual {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #D0D0D0; }
+  .dot-visual:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    background: #D0D0D0; }
+
+.dot-visual-start {
+  border: 1px solid #BA935F;
+  left: -14px; }
+  .dot-visual-start:before {
+    background: #BA935F; }
+
+.dot-visual-end {
+  right: -14px; }
+
+.travel-time {
+  text-align: center;
+  margin: 15px auto 0;
+  color: #727272;
+  font-size: 14px; }
+  .travel-time span {
+    display: block;
+    color: #000000;
+    font-weight: 500; }
+
+.recommended-model {
+  width: 100%;
+  background: #fff;
+  padding: 32px 24px; }
+  .recommended-model .btn {
+    max-width: none;
+    margin: 24px 0 0; }
+
+.table-recommended-model {
+  margin: 40px 0 0;
+  font-size: 14px;
+  font-weight: 500; }
+  .table-recommended-model .thead {
+    text-transform: uppercase;
+    font-weight: 600; }
+    .table-recommended-model .thead .tr {
+      padding: 0 0 16px;
+      border-bottom: 1px solid #D7D7D7; }
+  .table-recommended-model .tr {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 24px 0; }
+    .table-recommended-model .tr .btn {
+      margin: 0; }
+
+.td-image {
+  width: 19%; }
+
+.td-image-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 140px;
+  width: 100%; }
+  .td-image-box img {
+    width: 100%; }
+
+.td-model {
+  width: 26%;
+  padding: 0 0 0 40px; }
+
+.td-capacity {
+  width: 20%; }
+
+.td-price {
+  width: 16%; }
+
+.td-btn {
+  width: 19%; }
+
+.rental-page {
+  padding: 40px 0 0; }
+
 /*========== rental page end ==========*/
+/*==========  404  ==========*/
+.error-page {
+  background: #010101;
+  overflow: hidden;
+  border-top: 2px solid #BA935F;
+  padding: 0 0 60px; }
+  .error-page h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 677px;
+    font-size: 564px;
+    font-weight: bold;
+    margin: -150px auto -130px; }
+  .error-page .links-accent {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 16px; }
+    .error-page .links-accent:last-child {
+      margin: 0 auto; }
+  .error-page__img {
+    margin: 0 -20px; }
+
+#callModal .modal-dialog {
+  max-width: 1232px; }
+
+#callModal .form-rent {
+  padding: 0; }
+
+/*==========  404 end  ==========*/
+/*==========  output  ==========*/
+.output-page {
+  padding: 34px 0 147px; }
+
+.list-dots {
+  font-size: 18px; }
+  .list-dots li {
+    margin: 0 0 16px;
+    padding: 0 0 0 14px;
+    position: relative; }
+    .list-dots li:last-child {
+      margin: 0; }
+    .list-dots li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      background: #BA935F; }
+
+/*==========  output end  ==========*/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -3129,7 +3478,6 @@ footer {
     margin: 0 auto;
     max-width: 437px; }
   header {
-    margin: 0 0 15px;
     padding: 32px 0; }
   .menu {
     font-size: 13px;
@@ -3247,9 +3595,13 @@ footer {
   .journal-content {
     width: calc(100% - 250px);
     padding: 0 0 0 60px; }
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0 0 40px; }
   h2 {
     font-size: 50px;
-    margin: 0 0 45px; }
+    margin: 0 0 40px; }
   h3 {
     font-size: 22px; }
   .mb-32 {
@@ -3319,9 +3671,6 @@ footer {
     .list-news-card__head {
       margin: 0 0 13px;
       font-size: 12px; }
-  h1 {
-    font-size: 50px;
-    line-height: 50px; }
   .data-processing {
     margin: 40px 0 80px; }
     .data-processing h1 {
@@ -3346,8 +3695,6 @@ footer {
     padding: 32px 0 80px; }
     .footnotes p {
       margin: 0 0 20px; }
-  h1 {
-    margin: 0 0 40px; }
   .article-image__wrap {
     height: 354px; }
   .read-also-slider .slick-slide {
@@ -3587,7 +3934,132 @@ footer {
     font-size: 22px; }
   .reference-number {
     font-size: 16px;
-    margin: 0 0 24px; } }
+    margin: 0 0 24px; }
+  .rental-calculate-form {
+    margin: 70px 0 48px; }
+  .rental-calculate-form label, .rental-calculate-form button {
+    width: calc(25% - 3.5px); }
+  .nav-tabs-rental .nav-link {
+    height: 48px;
+    min-width: 182px;
+    padding: 0 19px; }
+  .order-airplane-wrapper {
+    padding: 19px 19px 26px; }
+    .order-airplane-wrapper .form-rent {
+      padding: 0; }
+  .description-box-service {
+    margin: 16px 0 0; }
+  .links-wrapper-item {
+    font-size: 12px; }
+    .links-wrapper-item .svg-icon {
+      margin: 0 5px 0 0; }
+  .result-calculate-rental__wrapper {
+    margin: 36px 0 16px;
+    padding: 24px 82px 26px; }
+  .result-calculate-rental-dot {
+    font-size: 14px; }
+    .result-calculate-rental-dot .date {
+      font-size: 12px;
+      margin: 1px 0 0; }
+  .travel-time {
+    font-size: 12px;
+    margin: 7px 0 0; }
+  .recommended-model {
+    padding: 26px 19px; }
+  .table-recommended-model {
+    margin: 32px 0 0;
+    font-size: 12px; }
+    .table-recommended-model .tr {
+      padding: 20px 0; }
+    .table-recommended-model .thead .tr {
+      padding: 0 0 12px; }
+    .table-recommended-model .btn {
+      font-size: 12px; }
+    .table-recommended-model .tbody .td-model {
+      font-size: 14px;
+      font-weight: bold; }
+  .td-model {
+    padding: 0 0 0 26px; }
+  .td-image-box {
+    max-width: 113px; }
+  .popular-empty .btn-group .btn-view-all {
+    height: 48px; }
+  .prices-popular-distance-row {
+    padding: 13px; }
+  .prices-popular-distance-head {
+    padding: 0 13px 13px; }
+  .prices-popular-distance-wrapper {
+    padding: 30px 20px;
+    font-size: 14px;
+    max-width: 711px; }
+  .helicopter-rental .nav-tabs-rental .nav-link {
+    padding: 0 28px;
+    min-width: auto; }
+  .btn-load-toggle {
+    height: 56px;
+    font-size: 18px; }
+  .seo-section {
+    padding: 60px 0 100px; }
+    .seo-section .box-text {
+      font-size: 16px;
+      line-height: 22px; }
+  .representation h2 {
+    margin: 0 0 60px; }
+  .representation-map {
+    height: 590px; }
+    .representation-map img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .contacts {
+    padding: 60px 0; }
+    .contacts h2 {
+      margin: 0 0 40px; }
+  .contacts-phone {
+    margin: 16px 0 0;
+    font-size: 32px; }
+  .form-contacts input {
+    height: 48px;
+    font-size: 14px;
+    padding: 0 16px; }
+  .form-contacts textarea {
+    height: 168px; }
+  .form-contacts button {
+    height: 48px;
+    font-size: 16px; }
+  .form-contacts .consent {
+    max-width: 312px;
+    font-size: 12px; }
+  .error-page {
+    padding: 0 0 44px; }
+    .error-page h1 {
+      line-height: 603px;
+      font-size: 502px;
+      margin: -110px auto -100px; }
+  .error-page__img {
+    max-width: 515px; }
+  .error-page .links-accent {
+    font-size: 20px; }
+  #callModal .modal-dialog {
+    max-width: 968px; }
+  .output-page {
+    padding: 90px 0 106px; }
+  .output-page-content {
+    padding: 0 0 0 227px; } }
+
+@media only screen and (max-width: 1100px) {
+  .result-calculate-rental-line {
+    max-width: 168px;
+    padding: 12px 0 0; }
+  .popular-empty {
+    padding: 100px 0; }
+  .popular-airplane-card .list-characteristics {
+    font-size: 12px; }
+    .popular-airplane-card .list-characteristics span, .popular-airplane-card .list-characteristics strong {
+      font-size: 14px; }
+    .popular-airplane-card .list-characteristics li {
+      margin: 0 0 13px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -3598,8 +4070,6 @@ footer {
       font-size: 14px; }
   .header-links {
     margin: 0 0 0 10px; }
-  header {
-    margin: 0 0 17px; }
   .button-search {
     width: 24px;
     height: 24px;
@@ -3889,7 +4359,30 @@ footer {
   .p-120 {
     padding: 60px 0; }
   .popular-airplane h2 {
-    margin: 0 0 40px; } }
+    margin: 0 0 40px; }
+  .seo-section {
+    padding: 60px 0 80px; }
+  .representation h2 {
+    max-width: 490px; }
+  .table-recommended-model {
+    font-size: 14px; }
+    .table-recommended-model .tr {
+      padding: 20px 0; }
+    .table-recommended-model .thead {
+      font-size: 12px; }
+  .recommended-model {
+    padding: 27px 20px; }
+  .rental-calculate-form label, .rental-calculate-form button {
+    width: calc(25% - 3.5px);
+    margin: 0; }
+  .error-page {
+    padding: 167px 0 80px; }
+    .error-page h1 {
+      font-size: 412px;
+      line-height: 496px;
+      margin: 0 auto 133px; }
+  #callModal .modal-dialog {
+    max-width: 725px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px) {
@@ -3994,7 +4487,56 @@ footer {
     .total-price-order span {
       font-size: 36px; }
   .seller-contacts {
-    margin: 80px 0; } }
+    margin: 80px 0; }
+  .form-contacts {
+    margin: 37px 0 0; }
+  .contacts-box {
+    font-size: 18px;
+    margin: 0 0 38px; }
+    .contacts-box h3 {
+      font-size: 18px; }
+  .popular-airplane .popular-airplane-card {
+    font-size: 12px; }
+    .popular-airplane .popular-airplane-card .card-airplane__name {
+      min-height: 28px;
+      margin: 0 0 15px; }
+  .helicopter-rental .nav-tabs-rental .nav-link {
+    font-size: 12px;
+    padding: 0 9.5px; }
+  .empty-legs-tabs-v2 {
+    margin: 0 0 33px; }
+  .popular-empty {
+    padding: 80px 0; }
+  .prices-popular-distance-head {
+    font-size: 12px; }
+  .card-airplane__name {
+    margin: 0 0 16px; }
+  .result-calculate-rental-line {
+    max-width: 340px;
+    margin: 0 25px; }
+  .result-calculate-rental__wrapper {
+    padding: 24px 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .rental-page {
+    padding: 16px 0 0; }
+    .rental-page .banner-box {
+      margin: 23px 0 0; }
+  .nav-tabs-rental {
+    margin: 0 0 16px; }
+  .description-box-service {
+    padding: 24px; }
+  .order-airplane-wrapper {
+    padding: 20px; }
+  .form-rent .form-group label {
+    margin: 0 0 14px; }
+  .form-search-my {
+    padding: 22px 20px; }
+  .output-page-content {
+    padding: 0 0 0 80px; }
+    .output-page-content ul {
+      max-width: 387px; } }
 
 @media only screen and (max-width: 640px) {
   .card-news__img {
@@ -4004,14 +4546,24 @@ footer {
   .card-news-sm .card-news__title br {
     display: none; }
   .info-airplane-wrapper {
-    padding: 40px 0 0; } }
+    padding: 40px 0 0; }
+  .error-page {
+    padding: 125px 0; }
+    .error-page h1 {
+      line-height: 237px;
+      font-size: 197px;
+      margin: 0 auto 50px; }
+    .error-page .links-accent {
+      font-size: 18px;
+      margin: 0 auto 32px; }
+    .error-page__img {
+      max-width: 200px; } }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
   body {
     background: #fff; }
   header {
-    padding: 26px 0;
-    margin: 0 0 16px; }
+    padding: 26px 0; }
     header .form-search {
       display: none; }
   footer {
@@ -4382,10 +4934,8 @@ footer {
     padding: 30px 0 92px; }
     .footnotes:before {
       background: #D7D7D7; }
-  .article-page {
-    margin: 40px 0; }
-    .article-page .box-text {
-      margin: 0 0 40px; }
+  .article-page .box-text {
+    margin: 0 0 40px; }
   .article-image {
     margin: 0 0 24px; }
   .redactor-box {
@@ -4722,7 +5272,230 @@ footer {
     .modal-body .form-rent {
       padding: 16px 0 0; }
       .modal-body .form-rent textarea {
-        height: 150px; } }
+        height: 150px; }
+  .home {
+    padding: 20px 0 0; }
+  .rental-page {
+    padding: 24px 0 0; }
+  .nav-tabs-rental .nav-item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0; }
+  .rental-page .banner-box {
+    margin: 40px 0 0; }
+  .description-box-service {
+    padding: 16px; }
+  .rental-calculate-form {
+    margin: 40px 0; }
+    .rental-calculate-form button {
+      width: 100%; }
+  .links-wrapper {
+    width: 100%;
+    margin: 24px 0 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .links-wrapper-item {
+    width: calc(50% - 10px);
+    margin: 0;
+    background: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 16px;
+    text-align: center; }
+    .links-wrapper-item .svg-icon {
+      margin: 0 auto 8px;
+      width: 32px;
+      height: 32px; }
+    .links-wrapper-item__text {
+      max-width: 75px;
+      width: 100%;
+      margin: 0 auto; }
+  .result-calculate-rental__wrapper {
+    margin: 16px 0;
+    padding: 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+  .result-calculate-rental h3 {
+    width: 100%;
+    text-align: center; }
+  .result-calculate-rental-line {
+    max-width: 223px;
+    margin: 16px auto; }
+  .travel-time {
+    margin: 40px auto 0; }
+    .travel-time span {
+      margin: 7px auto 0; }
+  .dot-visual__text {
+    position: absolute;
+    top: -25px;
+    font-size: 12px;
+    left: -14px; }
+  .dot-visual__text-end {
+    right: -14px;
+    left: auto; }
+  .result-calculate-rental-dot {
+    font-size: 16px; }
+    .result-calculate-rental-dot .date {
+      font-size: 14px;
+      margin: 4px auto 0; }
+    .result-calculate-rental-dot br {
+      display: none; }
+  .recommended-model {
+    padding: 24px 16px; }
+  .table-recommended-model {
+    margin: 24px 0 0; }
+    .table-recommended-model .thead {
+      display: none; }
+    .table-recommended-model .tr {
+      padding: 40px 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .table-recommended-model .tr:first-child {
+        padding-top: 0; }
+      .table-recommended-model .tr .td {
+        width: 100%; }
+      .table-recommended-model .tr .btn {
+        margin: 32px 0 0;
+        height: 48px;
+        max-width: none;
+        font-size: 16px; }
+    .table-recommended-model .tr-last {
+      border: none;
+      padding-bottom: 0; }
+    .table-recommended-model .tbody .td-model {
+      width: 100%;
+      padding: 0;
+      font-size: 18px;
+      font-weight: 500; }
+    .table-recommended-model .td:before {
+      content: attr(data-table);
+      display: block;
+      width: 100%;
+      color: #9F9F9F;
+      font-size: 12px;
+      margin: 0 0 8px; }
+    .table-recommended-model .btn-load-toggle {
+      font-size: 16px;
+      margin: 9px auto 0;
+      height: 48px; }
+  .td-image-box {
+    max-width: none;
+    margin: 0 0 16px; }
+  .td-capacity {
+    margin: 24px 0 22px; }
+  .td-price {
+    font-size: 16px; }
+  .popular-empty .btn-group .btn-view-all {
+    margin: 24px 0 0 auto; }
+  .prices-popular-distance-head {
+    display: none; }
+  .prices-popular-distance-wrapper {
+    padding: 0;
+    background: transparent; }
+  .prices-popular-distance-row {
+    background: #fff;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 0 16px;
+    padding: 16px; }
+    .prices-popular-distance-row:last-child {
+      margin: 0; }
+  .prices-popular-distance__price {
+    width: 100%;
+    margin: 40px 0 0; }
+  .price-val {
+    width: 100%;
+    background: #BA935F;
+    color: #fff;
+    border: none;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: none;
+    border-radius: 4px; }
+  .prices-popular-distance__direction, .prices-popular-distance__type {
+    width: 100%;
+    margin: 0 0 24px;
+    font-size: 16px; }
+    .prices-popular-distance__direction:before, .prices-popular-distance__type:before {
+      content: attr(data-table);
+      display: block;
+      margin: 0 0 8px;
+      color: #9F9F9F;
+      font-size: 12px; }
+  .prices-popular-distance__passengers {
+    width: 100%;
+    font-size: 16px; }
+    .prices-popular-distance__passengers:before {
+      content: attr(data-table);
+      display: block;
+      margin: 0 0 8px;
+      color: #9F9F9F;
+      font-size: 12px; }
+  .nav-tabs-rental .nav-item {
+    margin: 0 -1px 0 0; }
+    .nav-tabs-rental .nav-item .nav-link {
+      border-radius: 0;
+      padding: 0 28px;
+      font-size: 14px; }
+    .nav-tabs-rental .nav-item:last-child .nav-link {
+      border-radius: 0 4px 4px 0; }
+  .helicopter-rental .scroll-vertical .nav-tabs-rental {
+    margin: 0; }
+  .helicopter-rental .nav-tabs-rental {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    min-width: 750px; }
+  .helicopter-rental .btn-load-toggle {
+    background: transparent; }
+  .seo-section .box-text {
+    font-size: 18px;
+    line-height: 34px; }
+  .representation-map {
+    height: 481px; }
+  .contacts-box h3 {
+    margin: 0 0 16px;
+    font-size: 14px; }
+  .contacts-phone {
+    font-size: 24px; }
+  .contacts h2 {
+    margin: 0 0 24px; }
+  .output-page {
+    padding: 40px 0; }
+  .output-page-content {
+    padding: 0; }
+    .output-page-content ul {
+      max-width: 297px; }
+  .list-dots {
+    font-size: 14px; }
+    .list-dots li {
+      margin: 0 0 18px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {

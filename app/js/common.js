@@ -58,7 +58,7 @@ $(document).ready(function () {
             prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
             nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
             variableWidth: true,
-            appendArrows: $(this).next('.popular-airplane-slider__nav'),
+            appendArrows: $(this).parent().find('.popular-airplane-slider__nav'),
         });
     });
 });
