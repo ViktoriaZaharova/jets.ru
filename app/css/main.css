@@ -2562,9 +2562,11 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
   .card-airplane .btn {
-    margin: auto 0 0;
+    margin: auto 0 7px;
     width: 100%;
     max-width: none; }
+    .card-airplane .btn:last-child {
+      margin: auto 0 0; }
   .card-airplane__name {
     width: 100%;
     margin: 0 0 24px;
@@ -3466,6 +3468,280 @@ footer {
       background: #BA935F; }
 
 /*==========  output end  ==========*/
+/*==========  encyclopedia-aircraft page  ==========*/
+.encyclopedia-aircraft {
+  padding: 28px 0 24px; }
+  .encyclopedia-aircraft h1 {
+    max-width: 730px;
+    margin: 0 0 22px; }
+  .encyclopedia-aircraft .banner-box {
+    height: 558px; }
+
+.encyclopedia-aircraft-wrapper {
+  position: relative;
+  width: 100%;
+  height: 394px;
+  z-index: 1; }
+  .encyclopedia-aircraft-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 255px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3964A9), color-stop(58.01%, rgba(60, 106, 183, 0.29)), color-stop(95.22%, rgba(164, 181, 212, 0)));
+    background: linear-gradient(180deg, #3964A9 0%, rgba(60, 106, 183, 0.29) 58.01%, rgba(164, 181, 212, 0) 95.22%); }
+  .encyclopedia-aircraft-wrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.encyclopedia-aircraft-wrapper__content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 30px;
+  color: #fff; }
+  .encyclopedia-aircraft-wrapper__content .box-text {
+    max-width: 617px;
+    font-size: 16px;
+    font-weight: 600; }
+
+.encyclopedia-aircraft-catalog {
+  padding: 0 0 140px; }
+  .encyclopedia-aircraft-catalog .card-airplane .box-text {
+    font-size: 12px; }
+  .encyclopedia-aircraft-catalog .card-airplane__body {
+    padding: 13px 14px 15px; }
+  .encyclopedia-aircraft-catalog .card-airplane__name {
+    margin: 0 0 12px;
+    min-height: 60px; }
+
+.card-airplane__name-span {
+  display: block;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 6px 0 0; }
+
+.form-catalog .btn {
+  width: 100%;
+  max-width: none; }
+
+.accordion-sidebar .card {
+  margin: 0 0 16px; }
+  .accordion-sidebar .card .card-body {
+    padding: 24px 0; }
+  .accordion-sidebar .card .card-header {
+    margin: 0;
+    padding: 0 12px 0 16px;
+    height: 48px;
+    border: 1px solid #BA935F;
+      border-radius: 4px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .accordion-sidebar .card .card-header h3 {
+      color: #BA935F;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: normal;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 0 auto 0 0; }
+
+.accordion-sidebar .card-header.collapsed {
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 4px; }
+  .accordion-sidebar .card-header.collapsed .accordion-icon {
+    -webkit-transform: none;
+            transform: none;
+    fill: rgba(0, 0, 0, 0.5); }
+  .accordion-sidebar .card-header.collapsed h3 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: normal; }
+
+.accordion-sidebar .accordion-icon {
+  border: none;
+    border-radius: 0;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  padding: 8px;
+  fill: #BA935F;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+  .accordion-sidebar .accordion-icon:before, .accordion-sidebar .accordion-icon:after {
+    display: none; }
+
+.btn-clear {
+  margin: 8px auto 0; }
+
+.list-radio {
+  width: 100%; }
+  .list-radio li {
+    width: 100%;
+    margin: 0 0 16px; }
+    .list-radio li:last-child {
+      margin: 0; }
+
+.radio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.inp-radio {
+  display: none; }
+
+.radio-custom {
+  margin: 0 8px 0 0;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border: 1px solid #D0D0D0;
+    border-radius: 50%;
+  position: relative;
+  cursor: pointer; }
+  .radio-custom:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px; }
+
+.inp-radio:checked + .radio-custom {
+  border-color: #BA935F; }
+  .inp-radio:checked + .radio-custom:before {
+    background: #BA935F; }
+
+.filter-value {
+  color: #D0D0D0; }
+
+.checkbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.inp-checkbox {
+  display: none; }
+
+.checkbox-custom {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  margin: 0 8px 0 0;
+  border: 1px solid #D0D0D0;
+    border-radius: 4px;
+  position: relative; }
+  .checkbox-custom:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 14px;
+    height: 10px; }
+
+.inp-checkbox:checked + .checkbox-custom {
+  background: #BA935F;
+  border-color: #BA935F; }
+  .inp-checkbox:checked + .checkbox-custom:before {
+    background: url("../img/checkbox.svg") no-repeat center;
+      background-size: 100%; }
+
+.range_val .inp-group {
+  margin: 0 0 28px; }
+  .range_val .inp-group input {
+    width: calc(50% - 8px);
+    border: 1px solid #D0D0D0;
+      border-radius: 4px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #D0D0D0; }
+    .range_val .inp-group input::-webkit-input-placeholder {
+      color: #D0D0D0; }
+    .range_val .inp-group input::-moz-placeholder {
+      color: #D0D0D0; }
+    .range_val .inp-group input::-ms-input-placeholder {
+      color: #D0D0D0; }
+    .range_val .inp-group input::placeholder {
+      color: #D0D0D0; }
+
+.range_val .ui-slider .ui-slider-range {
+  background: #BA935F; }
+
+.range_val .slider-range {
+  border: none;
+    border-radius: 0;
+  height: 1px;
+  background: #D0D0D0; }
+  .range_val .slider-range .ui-slider-handle {
+    border: 1px solid #D0D0D0;
+      border-radius: 50%;
+    background: #fff;
+    outline: none;
+    width: 24px;
+    height: 24px;
+    top: -12px;
+    margin-left: 0; }
+
+.inp-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.btn-sidebar {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 16px;
+  border-radius: 2px;
+  background: rgba(215, 215, 215, 0.5);
+  max-width: none;
+  font-weight: 500; }
+  .btn-sidebar .btn-icon {
+    fill: #BA935F;
+    width: 24px;
+    height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 8px 0 0; }
+
+/*==========  encyclopedia-aircraft page end  ==========*/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -4046,7 +4322,15 @@ footer {
   .output-page {
     padding: 90px 0 106px; }
   .output-page-content {
-    padding: 0 0 0 227px; } }
+    padding: 0 0 0 227px; }
+  .encyclopedia-aircraft-wrapper {
+    height: 360px; }
+  .encyclopedia-aircraft .banner-box {
+    height: 488px; }
+  .encyclopedia-aircraft-wrapper__content {
+    padding: 24px; }
+  .encyclopedia-aircraft {
+    padding: 40px 0 16px; } }
 
 @media only screen and (max-width: 1100px) {
   .result-calculate-rental-line {
@@ -4059,7 +4343,67 @@ footer {
     .popular-airplane-card .list-characteristics span, .popular-airplane-card .list-characteristics strong {
       font-size: 14px; }
     .popular-airplane-card .list-characteristics li {
-      margin: 0 0 13px; } }
+      margin: 0 0 13px; }
+  .encyclopedia-aircraft-catalog .card-airplane__name {
+    font-size: 14px;
+    margin: 0 0 12px;
+    min-height: 55px; }
+  .encyclopedia-aircraft-catalog .card-airplane .btn {
+    height: 41px;
+    font-size: 14px; }
+  .encyclopedia-aircraft-catalog .list-characteristics {
+    margin: 0 0 16px; }
+    .encyclopedia-aircraft-catalog .list-characteristics li {
+      margin: 0 0 10px; }
+      .encyclopedia-aircraft-catalog .list-characteristics li:last-child {
+        margin: 0; }
+  .card-airplane__name-span {
+    font-size: 12px;
+    line-height: 14px; }
+  .encyclopedia-aircraft-catalog {
+    padding: 0 0 82px; }
+  .accordion-sidebar .card {
+    margin: 0 0 10px; }
+    .accordion-sidebar .card .card-body {
+      padding: 15px 0 14px; }
+    .accordion-sidebar .card .card-header {
+      height: 32px;
+      padding: 0 8px 0 11px; }
+      .accordion-sidebar .card .card-header h3 {
+        font-size: 12px; }
+  .inp-group {
+    margin: 0 0 18px; }
+  .range_val .inp-group input {
+    height: 26px;
+    width: calc(50% - 5.5px);
+    padding: 0 11px;
+    font-size: 10px; }
+  .range_val .slider-range .ui-slider-handle {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    top: -8px; }
+  .list-radio {
+    font-size: 12px; }
+    .list-radio li {
+      margin: 0 0 11px; }
+  .checkbox-custom {
+    margin: 0 5px 0 0;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    border-radius: 3px; }
+    .checkbox-custom:before {
+      width: 9px;
+      height: 6px; }
+  .radio-custom {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    margin: 0 5px 0 0; }
+    .radio-custom:before {
+      width: 8px;
+      height: 8px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -4536,7 +4880,24 @@ footer {
   .output-page-content {
     padding: 0 0 0 80px; }
     .output-page-content ul {
-      max-width: 387px; } }
+      max-width: 387px; }
+  .encyclopedia-aircraft {
+    margin: 0;
+    padding: 16px 0; }
+    .encyclopedia-aircraft .banner-box {
+      height: auto; }
+  .encyclopedia-aircraft-wrapper {
+    height: 356px; }
+    .encyclopedia-aircraft-wrapper:before {
+      height: 209px; }
+  .encyclopedia-aircraft-catalog .card-airplane__name {
+    min-height: 53px; }
+  .card-airplane__name-span {
+    display: none; }
+  .card-airplane-col {
+    display: none; }
+    .card-airplane-col:nth-child(-n+8) {
+      display: block; } }
 
 @media only screen and (max-width: 640px) {
   .card-news__img {
@@ -5495,7 +5856,43 @@ footer {
   .list-dots {
     font-size: 14px; }
     .list-dots li {
-      margin: 0 0 18px; } }
+      margin: 0 0 18px; }
+  .encyclopedia-aircraft {
+    padding: 24px 0 40px;
+    margin: 0; }
+    .encyclopedia-aircraft h1 {
+      margin: 0 0 24px;
+      max-width: 343px; }
+  .encyclopedia-aircraft-wrapper {
+    height: 244px;
+    margin: 0 0 16px; }
+    .encyclopedia-aircraft-wrapper .box-text {
+      line-height: 16px;
+      font-size: 12px; }
+    .encyclopedia-aircraft-wrapper:before {
+      height: 174px; }
+  .encyclopedia-aircraft-wrapper__content {
+    padding: 16px 14px 16px 16px; }
+  .card-airplane-col {
+    display: none; }
+    .card-airplane-col:nth-child(-n+8) {
+      display: none; }
+    .card-airplane-col:nth-child(-n+4) {
+      display: block; }
+  .encyclopedia-aircraft-catalog {
+    padding: 0 0 60px; }
+    .encyclopedia-aircraft-catalog .btn-load-toggle {
+      margin: 8px auto 0; }
+    .encyclopedia-aircraft-catalog .card-airplane__name {
+      min-height: 59px;
+      margin: 0 0 8px;
+      font-size: 16px; }
+  .card-airplane__name-span {
+    display: block;
+    font-size: 12px; }
+  .sidebar {
+    display: none;
+    margin: 0 0 16px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {

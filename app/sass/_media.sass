@@ -771,6 +771,18 @@
   .output-page-content
     padding: 0 0 0 227px
 
+  .encyclopedia-aircraft-wrapper
+    height: 360px
+
+  .encyclopedia-aircraft .banner-box
+    height: 488px
+
+  .encyclopedia-aircraft-wrapper__content
+    padding: 24px
+
+  .encyclopedia-aircraft
+    padding: 40px 0 16px
+
 @media only screen and (max-width: 1100px)
   .result-calculate-rental-line
     max-width: 168px
@@ -787,13 +799,85 @@
       li
         margin: 0 0 13px
 
+  .encyclopedia-aircraft-catalog
+    .card-airplane
+      &__name
+        font-size: 14px
+        margin: 0 0 12px
+        min-height: 55px
+      .btn
+        height: 41px
+        font-size: 14px
+    .list-characteristics
+      margin: 0 0 16px
+      li
+        margin: 0 0 10px
+        &:last-child
+          margin: 0
+
+  .card-airplane__name-span
+    font-size: 12px
+    line-height: 14px
+
+  .encyclopedia-aircraft-catalog
+    padding: 0 0 82px
+
+  .accordion-sidebar
+    .card
+      margin: 0 0 10px
+      .card-body
+        padding: 15px 0 14px
+      .card-header
+        height: 32px
+        padding: 0 8px 0 11px
+        h3
+          font-size: 12px
+
+
+  .inp-group
+    margin: 0 0 18px
+
+  .range_val
+    .inp-group
+      input
+        height: 26px
+        width: calc(50% - 5.5px)
+        padding: 0 11px
+        font-size: 10px
+    .slider-range
+      .ui-slider-handle
+        width: 16px
+        height: 16px
+        min-width: 16px
+        top: -8px
+
+  .list-radio
+    font-size: 12px
+    li
+      margin: 0 0 11px
+
+  .checkbox-custom
+    margin: 0 5px 0 0
+    width: 16px
+    height: 16px
+    min-width: 16px
+    border-radius: 3px
+    &:before
+      width: 9px
+      height: 6px
+
+  .radio-custom
+    width: 16px
+    height: 16px
+    min-width: 16px
+    margin: 0 5px 0 0
+    &:before
+      width: 8px
+      height: 8px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
-  //.container
-  //  max-width: 756px
-
   .form-search
     max-width: 260px
 
@@ -1376,6 +1460,29 @@
     ul
       max-width: 387px
 
+  .encyclopedia-aircraft
+    margin: 0
+    padding: 16px 0
+    .banner-box
+      height: auto
+
+  .encyclopedia-aircraft-wrapper
+    height: 356px
+    &:before
+      height: 209px
+
+  .encyclopedia-aircraft-catalog
+    .card-airplane__name
+      min-height: 53px
+
+  .card-airplane__name-span
+    display: none
+
+  .card-airplane-col
+    display: none
+    &:nth-child(-n+8)
+      display: block
+
 @media only screen and (max-width: 640px)
   .card-news__img
     width: 150px
@@ -1404,6 +1511,8 @@
 
     &__img
       max-width: 200px
+
+
 
 @media only screen and (max-width: 575px)
   body
@@ -2489,6 +2598,50 @@
     font-size: 14px
     li
       margin: 0 0 18px
+
+  .encyclopedia-aircraft
+    padding: 24px 0 40px
+    margin: 0
+    h1
+      margin: 0 0 24px
+      max-width: 343px
+
+  .encyclopedia-aircraft-wrapper
+    height: 244px
+    margin: 0 0 16px
+
+    .box-text
+      line-height: 16px
+      font-size: 12px
+    &:before
+      height: 174px
+
+  .encyclopedia-aircraft-wrapper__content
+    padding: 16px 14px 16px 16px
+
+  .card-airplane-col
+    display: none
+    &:nth-child(-n+8)
+      display: none
+    &:nth-child(-n+4)
+      display: block
+
+  .encyclopedia-aircraft-catalog
+    padding: 0 0 60px
+    .btn-load-toggle
+      margin: 8px auto 0
+    .card-airplane__name
+      min-height: 59px
+      margin: 0 0 8px
+      font-size: 16px
+
+  .card-airplane__name-span
+    display: block
+    font-size: 12px
+
+  .sidebar
+    display: none
+    margin: 0 0 16px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)

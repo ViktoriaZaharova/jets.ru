@@ -97,6 +97,11 @@ $('.accordion-my [data-toggle="collapse"]').click(function(e){
     }
 });
 
+$('.btn-sidebar').on('click', function (e) {
+    e.preventDefault();
+    $('.sidebar').slideToggle();
+});
+
 // datepicker
 $(function () {
     //Сменим язык календаря на русский
@@ -121,3 +126,27 @@ $(function () {
         });
     $(".datepicker").datepicker();
 });
+
+$(document).ready(function() {
+
+    $('.slider-range').slider({
+        range: true,
+        min: 0,
+        max: 40000,
+        values: [0, 20000],
+        classes: {
+            "ui-slider-handle": "ui-corner-all"
+        },
+        slide: function (event, ui) {
+            //Поле минимального значения
+            $(".dec1").val(ui.values[0]);
+            //Поле максимального значения
+            $(".dec2").val(ui.values[1]);
+        }
+    });
+
+    $(".dec1").val($(".slider-range").slider("values", 0));
+    $(".dec2").val($(".slider-range").slider("values", 1));
+
+});
+

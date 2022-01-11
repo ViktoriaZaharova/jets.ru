@@ -1,0 +1,247 @@
+@import "fonts"
+@import "vars"
+
+/*==========  encyclopedia-aircraft page  ==========*/
+.encyclopedia-aircraft
+  padding: 28px 0 24px
+  h1
+    max-width: 730px
+    margin: 0 0 22px
+  .banner-box
+    height: 558px
+
+
+.encyclopedia-aircraft-wrapper
+  position: relative
+  width: 100%
+  height: 394px
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 255px
+    background: linear-gradient(180deg, #3964A9 0%, rgba(60, 106, 183, 0.29) 58.01%, rgba(164, 181, 212, 0) 95.22%)
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.encyclopedia-aircraft-wrapper__content
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 1
+  padding: 30px
+
+  color: #fff
+  .box-text
+    max-width: 617px
+    font-size: 16px
+    font-weight: 600
+
+.encyclopedia-aircraft-catalog
+  padding: 0 0 140px
+  .card-airplane
+    .box-text
+      font-size: 12px
+    &__body
+      padding: 13px 14px 15px
+    &__name
+      margin: 0 0 12px
+      min-height: 60px
+
+.card-airplane__name-span
+  display: block
+  font-weight: normal
+  text-transform: none
+  font-size: 14px
+  line-height: 14px
+  margin: 6px 0 0
+
+.form-catalog
+  .btn
+    width: 100%
+    max-width: none
+
+.accordion-sidebar
+  .card
+    margin: 0 0 16px
+    .card-body
+      padding: 24px 0
+    .card-header
+      margin: 0
+      padding: 0 12px 0 16px
+      height: 48px
+      border: 1px solid #BA935F
+        radius: 4px
+      flex-wrap: nowrap
+      h3
+        color: #BA935F
+        font-size: 16px
+        font-weight: normal
+        line-height: normal
+        width: fit-content
+        margin: 0 auto 0 0
+  .card-header.collapsed
+    margin: 0
+    border: 1px solid rgba(0, 0, 0, 0.5)
+      radius: 4px
+    .accordion-icon
+      transform: none
+      fill: rgba(#000, .5)
+    h3
+      color: rgba(0, 0, 0, 0.5)
+      font-size: 16px
+      font-weight: normal
+
+  .accordion-icon
+    border: none
+      radius: 0
+    width: 24px
+    min-width: 24px
+    height: 24px
+    padding: 8px
+    fill: #BA935F
+    transform: rotate(180deg)
+    &:before, &:after
+      display: none
+
+
+.btn-clear
+  margin: 8px auto 0
+
+.list-radio
+  width: 100%
+  li
+    width: 100%
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+
+
+.radio
+  width: 100%
+  display: flex
+  align-items: center
+
+.inp-radio
+  display: none
+
+.radio-custom
+  margin: 0 8px 0 0
+  width: 24px
+  height: 24px
+  min-width: 24px
+  border: 1px solid #D0D0D0
+    radius: 50%
+  position: relative
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border-radius: 50%
+    width: 12px
+    height: 12px
+
+.inp-radio:checked + .radio-custom
+  border-color: #BA935F
+  &:before
+    background: #BA935F
+
+.filter-value
+  color: #D0D0D0
+
+.checkbox
+  width: 100%
+  display: flex
+  align-items: center
+
+.inp-checkbox
+  display: none
+
+.checkbox-custom
+  width: 24px
+  height: 24px
+  min-width: 24px
+  margin: 0 8px 0 0
+  border: 1px solid #D0D0D0
+    radius: 4px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 14px
+    height: 10px
+
+.inp-checkbox:checked + .checkbox-custom
+  background: $brown
+  border-color: $brown
+  &:before
+    background: url("../img/checkbox.svg") no-repeat center
+      size: 100%
+
+.range_val
+  .inp-group
+    margin: 0 0 28px
+    input
+      width: calc(50% - 8px)
+      border: 1px solid #D0D0D0
+        radius: 4px
+      padding: 0 16px
+      font-size: 14px
+      color: #D0D0D0
+      &::placeholder
+        color: #D0D0D0
+  .ui-slider .ui-slider-range
+    background: $brown
+
+  .slider-range
+    border: none
+      radius: 0
+    height: 1px
+    background: #D0D0D0
+    .ui-slider-handle
+      border: 1px solid #D0D0D0
+        radius: 50%
+      background: #fff
+      outline: none
+      width: 24px
+      height: 24px
+      top: -12px
+      margin-left: 0
+
+.inp-group
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.btn-sidebar
+  width: 100%
+  justify-content: center
+  margin: 0 0 16px
+  border-radius: 2px
+  background: rgba(#D7D7D7, .5)
+  max-width: none
+  font-weight: 500
+  .btn-icon
+    fill: $brown
+    width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 8px 0 0
+
+
+/*==========  encyclopedia-aircraft page end  ==========*/
