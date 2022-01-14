@@ -1533,6 +1533,8 @@
 
   .news-page
     padding: 16px 0 60px
+    .banner-box
+      margin: 40px 0
 
 @media only screen and (max-width: 640px)
   .card-news__img
@@ -2716,6 +2718,8 @@
       width: 0
     li
       margin: 0 8px 0 0
+      &:last-child
+        margin: 0
 
   .news-page
     background: #fff
@@ -2724,6 +2728,7 @@
       background: transparent
     .form-group label
       width: 100%
+
 
   .pagination-nav
     width: 100%
@@ -2749,6 +2754,7 @@
       display: none
 
   .news-page-box
+    margin-bottom: 40px
     .box-text
       margin: 0
       max-width: none
@@ -2760,8 +2766,36 @@
     height: 40px
     justify-content: center
 
+  .news-page
+    .nav-tabs
+      .nav-item
+        flex: 1
+        .nav-link
+          min-width: auto
+          padding: 0 10px
+    .banner-box
+      margin: 40px 0
+    .list-news
+      .list-news-card
+        &:last-child
+          border-bottom: 0.5px solid #D7D7D7
+      .box-text
+        margin: 0
 
+  .news-card-slider
+    margin: 0
+    flex-wrap: nowrap
+    &__nav
+      margin: 0 0 40px
+    .card-article
+      min-height: 301px
+      .box-text
+        display: none
 
+    .slick-slide
+      padding: 0
+      width: 280px
+      margin: 0 16px 24px 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
