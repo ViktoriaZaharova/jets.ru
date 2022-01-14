@@ -26,6 +26,13 @@ $('.news-slider').slick({
     appendDots: '.news-slider__nav',
 });
 
+$('.events-calendar-slider').slick({
+    slidesToShow: 1,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-my slick-prev-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-my slick-next-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
+});
+
 
 $(document).ready(function () {
     $('.about-the-plane-slider').each(function () {

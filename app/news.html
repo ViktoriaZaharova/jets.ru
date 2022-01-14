@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jets.ru</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!--  <link rel="stylesheet" href="css/libs.min.css">-->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="content content-page">
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__head">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <form method="post" class="form-search form d-none d-sm-block">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="btn-close-menu"></div>
+      </div>
+      <div class="mobile-menu__body">
+        <form method="post" class="form-search form d-block d-sm-none">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user-navigation">
+          <a href="comparison.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#comparison"></use></svg></span>
+            <span class="header-links__text">Сравнение</span>
+          </a>
+          <a href="favorites.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#heart"></use></svg></span>
+            <span class="header-links__text">Избранное</span>
+          </a>
+          <a href="#" class="header-links links-chat">
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#chat"></use></svg></span>
+            <span class="header-links__text">Спросить</span>
+          </a>
+          <a href="#" class="header-links language-links">
+            <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+            <span class="header-links__text">Русский</span>
+          </a>
+        </div>
+
+        <ul class="menu">
+          <li><a href="news.html">НОВОСТИ</a></li>
+          <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+          <li><a href="rental.html">АРЕНДА</a></li>
+          <li><a href="realization.html">ПРОДАЖА</a></li>
+          <li><a href="publication.html">Публикации</a></li>
+          <li><a href="concierge.html">Консьерж</a></li>
+          <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+        </ul>
+
+        <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+        <ul class="list-social">
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <form method="post" class="form-search form">
+              <label>
+                <input type="text" placeholder="Поиск" name="search">
+              </label>
+              <button type="submit" class="button-search">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+
+            <a href="comparison.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg></span>
+              <span class="header-links__text">Сравнение</span>
+            </a>
+            <a href="favorites.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#heart"></use></svg></span>
+              <span class="header-links__text">Избранное</span>
+            </a>
+            <a href="#" class="header-links links-chat">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chat"></use></svg></span>
+              <span class="header-links__text">Спросить</span>
+            </a>
+            <a href="#" class="header-links language-links">
+              <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+              <span class="header-links__text">Русский</span>
+            </a>
+            <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-12">
+            <ul class="menu">
+              <li><a href="news.html">НОВОСТИ</a></li>
+              <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+              <li><a href="rental.html">АРЕНДА</a></li>
+              <li><a href="realization.html">ПРОДАЖА</a></li>
+              <li><a href="publication.html">Публикации</a></li>
+              <li><a href="concierge.html">Консьерж</a></li>
+              <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="article-page rental-page news-page bg-grey">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12">
+                <div class="row align-items-center">
+                  <div class="col-12 col-lg-4 mb-20">
+                    <ul class="nav nav-pills nav-tabs nav-tabs-rental empty-legs-tabs empty-legs-tabs-v2"
+                        id="pills-tab4"
+                        role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-10-tab" data-toggle="pill" href="#pills-10" role="tab"
+                           aria-controls="pills-10" aria-selected="false">все новости</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-11-tab" data-toggle="pill" href="#pills-11" role="tab"
+                           aria-controls="pills-11" aria-selected="false">все события</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-8 mb-20">
+                    <ul class="list-tags">
+                      <li><a href="#">#европа</a></li>
+                      <li><a href="#">#РОССИЯ</a></li>
+                      <li><a href="#">#АМЕРИКА</a></li>
+                      <li><a href="#">#БЛИЖНИЙ ВОСТОК</a></li>
+                      <li><a href="#">#АЗИЯ</a></li>
+                      <li><a href="#">#БИЗНЕС-АВИАЦИЯ</a></li>
+                      <li><a href="#">#ЛАЙФСТАЙЛ</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-content" id="pills-tabContent4">
+                  <div class="tab-pane fade show active" id="pills-10" role="tabpanel" aria-labelledby="pills-10-tab">
+                    <div class="row">
+                      <div class="col-12 col-md-3 order-md-1 d-none d-md-block">
+                        <div class="banner-box mb-20">
+                          <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-md-block">
+                          <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+                          <div class="banner-box__mobile d-flex d-md-none">
+                            <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                            <div class="banner-box__title">Путеводитель
+                              по миру суперяхт
+                            </div>
+                          </div>
+                        </div>
+                        <div class="news-slider-wrapper d-none d-lg-block mb-20">
+                          <div class="news-slider">
+                            <div class="slide">
+                              <div class="news-slider-card">
+                                <div class="news-slider-card__img">
+                                  <img src="img/news2.png" alt="">
+                                  <div class="news-slider-card__footer">
+                                    <a href="#" class="category-name color-brown">Новости</a>
+                                    <div class="card-news__date">11.12.2020</div>
+                                  </div>
+                                </div>
+                                <div class="news-slider-card__body">
+                                  <a href="#" class="news-slider-card__name">Вертолет ACH130 Aston Martin Edition
+                                    получил заказы по
+                                    всему миру</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="slide">
+                              <div class="news-slider-card">
+                                <div class="news-slider-card__img">
+                                  <img src="img/news2.png" alt="">
+                                  <div class="news-slider-card__footer">
+                                    <a href="#" class="category-name color-brown">Новости</a>
+                                    <div class="card-news__date">11.12.2020</div>
+                                  </div>
+                                </div>
+                                <div class="news-slider-card__body">
+                                  <a href="#" class="news-slider-card__name">Вертолет ACH130 Aston Martin Edition
+                                    получил заказы по
+                                    всему миру</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="slide">
+                              <div class="news-slider-card">
+                                <div class="news-slider-card__img">
+                                  <img src="img/news2.png" alt="">
+                                  <div class="news-slider-card__footer">
+                                    <a href="#" class="category-name color-brown">Новости</a>
+                                    <div class="card-news__date">11.12.2020</div>
+                                  </div>
+                                </div>
+                                <div class="news-slider-card__body">
+                                  <a href="#" class="news-slider-card__name">Вертолет ACH130 Aston Martin Edition
+                                    получил заказы по
+                                    всему миру</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="slide">
+                              <div class="news-slider-card">
+                                <div class="news-slider-card__img">
+                                  <img src="img/news2.png" alt="">
+                                  <div class="news-slider-card__footer">
+                                    <a href="#" class="category-name color-brown">Новости</a>
+                                    <div class="card-news__date">11.12.2020</div>
+                                  </div>
+                                </div>
+                                <div class="news-slider-card__body">
+                                  <a href="#" class="news-slider-card__name">Вертолет ACH130 Aston Martin Edition
+                                    получил заказы по
+                                    всему миру</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="slide">
+                              <div class="news-slider-card">
+                                <div class="news-slider-card__img">
+                                  <img src="img/news2.png" alt="">
+                                  <div class="news-slider-card__footer">
+                                    <a href="#" class="category-name color-brown">Новости</a>
+                                    <div class="card-news__date">11.12.2020</div>
+                                  </div>
+                                </div>
+                                <div class="news-slider-card__body">
+                                  <a href="#" class="news-slider-card__name">Вертолет ACH130 Aston Martin Edition
+                                    получил заказы по
+                                    всему миру</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slider-nav slider-nav-v2 news-slider__nav"></div>
+                        </div>
+
+                        <div class="card-news card-news-col card-news-lg mb-20">
+                          <div class="card-news__body">
+                            <a href="#" class="card-news__title">Flexjet пополняет европейский флот первым Praetor
+                              600</a>
+                            <div class="box-text">
+                              <p>Компания Flexjet получила первый самолет Embraer Praetor 600, добавив его в свой
+                                европейский флот. </p>
+                            </div>
+                            <div class="card-news__footer">
+                              <a href="#" class="category-name color-brown">Новости</a>
+                              <div class="card-news__date">16.12.2020</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card-news card-news-col card-news-lg">
+                          <div class="card-news__body">
+                            <a href="#" class="card-news__title">Вопрос ко всем профессионалам индустрии: Как вы
+                              считаете, уходит ли JetSmarter в «штопор»?</a>
+                            <div class="box-text">
+                              <p>«Штопор»: JetSmarter в попытке стать «Uber для частных самолетов» столкнулась с
+                                финансовыми потерями, судебными исками и проблемами безопасности.
+                                Весной прошлого года Leonardo Galvez получил от JetSmarter очень выгодное
+                                предложение.</p>
+                            </div>
+                            <div class="card-news__footer">
+                              <a href="#" class="category-name color-brown">Новости</a>
+                              <div class="card-news__date">16.12.2020</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-9">
+                        <div class="news-page-box card-news card-news-row card-news-lg mb-20">
+                          <div class="card-news__content">
+                            <div class="card-news__body">
+                              <a href="#" class="card-news__title">Gulfstream завершает производство G550</a>
+                              <div class="box-text">
+                                <p>Gulfstream объявил о завершении производства одного из своих сверхдальних джетов
+                                  G550. Авиастроитель сообщает, что принял последний заказ на данную модель, которая
+                                  будет поставлена заказчику в 2021 году. </p>
+                              </div>
+                            </div>
+
+                            <div class="card-news__img">
+                              <img src="img/news1.png" alt="">
+                            </div>
+                          </div>
+
+                          <div class="card-news__footer">
+                            <a href="#" class="category-name color-brown">Новости</a>
+                            <div class="card-news__date color-light-grey">15.12.2020</div>
+                          </div>
+                        </div>
+                        <div class="news-page-box card-news card-news-row card-news-lg mb-20">
+                          <div class="card-news__content">
+                            <div class="card-news__body">
+                              <a href="#" class="card-news__title">Gulfstream завершает производство G550</a>
+                              <div class="box-text">
+                                <p>Gulfstream объявил о завершении производства одного из своих сверхдальних джетов
+                                  G550. Авиастроитель сообщает, что принял последний заказ на данную модель, которая
+                                  будет поставлена заказчику в 2021 году. </p>
+                              </div>
+                            </div>
+
+                            <div class="card-news__img">
+                              <img src="img/news-card1.png" alt="">
+                            </div>
+                          </div>
+
+                          <div class="card-news__footer">
+                            <a href="#" class="category-name color-brown">Новости</a>
+                            <div class="card-news__date color-light-grey">15.12.2020</div>
+                          </div>
+                        </div>
+
+                        <div class="banner-box d-flex d-md-none">
+                          <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-lg-block">
+                          <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+                          <div class="banner-box__mobile d-flex d-lg-none">
+                            <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                            <div class="banner-box__title">Путеводитель
+                              по миру суперяхт
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12 col-sm-6 col-md-4 mb-20">
+                            <div class="card-article news-card">
+                              <a href="article.html" class="card-article__img"><img src="img/news-card2.png" alt=""></a>
+                              <div class="card-article__body">
+                                <a href="article.html" class="card-article__name">Как улететь, когда границы закрыты:
+                                  эвакуационные рейсы</a>
+                                <div class="box-text">
+                                  <p>С 27 марта Россия приостановила регулярное авиасообщение с внешним миром в связи с
+                                    распространением новой коронавирусной инфекции.</p>
+                                </div>
+
+                                <div class="card-news__footer">
+                                  <a href="#" class="category-name color-brown">Новости</a>
+                                  <div class="card-news__date">16.12.2020</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-4 mb-20">
+                            <div class="card-article news-card">
+                              <a href="article.html" class="card-article__img"><img src="img/news-card3.png" alt=""></a>
+                              <div class="card-article__body">
+                                <a href="article.html" class="card-article__name">Разработчик сверхзвуковых самолетов
+                                  Bizjet Aerion прекращает работу</a>
+                                <div class="box-text">
+                                  <p>Aerion Corp. прекратила свою деятельность, сославшись на отсутствие финансирования
+                                    своих планов по выводу на рынок сверхзвуковых самолетов.</p>
+                                </div>
+
+                                <div class="card-news__footer">
+                                  <a href="#" class="category-name color-brown">Новости</a>
+                                  <div class="card-news__date">16.12.2020</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-4 mb-20">
+                            <div class="card-article news-card">
+                              <a href="article.html" class="card-article__img"><img src="img/news-card4.png" alt=""></a>
+                              <div class="card-article__body">
+                                <a href="article.html" class="card-article__name">Embraer Praetor 600 Business Jet
+                                  получил сертификат типа</a>
+                                <div class="box-text">
+                                  <p>Новый бизнес-джет супер-среднего класса Praetor 600 получил сертификат типа от
+                                    Управления гражданской авиации Бразилии (ANAC - Нац–я авиационная служба).</p>
+                                </div>
+
+                                <div class="card-news__footer">
+                                  <a href="#" class="category-name color-brown">Новости</a>
+                                  <div class="card-news__date">16.12.2020</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-4 mb-20">
+                            <div class="card-article news-card">
+                              <a href="article.html" class="card-article__img"><img src="img/news-card5.png" alt=""></a>
+                              <div class="card-article__body">
+                                <a href="article.html" class="card-article__name">Ростех модернизирует 7 вертолетов
+                                  Ансат для поставки на Крайний Север</a>
+                                <div class="box-text">
+                                  <p>Холдинг "Вертолеты России" и "Полярные авиалинии" заключили контракт на поставку
+                                    семи модернизированных вертолетов Ансат</p>
+                                </div>
+
+                                <div class="card-news__footer">
+                                  <a href="#" class="category-name color-brown">Новости</a>
+                                  <div class="card-news__date">16.12.2020</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-4 mb-20">
+                            <div class="card-article news-card">
+                              <a href="article.html" class="card-article__img"><img src="img/news-card6.png" alt=""></a>
+                              <div class="card-article__body">
+                                <a href="article.html" class="card-article__name">Daher анонсирует новый турбовинтовой
+                                  самолет
+                                  TBM 940</a>
+                                <div class="box-text">
+                                  <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный
+                                    удовлетворить самые
+                                    взыскательные запросы. </p>
+                                </div>
+
+                                <div class="card-news__footer">
+                                  <a href="#" class="category-name color-brown">Новости</a>
+                                  <div class="card-news__date">16.12.2020</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-4 mb-20">
+                            <div class="card-article news-card">
+                              <a href="article.html" class="card-article__img"><img src="img/news-card7.png" alt=""></a>
+                              <div class="card-article__body">
+                                <a href="article.html" class="card-article__name">Global 7500 стал рекордсменом по
+                                  дальности среди бизнес-джетов</a>
+                                <div class="box-text">
+                                  <p>Самолет Global 7500 разработки канадской компании
+                                    Bombardier стал самым дальнемагистральным
+                                    бизнес-джетом.</p>
+                                </div>
+
+                                <div class="card-news__footer">
+                                  <a href="#" class="category-name color-brown">Новости</a>
+                                  <div class="card-news__date">16.12.2020</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+
+                        <div class="pages-navigation">
+                          <nav class="pagination-nav">
+
+                            <ul class="pagination">
+                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                              <li class="page-item"><a class="page-link" href="#">5</a></li>
+                              <li class="page-item"><a class="page-link" href="#">6</a></li>
+                              <li class="page-item"><a class="page-link" href="#">...</a></li>
+                              <li class="page-item"><a class="page-link" href="#">12</a></li>
+                            </ul>
+
+                            <a href="#" class="links-next">Вперед</a>
+                          </nav>
+
+                          <div class="views">
+                            <p>Показывать:</p>
+                            <div class="pagination-nav">
+                              <ul class="pagination">
+                                <li class="page-item active"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item"><a class="page-link" href="#">20</a></li>
+                                <li class="page-item"><a class="page-link" href="#">30</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-11" role="tabpanel" aria-labelledby="pills-11-tab">
+                    <div class="row">
+                      <div class="col-12 col-md-3 order-md-1 d-none d-md-block">
+                        <div class="banner-box">
+                          <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-md-block">
+                          <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+                          <div class="banner-box__mobile d-flex d-md-none">
+                            <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                            <div class="banner-box__title">Путеводитель
+                              по миру суперяхт
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <div class="calculate-wrapper bg-black p-40">
+
+                          <form method="post" class="form-calculate">
+                            <h3 class="mb-32">Заказать бизнес-джет</h3>
+                            <div class="form-group">
+                              <label>
+                                <input type="text" placeholder="Откуда" name="where" required>
+                              </label>
+                              <label>
+                                <input type="text" placeholder="Куда" name="where_2" required>
+                              </label>
+                              <label>
+                                <input type="text" placeholder="Дата вылета" class="datepicker" name="date" required>
+                                <span class="inp-icon"><svg class="svg-icon"><use
+                                    xlink:href="img/sprite.svg#calendar"></use></svg></span>
+                              </label>
+                            </div>
+
+                            <div class="form-group">
+                              <label>
+                                <input type="text" placeholder="Имя" name="name" required>
+                              </label>
+                              <label>
+                                <input type="text" placeholder="Телефон" name="phone" required>
+                              </label>
+                              <label>
+                                <input type="text" placeholder="Email" name="mail" required>
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-accent max-100">рассчитать</button>
+
+                            <div class="consent">Нажимая на кнопку, <a href="data-processing.html" target="_blank"
+                                                                       class="d-inline text-decoration color-white">вы
+                              соглашаетесь
+                              на обработку персональных данных</a></div>
+                          </form>
+                        </div>
+
+                        <div class="events-calendar">
+                          <div class="events-calendar__head">
+                            <div class="events-calendar-month">
+                              <div class="month-name">Август</div>
+                              <div class="month-name">Сентябрь</div>
+                            </div>
+                            <div class="datepicker-events">
+                              <span class="inp-icon"><svg class="svg-icon"><use
+                                  xlink:href="img/sprite.svg#calendar"></use></svg></span>
+                              <input type="text" placeholder="Дата вылета" class="datepicker" name="date" required>
+
+                              <div class="datepicker-events__text">Выбор даты</div>
+                            </div>
+
+                          </div>
+
+                          <div class="events-calendar__body">
+                            <div class="events-calendar-slider">
+                              <div class="slide">
+                                <div class="calendar-box day-off">
+                                  <div class="calendar-box__week">вс</div>
+                                  <div class="calendar-box__date">29</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box active">
+                                  <div class="calendar-box__week">пн</div>
+                                  <div class="calendar-box__date">30</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">вт</div>
+                                  <div class="calendar-box__date">31</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">ср</div>
+                                  <div class="calendar-box__date">1</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">чт</div>
+                                  <div class="calendar-box__date">2</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">пт</div>
+                                  <div class="calendar-box__date">3</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box day-off">
+                                  <div class="calendar-box__week">сб</div>
+                                  <div class="calendar-box__date">4</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box day-off">
+                                  <div class="calendar-box__week">вс</div>
+                                  <div class="calendar-box__date">5</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">пн</div>
+                                  <div class="calendar-box__date">6</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">вт</div>
+                                  <div class="calendar-box__date">7</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">ср</div>
+                                  <div class="calendar-box__date">8</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">чт</div>
+                                  <div class="calendar-box__date">9</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">пт</div>
+                                  <div class="calendar-box__date">10</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box day-off">
+                                  <div class="calendar-box__week">сб</div>
+                                  <div class="calendar-box__date">11</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box day-off">
+                                  <div class="calendar-box__week">вс</div>
+                                  <div class="calendar-box__date">12</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">пн</div>
+                                  <div class="calendar-box__date">13</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">вт</div>
+                                  <div class="calendar-box__date">14</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">ср</div>
+                                  <div class="calendar-box__date">15</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">чт</div>
+                                  <div class="calendar-box__date">16</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">пн</div>
+                                  <div class="calendar-box__date">30</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box">
+                                  <div class="calendar-box__week">пт</div>
+                                  <div class="calendar-box__date">17</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box day-off">
+                                  <div class="calendar-box__week">сб</div>
+                                  <div class="calendar-box__date">18</div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="calendar-box day-off">
+                                  <div class="calendar-box__week">вс</div>
+                                  <div class="calendar-box__date">19</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="banner-box d-flex d-md-none">
+                          <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-lg-block">
+                          <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+                          <div class="banner-box__mobile d-flex d-lg-none">
+                            <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                            <div class="banner-box__title">Путеводитель
+                              по миру суперяхт
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="news-page-box card-news card-news-row card-news-lg mb-20">
+                          <div class="card-news__content">
+                            <div class="card-news__body">
+                              <a href="#" class="card-news__title">Moscow Yacht Show 2019</a>
+                              <div class="box-text">
+                                <p>С 31 мая по 2 июня в Москве состоится выставка яхт и катеров на воде Moscow Yacht
+                                  Show 2019 (MYS). Организацией этого ежегодного события занимается ведущий российский
+                                  яхтенный журнал Motor Boat & Yachting Russia (MBY), выставочная площадка — самый
+                                  престижный яхт-клуб столицы
+                                  Royal Yacht Club (RYC). </p>
+                              </div>
+                            </div>
+
+                            <div class="card-news__img">
+                              <img src="img/events1.png" alt="">
+                            </div>
+                          </div>
+
+                          <div class="card-news__footer">
+                            <a href="#" class="category-name color-brown">События</a>
+                            <div class="card-news__date color-light-grey">30.09.2021</div>
+                          </div>
+                        </div>
+                        <div class="news-page-box card-news card-news-row card-news-lg mb-20">
+                          <div class="card-news__content">
+                            <div class="card-news__body">
+                              <a href="#" class="card-news__title">Чемпионат мира по легкой атлетике 2019
+                                в Катаре</a>
+                              <div class="box-text">
+                                <p>В 2014 году Катар получил право на проведение Чемпионата мира по легкой атлетике IAAF
+                                  World Athletic Championship 2019, который впервые пройдет на Ближнем Востоке.</p>
+                              </div>
+                            </div>
+
+                            <div class="card-news__img">
+                              <img src="img/events2.png" alt="">
+                            </div>
+                          </div>
+
+                          <div class="card-news__footer">
+                            <a href="#" class="category-name color-brown">События</a>
+                            <div class="card-news__date color-light-grey">30.09.2021</div>
+                          </div>
+                        </div>
+                        <div class="news-page-box card-news card-news-row card-news-lg mb-20">
+                          <div class="card-news__content">
+                            <div class="card-news__body">
+                              <a href="#" class="card-news__title">«Кубок Аргентины» по конному поло</a>
+                              <div class="box-text">
+                                <p>Летний игровой сезон 2018 года в «Московском поло клубе» в самом разгаре и уже в
+                                  ближайшую субботу состоится очередной турнир – «Кубок Аргентины». Как известно,
+                                  Аргентина уже очень давно является страной на которую ориентируются все страны мира, в
+                                  которых играют в этот удивительный вид спорта – конное поло.</p>
+                              </div>
+                            </div>
+
+                            <div class="card-news__img">
+                              <img src="img/events3.png" alt="">
+                            </div>
+                          </div>
+
+                          <div class="card-news__footer">
+                            <a href="#" class="category-name color-brown">События</a>
+                            <div class="card-news__date color-light-grey">30.09.2021</div>
+                          </div>
+                        </div>
+                        <div class="news-page-box card-news card-news-row card-news-lg mb-20">
+                          <div class="card-news__content">
+                            <div class="card-news__body">
+                              <a href="#" class="card-news__title">Bad RagARTz: крупнейшая в Европе выставка скульптур в
+                                Бад-Рагаце</a>
+                              <div class="box-text">
+                                <p>Скульптуры ярко-желтых улиток в парках в Бад-Рагаца невозможно не заметить. И это не
+                                  случайно – они являются визитной карточкой 7-ого Швейцарского Триеннале скульптуры,
+                                  также известного как BadRagARTz, которое продлится до 4 ноября 2018 года.</p>
+                              </div>
+                            </div>
+
+                            <div class="card-news__img">
+                              <img src="img/events4.png" alt="">
+                            </div>
+                          </div>
+
+                          <div class="card-news__footer">
+                            <a href="#" class="category-name color-brown">События</a>
+                            <div class="card-news__date color-light-grey">30.09.2021</div>
+                          </div>
+                        </div>
+
+                        <a href="#" class="btn btn-border-grey btn-load-toggle">показать еще</a>
+
+                        <div class="pages-navigation">
+                          <nav class="pagination-nav">
+
+                            <ul class="pagination">
+                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                              <li class="page-item"><a class="page-link" href="#">5</a></li>
+                              <li class="page-item"><a class="page-link" href="#">6</a></li>
+                              <li class="page-item"><a class="page-link" href="#">...</a></li>
+                              <li class="page-item"><a class="page-link" href="#">12</a></li>
+                            </ul>
+
+                            <a href="#" class="links-next">Вперед</a>
+                          </nav>
+
+                          <div class="views">
+                            <p>Показывать:</p>
+                            <div class="pagination-nav">
+                              <ul class="pagination">
+                                <li class="page-item active"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item"><a class="page-link" href="#">20</a></li>
+                                <li class="page-item"><a class="page-link" href="#">30</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="bg-black p-60 color-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>По вопросам рекламы и сотрудничества обращаться по телефону:</h4>
+            <a href="tel:+74956616583" class="color-white footer-box__links font-600">+7 (495) 661-65-83</a>
+            <a href="mailto:sales@aviapromo.ru" class="color-white footer-box__links font-600">sales@aviapromo.ru</a>
+            <p class="font-600">Часы работы: с 10 до 19 пн-пт</p>
+
+            <ul class="footer-box__logos">
+              <li><a href="#"><img src="img/logo-footer1.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer2.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer3.png" alt=""></a></li>
+            </ul>
+
+            <div class="number-evidence">
+              Номер свидетельства ЭЛ № ФС 77 - 75020
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>Для пресс-релизов</h4>
+            <a href="mailto:press@jets.ru" class="color-white footer-box__links font-600">press@jets.ru</a>
+          </div>
+
+          <div class="footer-box">
+            <h4>Аренда и заказ частного самолета </h4>
+            <a href="tel:+74957737555" class="color-white footer-box__links font-600">+7 (495) 773-75-55</a>
+          </div>
+          <div class="footer-box">
+            <h4>Покупка и продажа частных <br>
+              самолетов и вертолетов</h4>
+            <a href="tel:+74957898404" class="color-white footer-box__links font-600">+7 (495) 789-84-04</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <div class="address">119048, Москва, ул. Усачёва д 35, стр. 1, БЦ "Спектр", 1 подъезд, 5 этаж</div>
+            <ul class="footer-box__menu">
+              <li><a href="https://jets.ru" class="color-white footer-box__links font-600">jets.ru</a></li>
+              <li><a href="mailto:info@jets.ru" class="color-white footer-box__links font-600">info@jets.ru</a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Медиакит
+                2021 </a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Тех.
+                требования к баннерам</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Выходные
+                данные</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Архив</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-3 col-lg-8">
+          <div class="age">18+</div>
+        </div>
+        <div class="col-9 col-lg-4">
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="cookie">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <h3>Мы используем файлы <a href="cookie.html" class="color-white d-inline text-decoration" target="_blank">cookies.</a>
+        </h3>
+        <div class="box-text d-block d-sm-none">
+          <p>На сайте используются cookies.</p>
+          <p>Продолжая использовать сайт, вы принимаете <a href="#" class="d-inline text-decoration">условия</a></p>
+        </div>
+        <a href="#" class="btn btn-accent btn-agree">
+          <span class="btn-text d-none d-sm-block">согласен</span>
+          <span class="btn-text d-block d-sm-none">OK</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

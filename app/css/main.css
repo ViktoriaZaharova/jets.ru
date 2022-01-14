@@ -1122,7 +1122,7 @@ footer {
   border: 1px solid #D7D7D7; }
   .card-news__body {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: relative;
     z-index: 1;
     display: -webkit-box;
@@ -1172,8 +1172,7 @@ footer {
   height: 135px; }
 
 .card-news-lg {
-  padding: 24px 24px 14px 24px;
-  height: 290px; }
+  padding: 24px 24px 14px 24px; }
 
 .card-news-sm .card-news__title {
   font-size: 14px;
@@ -1214,6 +1213,8 @@ footer {
     height: auto;
     width: calc(100% - 242px);
     padding: 0 0 0 24px; }
+  .card-news-row .card-news__content {
+    margin: 0 0 35px; }
   .card-news-row .box-text {
     font-family: "Lora", sans-serif;
     font-size: 15px;
@@ -1325,7 +1326,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column; }
   .news-slider-wrapper .slider-nav {
-    margin: auto 0 0;
+    margin: 24px 0 0;
     padding: 16px; }
 
 .news-slider-card {
@@ -1729,7 +1730,8 @@ footer {
 .card-article {
   width: 100%;
   background: #fff;
-  height: 480px;
+  min-height: 480px;
+  height: 100%;
   font-size: 14px;
   border: 1px solid #E0DFDF; }
   .card-article__img {
@@ -3742,6 +3744,291 @@ footer {
     margin: 0 8px 0 0; }
 
 /*==========  encyclopedia-aircraft page end  ==========*/
+/*==========  news ==========*/
+.news-page {
+  padding: 40px 0 160px; }
+  .news-page .btn-load-toggle {
+    max-width: none;
+    margin: 0; }
+  .news-page .nav-tabs {
+    margin: 0; }
+
+.news-page-box .card-news__body {
+  padding: 0;
+  width: calc(100% - 261px); }
+
+.news-page-box .box-text {
+  max-width: 490px; }
+
+.news-page-box .card-news__img {
+  width: 261px;
+  height: 197px; }
+
+.news-card .box-text, .card-news .box-text {
+  font-size: 15px;
+  line-height: 22px; }
+
+.list-tags {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 14px; }
+  .list-tags li {
+    margin: 0 8px 0 0; }
+    .list-tags li:last-child {
+      margin: 0; }
+    .list-tags li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 9px 15px;
+      text-transform: uppercase;
+      color: #727272;
+      border: 1px solid #727272;
+        border-radius: 20px; }
+      .list-tags li a:hover {
+        background: #727272;
+        color: #FFFFFF; }
+
+.pages-navigation {
+  width: 100%;
+  margin: 16px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .views p {
+    margin: 0 20px 0 0; }
+
+.pagination {
+  background: transparent;
+  border: none;
+    border-radius: 0;
+  padding: 0;
+  letter-spacing: 0.2em;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1; }
+  .pagination li {
+    margin: 0 5px 0 0; }
+    .pagination li:last-child {
+      margin: 0; }
+    .pagination li a {
+      color: #727272;
+      border: none;
+        border-radius: 0;
+      padding: 0 0 3px;
+      background: transparent;
+      position: relative; }
+      .pagination li a:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: transparent; }
+      .pagination li a:hover {
+        color: #BA935F;
+        background: transparent;
+        border: none; }
+  .pagination .active .page-link {
+    background: transparent;
+    color: #BA935F;
+    border: none;
+      border-radius: 0; }
+    .pagination .active .page-link:before {
+      background: #B89B7B; }
+
+.links-next {
+  margin: 0 0 0 40px;
+  color: #727272; }
+  .links-next:hover {
+    color: #BA935F; }
+
+.pagination-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+  border: 1px solid #727272;
+    border-radius: 4px; }
+
+.events-calendar {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  width: 100%;
+  margin: 60px 0 40px; }
+  .events-calendar__head {
+    margin: 0 0 12px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .events-calendar__body {
+    width: 100%;
+    position: relative; }
+
+.events-calendar-month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 70px 0 33px; }
+
+.month-name {
+  margin: 0 65px 0 0; }
+  .month-name:last-child {
+    margin: 0; }
+
+.datepicker-events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+  .datepicker-events:after {
+    content: '';
+    background: url("../img/caret-down-black.svg") no-repeat center;
+      background-size: 100%;
+    margin: 0 0 0 4px;
+    width: 16px;
+    height: 16px;
+    min-width: 16px; }
+  .datepicker-events .datepicker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 0; }
+  .datepicker-events .inp-icon {
+    position: relative;
+    right: 0;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    fill: #000;
+    margin: 0 4px 0 0; }
+
+.calendar-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 4px;
+  width: 39px;
+  height: 41px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer; }
+  .calendar-box__week {
+    color: #707070;
+    font-weight: normal;
+    margin: 0 auto 4px; }
+
+.day-off {
+  color: #BA935F; }
+  .day-off .calendar-box__week {
+    color: #BA935F; }
+
+.calendar-box.active {
+  background: #BA935F;
+  color: #fff; }
+  .calendar-box.active .calendar-box__week {
+    color: #fff; }
+
+.events-calendar-slider {
+  padding: 0 24px;
+  position: relative; }
+  .events-calendar-slider:before, .events-calendar-slider:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(27.08%, rgba(242, 242, 242, 0.92)), color-stop(59.11%, #F2F2F2), color-stop(102.08%, rgba(242, 242, 242, 0.8)), color-stop(102.08%, rgba(242, 242, 242, 0.9)));
+    background: linear-gradient(-270deg, rgba(242, 242, 242, 0.92) 27.08%, #F2F2F2 59.11%, rgba(242, 242, 242, 0.8) 102.08%, rgba(242, 242, 242, 0.9) 102.08%);
+    width: 58px;
+    height: 100%;
+    z-index: 1; }
+  .events-calendar-slider:before {
+    left: 0; }
+  .events-calendar-slider:after {
+    right: 0;
+    background: -webkit-gradient(linear, right top, left top, color-stop(-42.86%, #F2F2F2), color-stop(50%, rgba(242, 242, 242, 0.92)));
+    background: linear-gradient(270deg, #F2F2F2 -42.86%, rgba(242, 242, 242, 0.92) 50%); }
+  .events-calendar-slider .slick-arrow {
+    z-index: 2;
+    stroke: #707070;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+  .events-calendar-slider .slick-prev {
+    left: 0; }
+  .events-calendar-slider .slick-next {
+    right: 0; }
+
+/*==========  news end ==========*/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
