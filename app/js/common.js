@@ -31,6 +31,14 @@ $('.events-calendar-slider').slick({
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev slick-arrow-my slick-prev-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next slick-arrow-my slick-next-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                arrows: false
+            }
+        }
+    ]
 });
 
 

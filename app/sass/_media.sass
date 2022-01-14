@@ -3,9 +3,6 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
-  //.container
-  //  max-width: 988px
-
   .phone
     font-size: 15px
     margin: 0 0 0 36px
@@ -41,7 +38,7 @@
       margin: 6px 0 0
 
   .card-news-lg
-    height: 233px
+    min-height: 233px
 
   .card-news-overlay
     padding: 14px 20px 13px 12px
@@ -783,6 +780,24 @@
   .encyclopedia-aircraft
     padding: 40px 0 16px
 
+  .news-page
+    padding: 40px 0 100px
+
+  .news-page-box
+    padding: 19px
+    .card-news__body
+      padding: 0
+      width: calc(100% - 210px)
+    .card-news__img
+      width: 210px
+
+  .news-page
+    .calculate-wrapper
+      padding: 25px 19px
+
+  .events-calendar
+    margin: 40px 0
+
 @media only screen and (max-width: 1100px)
   .result-calculate-rental-line
     max-width: 168px
@@ -926,8 +941,6 @@
       font-size: 36px
       max-width: 400px
 
-  .card-news-lg
-    padding: 20px 20px 11px
 
   .card-news-overlay
     padding: 14px 20px 15px 14px
@@ -945,13 +958,14 @@
       padding: 0 0 0 20px
 
   .card-news-lg
-    height: 243px
+    padding: 20px 20px 11px
+    min-height: 243px
 
   .card-news-sm
     height: 113px
 
   .card-news-col
-    height: 242px
+    min-height: 242px
     padding: 20px 13.4px 13.4px
 
   .cookie
@@ -1263,6 +1277,37 @@
   #callModal .modal-dialog
     max-width: 725px
 
+  .news-page-box
+    .card-news__body
+      padding: 0
+      width: calc(100% - 218px)
+    .card-news__img
+      width: 218px
+      height: 164px
+
+  .list-tags
+    max-width: 477px
+    font-size: 12px
+    li
+      margin: 0 8px 8px 0
+      &:last-child
+        margin: 0 0 8px
+
+  .news-page
+    padding: 16px 0 80px
+    .form-calculate
+      max-width: none
+
+  .events-calendar
+    font-size: 12px
+
+  .calendar-box
+    width: 33px
+    height: 35px
+    padding: 2px
+    &__week
+      margin: 0 auto
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px)
   .info-airplane__box
@@ -1483,6 +1528,12 @@
     &:nth-child(-n+8)
       display: block
 
+  .pages-navigation
+    display: none
+
+  .news-page
+    padding: 16px 0 60px
+
 @media only screen and (max-width: 640px)
   .card-news__img
     width: 150px
@@ -1512,7 +1563,11 @@
     &__img
       max-width: 200px
 
-
+  .news-page-box
+    .card-news__img
+      display: none
+    .card-news__body
+      width: 100%
 
 @media only screen and (max-width: 575px)
   body
@@ -1651,7 +1706,7 @@
       z-index: 1
 
   .card-news-lg
-    height: 230px
+    min-height: 230px
 
 
   .card-news-overlay
@@ -2642,6 +2697,71 @@
   .sidebar
     display: none
     margin: 0 0 16px
+
+  .pages-navigation
+    display: flex
+
+  .views
+    display: none
+
+  .list-tags
+    max-width: none
+    flex-wrap: nowrap
+    white-space: nowrap
+    overflow-x: auto
+    padding: 0
+    &::-webkit-scrollbar-thumb, &::-webkit-scrollbar
+      background: transparent
+    &::-webkit-scrollbar, &::-webkit-scrollbar
+      width: 0
+    li
+      margin: 0 8px 0 0
+
+  .news-page
+    background: #fff
+    padding: 16px 0 60px
+    .btn-load-toggle
+      background: transparent
+    .form-group label
+      width: 100%
+
+  .pagination-nav
+    width: 100%
+    .links-next
+      margin: 0 0 0 auto
+
+  .events-calendar
+    &__body
+      margin: 0 0 16px
+
+  .events-calendar-slider
+    padding: 0
+    &:before, &:after
+      display: none
+    .slick-slide
+      margin: 0 8px 0 0
+
+  .events-calendar-month
+    padding: 0
+
+  .month-name
+    &:first-child
+      display: none
+
+  .news-page-box
+    .box-text
+      margin: 0
+      max-width: none
+
+  .calendar-box
+    background: #F2F2F2
+    border-radius: 2px
+    width: 40px
+    height: 40px
+    justify-content: center
+
+
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
