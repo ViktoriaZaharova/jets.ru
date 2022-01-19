@@ -46,6 +46,9 @@ body {
 html, body {
   overflow-x: hidden; }
 
+.no-scroll {
+  overflow: hidden; }
+
 img {
   display: block;
   max-width: 100%;
@@ -1172,7 +1175,8 @@ footer {
   height: 135px; }
 
 .card-news-lg {
-  padding: 24px 24px 14px 24px; }
+  padding: 24px 24px 14px 24px;
+  min-height: 290px; }
 
 .card-news-sm .card-news__title {
   font-size: 14px;
@@ -1426,7 +1430,7 @@ footer {
     border: none; }
 
 .tbody .tr {
-  padding: 17px 16px 18px; }
+  padding: 19px 16px 18.5px; }
 
 .table-empty {
   margin: 40px 0 0; }
@@ -1755,6 +1759,7 @@ footer {
   .card-article__body {
     width: 100%;
     height: calc(100% - 220px);
+    min-height: 260px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2563,15 +2568,17 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .card-airplane__body .box-text {
+      margin: 0 0 39px; }
   .card-airplane .btn {
     margin: auto 0 7px;
     width: 100%;
     max-width: none; }
     .card-airplane .btn:last-child {
-      margin: auto 0 0; }
+      margin: 0; }
   .card-airplane__name {
     width: 100%;
-    margin: 0 0 24px;
+    margin: 0 0 20px;
     text-transform: uppercase;
     color: #000;
     min-height: 38px;
@@ -2580,10 +2587,10 @@ footer {
     .card-airplane__name:hover {
       color: #AE762C; }
   .card-airplane .list-characteristics {
-    margin: 0 0 39px; }
+    margin: 0; }
   .card-airplane .prices-popular-distance-item {
     font-size: 18px;
-    margin: 0 0 25px; }
+    margin: 0 0 16px; }
     .card-airplane .prices-popular-distance-item:last-child {
       margin: 0; }
   .card-airplane .prices-popular-distance-item strong {
@@ -2845,9 +2852,6 @@ footer {
 
 .popular-airplane-card .box-text {
   font-size: 14px; }
-
-.popular-airplane-card .list-characteristics {
-  margin: 0 0 24px; }
 
 /*==========  rental-air end  ==========*/
 /*========== order rental-air page  ==========*/
@@ -4029,6 +4033,183 @@ footer {
     right: 0; }
 
 /*==========  news end ==========*/
+/*==========  search ==========*/
+.result-search-page {
+  padding: 34px 0 160px; }
+  .result-search-page .btn-load-toggle {
+    max-width: none;
+    width: 100%;
+    margin: 0; }
+  .result-search-page .card-airplane .box-text {
+    font-size: 16px;
+    line-height: 19px; }
+
+.title-decor {
+  width: 100%;
+  margin: 0 0 54px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .title-decor h2 {
+    margin: 0;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 45px 0 0; }
+  .title-decor:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #000; }
+
+.result-search-box {
+  margin: 0 0 110px; }
+  .result-search-box:last-child {
+    margin: 0; }
+
+.result-search-page-zero {
+  padding: 54px 0 160px; }
+  .result-search-page-zero h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 40px;
+    padding: 0 0 34px;
+    border-bottom: 1px solid #BA935F; }
+  .result-search-page-zero .box-text {
+    width: 100%;
+    text-align: center; }
+    .result-search-page-zero .box-text h3 {
+      max-width: 344px;
+      width: 100%;
+      margin: 0 auto;
+      line-height: 38px;
+      font-weight: 500; }
+
+.form-search-page {
+  width: 100%;
+  margin: 0 0 24px; }
+  .form-search-page input {
+    border: 1px solid #BA935F;
+      border-radius: 4px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500; }
+    .form-search-page input::-webkit-input-placeholder {
+      color: #000000; }
+    .form-search-page input::-moz-placeholder {
+      color: #000000; }
+    .form-search-page input::-ms-input-placeholder {
+      color: #000000; }
+    .form-search-page input::placeholder {
+      color: #000000; }
+  .form-search-page button {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 24px;
+    height: 24px;
+    right: 15px;
+    background: transparent;
+    fill: #BA935F; }
+
+.tab-content-search .fade:not(.show) {
+  opacity: 1;
+  display: block; }
+
+.nav-tabs-search {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto; }
+  .nav-tabs-search .nav-link {
+    white-space: nowrap; }
+
+/*==========  search end ==========*/
+/*==========  aircraft-sales ==========*/
+.aircraft-sales {
+  padding: 28px 0 100px; }
+  .aircraft-sales h1 {
+    margin: 0 0 48px; }
+
+.aircraft-sales-box {
+  margin: 0 0 20px;
+  height: 290px; }
+  .aircraft-sales-box:before {
+    background: -webkit-gradient(linear, left top, left bottom, from(#234176), to(rgba(73, 103, 160, 0)));
+    background: linear-gradient(180deg, #234176 0%, rgba(73, 103, 160, 0) 100%);
+    height: 84px; }
+  .aircraft-sales-box:last-child {
+    margin: 0; }
+  .aircraft-sales-box__title {
+    font-size: 24px;
+    font-weight: bold; }
+
+.aircraft-sales-box1:before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#354760), to(rgba(56, 75, 98, 0)));
+  background: linear-gradient(180deg, #354760 0%, rgba(56, 75, 98, 0) 100%); }
+
+.aircraft-sales-catalog .btn-load-toggle {
+  max-width: none;
+  width: 100%;
+  margin: 0; }
+
+.calculate-callback .calculate-wrapper {
+  padding: 60px 60px 20px; }
+
+.calculate-callback h2 {
+  max-width: 670px;
+  margin: 0 auto 40px; }
+
+.calculate-callback .nav-tabs .nav-link.active {
+  border-color: #BA935F; }
+
+.calculate-callback .nav-tabs, .calculate-callback .tab-content {
+  max-width: 832px;
+  width: 100%;
+  margin: 0 auto; }
+
+.sidebar-head {
+  width: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  padding: 25px 16px;
+  border-bottom: 1px solid #D7D7D7;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .sidebar-head h4 {
+    font-size: 18px;
+    font-weight: bold; }
+
+.btn-close-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  fill: #BA935F; }
+
+.links-clear {
+  font-size: 14px;
+  color: #BA935F; }
+  .links-clear:hover {
+    color: #151515; }
+
+/*==========  aircraft-sales end ==========*/
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -4630,7 +4811,29 @@ footer {
   .news-page .calculate-wrapper {
     padding: 25px 19px; }
   .events-calendar {
-    margin: 40px 0; } }
+    margin: 40px 0; }
+  .result-search-page {
+    padding: 40px 0 100px; }
+  .title-decor {
+    margin: 0 0 48px; }
+    .title-decor h2 {
+      padding: 0 30px 0 0; }
+  .result-search-box {
+    margin: 0 0 100px; }
+  .calculate-callback .nav-tabs, .calculate-callback .tab-content {
+    max-width: 695px; }
+  .calculate-callback .calculate-wrapper {
+    padding: 50px 50px 30px; }
+  .calculate-callback h2 {
+    max-width: 553px; }
+  .aircraft-sales-box {
+    height: 234px; }
+    .aircraft-sales-box:before {
+      height: 68px; }
+  .aircraft-sales-box__title {
+    font-size: 22px; }
+  .aircraft-sales {
+    padding: 40px 0 80px; } }
 
 @media only screen and (max-width: 1100px) {
   .result-calculate-rental-line {
@@ -5050,7 +5253,11 @@ footer {
     height: 35px;
     padding: 2px; }
     .calendar-box__week {
-      margin: 0 auto; } }
+      margin: 0 auto; }
+  .card-article-col {
+    display: none; }
+    .card-article-col:nth-child(-n+6) {
+      display: block; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px) {
@@ -5227,7 +5434,27 @@ footer {
   .news-page {
     padding: 16px 0 60px; }
     .news-page .banner-box {
-      margin: 40px 0; } }
+      margin: 40px 0; }
+  .result-search-page {
+    padding: 34px 0 80px; }
+  .title-decor {
+    margin: 0 0 40px; }
+    .title-decor h2 {
+      padding: 0 16px 0 0; }
+  .aircraft-sales {
+    padding: 16px 0 60px;
+    margin: 0; }
+    .aircraft-sales .banner-box {
+      margin: 0 0 40px; }
+  .aircraft-sales-box {
+    height: 243px;
+    margin: 0 0 16px; }
+  .encyclopedia-aircraft-catalog {
+    padding: 0 0 80px; }
+  .calculate-callback .calculate-wrapper {
+    padding: 40px 16px 20px; }
+  .calculate-callback .nav-tabs, .calculate-callback .tab-content {
+    max-width: none; } }
 
 @media only screen and (max-width: 640px) {
   .card-news__img {
@@ -6226,7 +6453,21 @@ footer {
     font-size: 12px; }
   .sidebar {
     display: none;
-    margin: 0 0 16px; }
+    margin: 0 0 16px;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    width: 100%;
+    background: #fff; }
+    .sidebar .form-catalog {
+      padding: 24px 16px; }
+    .sidebar-head {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .pages-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6310,7 +6551,70 @@ footer {
     .news-card-slider .slick-slide {
       padding: 0;
       width: 280px;
-      margin: 0 16px 24px 0; } }
+      margin: 0 16px 24px 0; }
+  .title-decor {
+    display: none; }
+  .tab-content-search .fade:not(.show) {
+    opacity: 0;
+    display: none; }
+  .nav-tabs-search {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 0 5px;
+    font-size: 14px; }
+    .nav-tabs-search .nav-link {
+      white-space: nowrap;
+      padding: 0 25px;
+      max-width: none;
+      min-width: auto; }
+  .result-search-page {
+    padding: 24px 0 60px; }
+  .result-search-page-zero h1 {
+    padding: 0 0 24px;
+    margin: 50px 0 24px; }
+  .result-search-page-zero .box-text h3 {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 230px; }
+  .aircraft-sales {
+    padding: 24px 0 40px;
+    margin: 0; }
+    .aircraft-sales h1 {
+      margin: 0 0 24px; }
+  .aircraft-sales-box {
+    height: 180px; }
+    .aircraft-sales-box:before {
+      height: 39px; }
+  .aircraft-sales-box__title {
+    font-size: 18px; }
+  .calculate-callback .calculate-wrapper {
+    padding: 16px; }
+  .calculate-callback h2 {
+    margin: 0 0 16px;
+    text-align: left !important; }
+  .calculate-callback .form-rent {
+    padding: 16px 0 0; }
+  .calculate-callback .nav-tabs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .calculate-callback .nav-tabs .nav-item {
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto; }
+      .calculate-callback .nav-tabs .nav-item:first-child {
+        width: 100%;
+        margin: 0 0 8px; }
+        .calculate-callback .nav-tabs .nav-item:first-child .nav-link {
+          border-radius: 4px; }
+      .calculate-callback .nav-tabs .nav-item:nth-child(2) {
+        width: 50%; }
+        .calculate-callback .nav-tabs .nav-item:nth-child(2) .nav-link {
+          border-radius: 4px 0 0 4px; }
+      .calculate-callback .nav-tabs .nav-item:last-child {
+        width: 50%; }
+      .calculate-callback .nav-tabs .nav-item .nav-link {
+        font-size: 12px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {

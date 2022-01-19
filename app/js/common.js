@@ -129,7 +129,14 @@ $('.accordion-my [data-toggle="collapse"]').click(function (e) {
 
 $('.btn-sidebar').on('click', function (e) {
     e.preventDefault();
-    $('.sidebar').slideToggle();
+    $('body, html').addClass('no-scroll');
+    $('.sidebar').fadeIn();
+});
+
+$('.btn-close-filter').on('click', function (e) {
+    e.preventDefault();
+    $('.sidebar').fadeOut();
+    $('body, html').removeClass('no-scroll');
 });
 
 // datepicker

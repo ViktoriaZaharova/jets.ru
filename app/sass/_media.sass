@@ -798,6 +798,38 @@
   .events-calendar
     margin: 40px 0
 
+  .result-search-page
+    padding: 40px 0 100px
+
+  .title-decor
+    margin: 0 0 48px
+    h2
+      padding: 0 30px 0 0
+
+  .result-search-box
+    margin: 0 0 100px
+
+  .calculate-callback
+    .nav-tabs, .tab-content
+      max-width: 695px
+    .calculate-wrapper
+      padding: 50px 50px 30px
+    h2
+      max-width: 553px
+
+
+  .aircraft-sales-box
+    height: 234px
+    &:before
+      height: 68px
+
+  .aircraft-sales-box__title
+    font-size: 22px
+
+  .aircraft-sales
+    padding: 40px 0 80px
+
+
 @media only screen and (max-width: 1100px)
   .result-calculate-rental-line
     max-width: 168px
@@ -889,6 +921,7 @@
     &:before
       width: 8px
       height: 8px
+
 
 
 /* Medium Devices, Desktops */
@@ -1308,6 +1341,12 @@
     &__week
       margin: 0 auto
 
+  .card-article-col
+    display: none
+    &:nth-child(-n+6)
+      display: block
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px)
   .info-airplane__box
@@ -1535,6 +1574,34 @@
     padding: 16px 0 60px
     .banner-box
       margin: 40px 0
+
+  .result-search-page
+    padding: 34px 0 80px
+
+  .title-decor
+    margin: 0 0 40px
+    h2
+      padding: 0 16px 0 0
+
+  .aircraft-sales
+    padding: 16px 0 60px
+    margin: 0
+    .banner-box
+      margin: 0 0 40px
+
+  .aircraft-sales-box
+    height: 243px
+    margin: 0 0 16px
+
+  .encyclopedia-aircraft-catalog
+    padding: 0 0 80px
+
+  .calculate-callback
+    .calculate-wrapper
+      padding: 40px 16px 20px
+    .nav-tabs, .tab-content
+      max-width: none
+
 
 @media only screen and (max-width: 640px)
   .card-news__img
@@ -2699,6 +2766,19 @@
   .sidebar
     display: none
     margin: 0 0 16px
+    position: fixed
+    z-index: 4
+    left: 0
+    top: 0
+    height: 100%
+    overflow-y: auto
+    width: 100%
+    background: #fff
+    .form-catalog
+      padding: 24px 16px
+    &-head
+      display: flex
+
 
   .pages-navigation
     display: flex
@@ -2796,6 +2876,80 @@
       padding: 0
       width: 280px
       margin: 0 16px 24px 0
+
+  .title-decor
+    display: none
+
+
+  .tab-content-search .fade:not(.show)
+    opacity: 0
+    display: none
+
+  .nav-tabs-search
+    flex-wrap: nowrap
+    overflow-x: auto
+    padding: 0 0 5px
+    font-size: 14px
+    .nav-link
+      white-space: nowrap
+      padding: 0 25px
+      max-width: none
+      min-width: auto
+
+  .result-search-page
+    padding: 24px 0 60px
+
+  .result-search-page-zero
+    h1
+      padding: 0 0 24px
+      margin: 50px 0 24px
+    .box-text
+      h3
+        font-size: 18px
+        line-height: 22px
+        max-width: 230px
+
+  .aircraft-sales
+    padding: 24px 0 40px
+    margin: 0
+    h1
+      margin: 0 0 24px
+
+  .aircraft-sales-box
+    height: 180px
+    &:before
+      height: 39px
+
+  .aircraft-sales-box__title
+    font-size: 18px
+
+  .calculate-callback
+    .calculate-wrapper
+      padding: 16px
+    h2
+      margin: 0 0 16px
+      text-align: left !important
+    .form-rent
+      padding: 16px 0 0
+    .nav-tabs
+      flex-wrap: wrap
+
+      .nav-item
+        flex: auto
+
+        &:first-child
+          width: 100%
+          margin: 0 0 8px
+          .nav-link
+            border-radius: 4px
+        &:nth-child(2)
+          width: 50%
+          .nav-link
+            border-radius: 4px 0 0 4px
+        &:last-child
+          width: 50%
+        .nav-link
+          font-size: 12px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
