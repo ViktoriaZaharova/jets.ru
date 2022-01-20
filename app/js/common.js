@@ -78,6 +78,45 @@ $(document).ready(function () {
     });
 });
 
+$('.comparison-slider').slick({
+    slidesToShow: 4,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chevron-right"></use></svg></button>',
+    // variableWidth: true,
+    infinite: false,
+    asNavFor: '.comparison-characteristics-slider',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+    ]
+});
+
+$('.comparison-characteristics-slider').slick({
+    slidesToShow: 4,
+    // variableWidth: true,
+    infinite: false,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                arrows: false,
+            }
+        }
+    ]
+});
+
+
+
+$('#accordionExample').on('show.bs.collapse', function (e) {
+    $('.comparison-characteristics-slider').slick('refresh');
+});
+
 // slick active
 $(window).on('load resize', function () {
     if ($(window).width() < 576) {

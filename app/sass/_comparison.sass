@@ -6,4 +6,201 @@
   padding: 34px 0 120px
 
 
+.comparison-wrapper
+  width: 100%
+  .accordion
+    .card
+      margin: -1px 0 0
+    .card-header
+      margin: 0
+      border: 1px solid #D7D7D7
+      background: #F3F3F3
+      padding: 20px 24px
+      justify-content: flex-start
+      flex-wrap: nowrap
+      h3
+        width: fit-content
+        font-size: 20px
+      .accordion-icon
+        margin: 0 0 0 8px
+        width: 24px
+        height: 24px
+        min-width: 24px
+        border: none
+          radius: 0
+        background: url("../img/arrow-bottom.svg") no-repeat center
+          size: 14px
+        transform: rotate(180deg)
+        &:before, &:after
+          display: none
+    .collapsed
+      .accordion-icon
+        transform: rotate(0)
+
+
+
+.comparison-line
+  width: 100%
+  display: flex
+  align-items: stretch
+
+.comparison-line__col
+  width: 216px
+  min-width: 216px
+  border: 1px solid #D7D7D7
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 16px
+  .btn
+    height: 32px
+    color: #9F9F9F
+    font-size: 14px
+
+.btn-add-comparison
+  margin: auto
+  color: #9F9F9F
+  font-size: 12px
+  font-weight: 500
+  text-align: center
+  &:hover
+    color: $brown
+  &__icon
+    width: 60px
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 8px
+    padding: 5px
+    fill: #9F9F9F
+
+
+.btn-close-card
+  position: absolute
+  background: #fff
+  top: 7px
+  right: 7px
+  width: 24px
+  height: 24px
+  border-radius: 50%
+  padding: 4px
+  fill: $brown
+  z-index: 1
+  display: flex
+  align-items: center
+  justify-content: center
+
+.comparison-slider
+  .slick-slide
+    margin: 0 0 0 -1px
+  .slick-arrow
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+    border: none
+      radius: 50%
+    background: #fff
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1)
+    width: 40px
+    height: 40px
+    z-index: 2
+  .slick-next
+    right: -20px
+  .slick-prev
+    left: -20px
+  .slick-disabled
+    opacity: 0
+  .card-airplane
+    //width: 247px
+    width: 100%
+    max-width: none
+    //margin: 0 0 0 -1px
+    .btn
+      height: 32px
+      margin: 16px 0 0
+      font-size: 14px
+      border-radius: 4px
+  .add-favorite
+    width: 24px
+    height: 24px
+    padding: 4px
+    top: 7px
+    left: 7px
+  .card-airplane__img
+    height: 118px
+  .card-airplane__body
+    padding: 16px
+    height: calc(100% - 118px)
+    .box-text
+      margin: 0
+  .card-airplane__name
+    min-height: auto
+    margin: 0 0 9px
+    font-size: 14px
+  .list-characteristics
+    font-size: 14px
+    li
+      margin: 0 0 12px
+      &:last-child
+        margin: 0
+
+.comparison-line__wrapper
+  width: calc(100% - 216px)
+
+.card-airplane__number
+  position: absolute
+  bottom: 8px
+  right: 8px
+  font-size: 12px
+  font-weight: 500
+  background: #BA935F
+  border-radius: 25px
+  width: 56px
+  height: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  z-index: 1
+  color: #fff
+
+.comparison-characteristics__col
+  width: 216px
+  min-width: 216px
+
+.comparison-characteristics-list
+  width: 100%
+  font-weight: 500
+  font-size: 16px
+  line-height: 19px
+  color: #9F9F9F
+  li
+    border: 1px solid #D7D7D7
+    width: 100%
+    min-height: 80px
+    margin: -1px 0 0
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    flex-wrap: wrap
+    padding: 10px 24px
+
+.btn-clear-comparison
+  display: none
+  align-items: center
+  text-transform: uppercase
+  color: #727272
+  font-size: 12px
+  font-weight: 600
+
+
+.comparison-characteristics-slider
+  .slick-slide
+    margin: 0 0 0 -1px
+  .comparison-characteristics-list
+    color: #000000
+    //width: 247px
+    //margin: 0 0 0 -1px
 /*==========  comparison page end ==========*/

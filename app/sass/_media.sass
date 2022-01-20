@@ -852,6 +852,70 @@
   .author-box-about
     padding: 16px 16px 24px
 
+  .comparison-page
+    padding: 45px 0 100px
+    h1
+      margin: 0 0 40px
+    .accordion
+      .card-header
+        padding: 19px
+        h3
+          font-size: 16px
+      .accordion-icon
+        width: 19px
+        height: 19px
+        min-width: 19px
+
+  .comparison-characteristics-list
+    font-size: 13px
+    li
+      min-height: 65px
+      padding: 10px 19px
+
+  .comparison-line__col, .comparison-characteristics__col
+    width: 174px
+    min-width: 174px
+    .btn
+      height: 26px
+      font-size: 11px
+
+  .comparison-line__wrapper
+    width: calc(100% - 174px)
+
+  .comparison-slider .card-airplane
+    //width: 199px
+    .btn
+      height: 26px
+      font-size: 11px
+      margin: 13px auto 0
+    .card-airplane__name
+      font-size: 11px
+    .card-airplane__img
+      height: 95px
+    .card-airplane__body
+      height: calc(100% - 95px)
+      padding: 13px
+    .list-characteristics
+      line-height: 14px
+      font-size: 11px
+      li
+        margin: 0 0 9px
+
+  .btn-add-comparison
+    &__icon
+      width: 48px
+      height: 48px
+      margin: 0 auto 7px
+
+  .comparison-slider
+    .slick-arrow
+      width: 32px
+      height: 32px
+      min-width: 32px
+    .slick-next
+      right: -17px
+    .slick-prev
+      left: -17px
 
 @media only screen and (max-width: 1100px)
   .result-calculate-rental-line
@@ -1402,6 +1466,10 @@
     font-size: 12px
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 930px)
+  .comparison-slider .card-airplane .card-airplane__name
+    min-height: 26px
+
 @media only screen and (max-width: 860px)
   .info-airplane__box
     margin: 0 auto 0 0
@@ -1667,6 +1735,54 @@
   .author-page
     .banner-box
       margin: 0 0 16px
+
+  .comparison-line__col
+    width: 100%
+    border: none
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    padding: 0
+    margin: 0 0 19px
+
+  .btn-clear-comparison
+    display: flex
+
+  .btn-add-comparison
+    color: #727272
+    align-items: center
+    margin: 0 40px 0 0
+    text-transform: uppercase
+    display: flex
+    white-space: nowrap
+    br
+      display: none
+    &__icon
+      width: 24px
+      height: 24px
+      min-width: 24px
+      margin: 0 10px 0 0
+      padding: 2px
+
+  .btn-add-comparison__text
+    width: fit-content
+    max-width: none
+
+
+  .comparison-line
+    flex-wrap: wrap
+
+  .comparison-line__wrapper
+    width: 100%
+
+  .comparison-page
+    padding: 40px 0 80px
+
+  .comparison-slider .slick-slide, .comparison-characteristics-slider .slick-slide
+    margin: 0
+
+  .comparison-slider .card-airplane .card-airplane__name
+    font-size: 10px
 
 @media only screen and (max-width: 640px)
   .card-news__img
@@ -3085,6 +3201,51 @@
     .box-text
       font-size: 14px
       line-height: 18px
+
+  .comparison-page .accordion .card-header
+    padding: 15px 16px
+    flex-wrap: nowrap
+
+  .comparison-characteristics-list li
+    min-height: 56px
+    text-align: center
+    font-weight: normal
+    justify-content: center
+
+  .comparison-line__col
+    align-items: stretch
+    margin: 0 0 16px
+    justify-content: space-between
+
+  .btn-add-comparison, .btn-clear-comparison
+    margin: 0
+    flex-direction: column
+    align-items: center
+    text-align: center
+    justify-content: center
+    border: 1px solid #D7D7D7
+      radius: 6px
+    background: #fff
+    height: 100px
+    width: calc(50% - 8px)
+    text-transform: none
+    color: #000000
+    font-size: 12px
+    white-space: normal
+    font-weight: normal
+
+  .btn-add-comparison__text
+    max-width: 90px
+    margin: 0 auto
+
+
+  .btn-add-comparison__icon
+    margin: 0 auto 8px
+    width: 32px
+    height: 32px
+    min-width: 32px
+    fill: #000
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
