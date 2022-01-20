@@ -1815,6 +1815,11 @@ footer {
     line-height: 24px;
     font-size: 18px; }
 
+.article-box {
+  margin: 60px 0; }
+  .article-box h3 {
+    margin: 0 0 24px; }
+
 .article-author {
   width: 100%;
   display: -webkit-box;
@@ -4907,7 +4912,9 @@ footer {
   .aircraft-sales-box__title {
     font-size: 22px; }
   .aircraft-sales {
-    padding: 40px 0 80px; } }
+    padding: 40px 0 80px; }
+  .article-box {
+    margin: 50px 0; } }
 
 @media only screen and (max-width: 1100px) {
   .result-calculate-rental-line {
@@ -6714,7 +6721,9 @@ footer {
   .news-card-slider .card-article__body {
     height: calc(100% - 150px); }
   .publication-page .nav-tabs .nav-item .nav-link {
-    padding: 0 37px; } }
+    padding: 0 37px; }
+  .article-box {
+    margin: 40px 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {

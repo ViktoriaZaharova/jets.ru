@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jets.ru</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!--  <link rel="stylesheet" href="css/libs.min.css">-->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="content content-page">
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__head">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <form method="post" class="form-search form d-none d-sm-block">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="btn-close-menu"></div>
+      </div>
+      <div class="mobile-menu__body">
+        <form method="post" class="form-search form d-block d-sm-none">
+          <label>
+            <input type="text" placeholder="Поиск" name="search">
+          </label>
+          <button type="submit" class="button-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="user-navigation">
+          <a href="comparison.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#comparison"></use></svg></span>
+            <span class="header-links__text">Сравнение</span>
+          </a>
+          <a href="favorites.html" class="header-links">
+            <span class="header-links__val">10</span>
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#heart"></use></svg></span>
+            <span class="header-links__text">Избранное</span>
+          </a>
+          <a href="#" class="header-links links-chat">
+            <span class="header-links__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#chat"></use></svg></span>
+            <span class="header-links__text">Спросить</span>
+          </a>
+          <a href="#" class="header-links language-links">
+            <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+            <span class="header-links__text">Русский</span>
+          </a>
+        </div>
+
+        <ul class="menu">
+          <li><a href="news.html">НОВОСТИ</a></li>
+          <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+          <li><a href="rental.html">АРЕНДА</a></li>
+          <li><a href="realization.html">ПРОДАЖА</a></li>
+          <li><a href="publication.html">Публикации</a></li>
+          <li><a href="concierge.html">Консьерж</a></li>
+          <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+        </ul>
+
+        <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+        <ul class="list-social">
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <form method="post" class="form-search form">
+              <label>
+                <input type="text" placeholder="Поиск" name="search">
+              </label>
+              <button type="submit" class="button-search">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+
+            <a href="comparison.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#comparison"></use></svg></span>
+              <span class="header-links__text">Сравнение</span>
+            </a>
+            <a href="favorites.html" class="header-links">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#heart"></use></svg></span>
+              <span class="header-links__text">Избранное</span>
+            </a>
+            <a href="#" class="header-links links-chat">
+              <span class="header-links__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#chat"></use></svg></span>
+              <span class="header-links__text">Спросить</span>
+            </a>
+            <a href="#" class="header-links language-links">
+              <span class="header-links__icon"><img src="img/ru.png" alt=""></span>
+              <span class="header-links__text">Русский</span>
+            </a>
+            <a href="tel:+74957898404" class="phone">+7 (495) 789-84-04</a>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-12">
+            <ul class="menu">
+              <li><a href="news.html">НОВОСТИ</a></li>
+              <li><a href="business-aviation.html">БИЗНЕС-АВИАЦИЯ</a></li>
+              <li><a href="rental.html">АРЕНДА</a></li>
+              <li><a href="realization.html">ПРОДАЖА</a></li>
+              <li><a href="publication.html">Публикации</a></li>
+              <li><a href="concierge.html">Консьерж</a></li>
+              <li><a href="encyclopedia.html">ЭНЦИКЛОПЕДИЯ САМОЛЕТОВ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="article-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 order-lg-1 offset-xl-1 d-none d-sm-block">
+            <div class="banner-box">
+              <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-lg-block">
+              <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+              <div class="banner-box__mobile d-flex d-lg-none">
+                <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                <div class="banner-box__title">Путеводитель
+                  по миру суперяхт
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9 col-xl-8">
+            <div class="list-news-card__head">
+              <div class="card-news__date">31.01.2020</div>
+              <a href="#" class="category-name color-brown">Обзор самолетов</a>
+            </div>
+            <h1>Апдейт Pilatus РС-24 специально для России</h1>
+
+            <div class="article-author">
+              <div class="article-author__photo"><img src="img/author.png" alt=""></div>
+              <h4>Константин Константинопольский</h4>
+
+              <div class="dropdown dropdown-share">
+                <a href="#" class="dropdown-toggle btn-share" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#share"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <ul class="list-social">
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#twitter"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#telegram"></use>
+                      </svg>
+                    </a></li>
+                  </ul>
+                  <a href="#" class="btn btn-border-brown btn-copy-link">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#link"></use></svg></span>
+                    <span class="btn-text">Скопировать ссылку</span>
+                  </a>
+                </div>
+              </div>
+
+              <ul class="social">
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#telegram-icon"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk-icon"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+
+            <div class="article-image">
+              <div class="article-image__wrap">
+                <img src="img/article-img7.png" alt="">
+              </div>
+              <small>Подпись к фотографии или имя фотографа</small>
+            </div>
+
+            <div class="box-text">
+              <p>Недавно Pilatus Aircraft представил дополнительные обновления в суперуниверсальном реактивном РС-24,
+                которые понравятся не только пассажирам, но и экипажу. Разрабатывая эти обновления в Pilatus Aircraft
+                думали о запросах российских клиентов и об условиях эксплуатации в холодном климате.</p>
+
+              <p>РС-24 уже произвел впечатление и вызвал огромный интерес на рынке деловой авиации, когда для него
+                создали совершенно новую категорию самолетов, он стал первым бизнес-джетом, использующим короткие и
+                неподготовленные ВПП, первым в мире самолетом бизнес-авиации с режимом двигателя для обогрева и
+                охлаждения салона с помощью Quite Power Mode вместо обычной ВСУ.</p>
+
+              <p>Чем еще может удивить РС-24? Представляем сразу несколько новинок!</p>
+            </div>
+
+            <div class="banner-box d-flex d-sm-none">
+              <img src="img/banner1.jpeg" alt="" class="banner-box__bg d-none d-lg-block">
+              <img src="img/banner-mobile.jpg" class="d-flex d-sm-none banner-box__bg" alt="">
+              <div class="banner-box__mobile d-flex d-lg-none">
+                <div class="banner-box__img d-none d-sm-flex"><img src="img/banner-tablet.png" alt=""></div>
+
+                <div class="banner-box__title">Путеводитель
+                  по миру суперяхт
+                </div>
+              </div>
+            </div>
+
+            <div class="article-box">
+              <h3>Русские клиенты любят погорячее</h3>
+
+              <div class="box-text">
+                <p>Во-первых, это возможность подавать горячие напитки и питание во время полета! Это первый самолет в
+                  такой категории с полноценной кухней на борту, которая встраивается в носовой части салона. В
+                  стандартную комплектацию кухни входят кофемашина с розеткой переменного тока 115 В, рабочая
+                  поверхность
+                  с отдельным управляемым освещением, отсеки для хранения продуктов, холодильная камера и микроволновая
+                  печь. Кофемашину из стандартной комплектации кухни можно заменить на любую другую, например,
+                  Nespresso,
+                  DeLonghi и т.д. Вся конфигурация кухни также может изменяться под предпочтения клиента.</p>
+              </div>
+
+              <div class="article-image">
+                <div class="article-image__wrap">
+                  <img src="img/article-img8.png" alt="">
+                </div>
+                <small>Подпись к фотографии или имя фотографа</small>
+              </div>
+            </div>
+
+            <div class="article-box">
+              <h3>Снег, трава, грунт – идеальные условия для РС-24</h3>
+
+              <div class="box-text">
+                <p>Во-вторых, РС-24 изначально проектировался для эксплуатации на коротких и неподготовленных полосах,
+                  включая траву, гравий, снег. Для получения всех необходимых сертификатов и подтверждения летных
+                  характеристик РС-24 испытания проводились на различных видах травяного покрытия в Англии, Чехии и
+                  Франции. Также в Англии на полосе искусственно создавались сложные условия для того, чтобы
+                  соответствовать всем требованиям взлетов-посадок на мокрые грунтовые полосы. В Канаде РС-24 успешно
+                  завершил испытания на покрытых снегом гравийных полосах.</p>
+
+                <p>Возможность приземляться максимально близко к пункту назначения, экономит общее время в пути, ведь
+                  РС-24 доступны почти в 2 раза больше аэропортов мира, чем другим бизнес-джетам на рынке.</p>
+
+                <p>В новый набор для эксплуатации на неподготовленных ВПП входит комплект защиты при посадке на гравий,
+                  который представляет собой небольшую ловушку, устанавливаемую на переднее колесо, которая препятствует
+                  вылетающему из-под него гравию и сверхпрочной защитной пленки белого цвета для интенсивного
+                  использования в сложных условиях – предназначена для снижения воздействия посадок на неподготовленный
+                  полосы на лакокрасочное покрытие фюзеляжа.</p>
+
+                <p>Данный набор входит в стандартную комплектацию самолета.</p>
+              </div>
+
+              <div class="article-image">
+                <div class="article-image__wrap">
+                  <img src="img/article-img7.png" alt="">
+                </div>
+                <small>Подпись к фотографии или имя фотографа</small>
+              </div>
+            </div>
+
+            <div class="article-box">
+              <h3>Всегда в тепле даже зимой</h3>
+              <div class="box-text">
+                <p>Третья новинка разработана для эксплуатации самолета в России – комплект оборудования, позволяющий
+                  облегчить запуск двигателя в условиях низких температур.</p>
+
+                <p>При отсутствии возможности разместить самолет в ангаре в холодное время года, данная система
+                  подогрева
+                  позволит сохранять двигатель и аккумуляторы в тепле и снизить дополнительные нагрузки на них,
+                  возникающие в экстремальных условиях. Обогревающая лента работает от наземного источника питания и
+                  обогревает батареи.</p>
+
+                <p>В Pilatus Aircraft всегда с большим вниманием относятся к пожеланиям клиентов и стараются максимально
+                  реализовать их. В результате такого диалога Pilatus Aircraft получает дополнительную лояльность
+                  клиентов, а клиенты – все более совершенные, суперуниверсальные самолеты!</p>
+              </div>
+            </div>
+
+            <div class="article-author">
+              <div class="article-author__photo"><img src="img/author.png" alt=""></div>
+              <h4>Константин Константинопольский</h4>
+              <div class="dropdown dropdown-share">
+                <a href="#" class="dropdown-toggle btn-share" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#share"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <ul class="list-social">
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#twitter"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a></li>
+                    <li><a href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#telegram"></use>
+                      </svg>
+                    </a></li>
+                  </ul>
+                  <a href="#" class="btn btn-border-brown btn-copy-link">
+                    <span class="btn-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#link"></use></svg></span>
+                    <span class="btn-text">Скопировать ссылку</span>
+                  </a>
+                </div>
+              </div>
+              <ul class="social">
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#telegram-icon"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk-icon"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="read-also m-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Читайте также</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="read-also-slider">
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article1.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Новости</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article2.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article3.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Rolls-Royce Cullinan дебютировал в России</a>
+                    <div class="box-text">
+                      <p>Новый Rolls-Royce Cullinan дебютировал в России. Спустя всего несколько недель после мировой
+                        премьеры новинка Rolls-Royce впервые предстала перед публикой в Москве.</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article4.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Porsche Panamera — бескомпромиссный выбор</a>
+                    <div class="box-text">
+                      <p>Представители компании Porsche Russland, бренда с выдающейся историей, рассказали о том, почему
+                        модель Porsche Panamera — бескомпромиссный выбор.</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article5.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Сегодня Range Rover
+                      празднует 50 лет</a>
+                    <div class="box-text">
+                      <p>В честь 50-летнего юбилея Range Rover Jaguar Land Rover представляет эксклюзивную версию
+                        модели</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article2.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Lexus: несравненный комфорт и уверенность</a>
+                    <div class="box-text">
+                      <p>Сегодня Lexus предлагает своим клиентам обширный модельный ряд, способный удовлетворить самые
+                        взыскательные запросы. </p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="card-article">
+                  <a href="article.html" class="card-article__img"><img src="img/article5.png" alt=""></a>
+                  <div class="card-article__body">
+                    <a href="article.html" class="card-article__name">Внедорожник Lexus LX — удобство роскоши</a>
+                    <div class="box-text">
+                      <p>Lexus LX — тот самый автомобиль, который практически никогда не испортит ваше настроение из-за
+                        тряски или колебаний. Сомневаетесь?</p>
+                    </div>
+
+                    <div class="card-news__footer">
+                      <a href="#" class="category-name color-brown">Авто</a>
+                      <div class="card-news__date">16.12.2020</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-nav read-also-slider__nav"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="bg-black p-60 color-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>По вопросам рекламы и сотрудничества обращаться по телефону:</h4>
+            <a href="tel:+74956616583" class="color-white footer-box__links font-600">+7 (495) 661-65-83</a>
+            <a href="mailto:sales@aviapromo.ru" class="color-white footer-box__links font-600">sales@aviapromo.ru</a>
+            <p class="font-600">Часы работы: с 10 до 19 пн-пт</p>
+
+            <ul class="footer-box__logos">
+              <li><a href="#"><img src="img/logo-footer1.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer2.png" alt=""></a></li>
+              <li><a href="#"><img src="img/logo-footer3.png" alt=""></a></li>
+            </ul>
+
+            <div class="number-evidence">
+              Номер свидетельства ЭЛ № ФС 77 - 75020
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <h4>Для пресс-релизов</h4>
+            <a href="mailto:press@jets.ru" class="color-white footer-box__links font-600">press@jets.ru</a>
+          </div>
+
+          <div class="footer-box">
+            <h4>Аренда и заказ частного самолета </h4>
+            <a href="tel:+74957737555" class="color-white footer-box__links font-600">+7 (495) 773-75-55</a>
+          </div>
+          <div class="footer-box">
+            <h4>Покупка и продажа частных <br>
+              самолетов и вертолетов</h4>
+            <a href="tel:+74957898404" class="color-white footer-box__links font-600">+7 (495) 789-84-04</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-40">
+          <div class="footer-box">
+            <div class="address">119048, Москва, ул. Усачёва д 35, стр. 1, БЦ "Спектр", 1 подъезд, 5 этаж</div>
+            <ul class="footer-box__menu">
+              <li><a href="https://jets.ru" class="color-white footer-box__links font-600">jets.ru</a></li>
+              <li><a href="mailto:info@jets.ru" class="color-white footer-box__links font-600">info@jets.ru</a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Медиакит
+                2021 </a></li>
+              <li><a href="#" class="color-brown text-decoration footer-box__links font-600" target="_blank">Тех.
+                требования к баннерам</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Выходные
+                данные</a></li>
+              <li><a href="#" class="color-white text-decoration footer-box__links font-600" target="_blank">Архив</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-3 col-lg-8">
+          <div class="age">18+</div>
+        </div>
+        <div class="col-9 col-lg-4">
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="cookie">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <h3>Мы используем файлы <a href="cookie.html" class="color-white d-inline text-decoration" target="_blank">cookies.</a>
+        </h3>
+        <div class="box-text d-block d-sm-none">
+          <p>На сайте используются cookies.</p>
+          <p>Продолжая использовать сайт, вы принимаете <a href="#" class="d-inline text-decoration">условия</a></p>
+        </div>
+        <a href="#" class="btn btn-accent btn-agree">
+          <span class="btn-text d-none d-sm-block">согласен</span>
+          <span class="btn-text d-block d-sm-none">OK</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
