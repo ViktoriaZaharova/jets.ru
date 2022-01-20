@@ -1,0 +1,62 @@
+@import "fonts"
+@import "vars"
+
+/*==========  author ==========*/
+.author-box
+  padding: 20px
+  margin: 0 0 10px
+  position: relative
+  &:last-child
+    margin: 0
+  .box-text
+    font-size: 12px
+    line-height: 16px
+    margin: 0
+  &__body
+    font-size: 12px
+    color: rgba(#fff, .7)
+  h4
+    margin: 8px 0 16px
+    font-weight: 500
+  h5
+    font-size: 12px
+    margin: 0 0 16px
+    color: rgba(#fff, .7)
+  &__photo
+    width: 80px
+    height: 80px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border: 2px solid #B89B7B
+      radius: 50%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__close
+    display: none
+    align-items: center
+    justify-content: center
+    width: 24px
+    height: 24px
+    top: 16px
+    right: 16px
+    fill: $brown
+    position: absolute
+
+
+.links-details
+  display: flex
+  align-items: center
+  margin: 13px 0 0
+  font-size: 14px
+  .svg-icon
+    fill: $brown
+    width: 16px
+    height: 16px
+
+.author-page
+  padding: 40px 0 140px
+/*==========  author end ==========*/

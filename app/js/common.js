@@ -118,6 +118,15 @@ $('.btn-close-menu').on('click', function () {
     $('.mobile-menu').fadeOut();
 });
 
+$('.author-box__details').on('click', function (e) {
+    e.preventDefault();
+    $('.author-box-about').fadeIn();
+});
+
+$('.author-box__close').on('click', function (e) {
+    e.preventDefault();
+    $('.author-box-about').fadeOut();
+});
 
 // accordion
 $('.accordion-my [data-toggle="collapse"]').click(function (e) {
